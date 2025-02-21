@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../../common/images/favicon.png">
+    <link rel="icon" href="../../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../public/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <script src="../../common/js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="../../common/js/jquery.screen.js"></script>
+    <script src="../../common/js/slick.min.custom.1.8.0.11.js"></script>
+    <script src="../../common/js/slick.extensions.min.js"></script>
+    <script src="../public/js/common.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="../../common/js/program.min.js"></script><!--//교육프로그램 검색 캘린더 사용 위함-->
+    <title>옥천군청 - 교육포털 메인</title>
+</head>
+<body id="main" class="main edulife">
+<!--// 메인레이아웃(id="main" class="main") -->
+<!--// 서브레이아웃(id="sub" class="sub") -->
+<!--// 해당사이트아이디(class="해당사이트아이디") -->
+<div class="accessibility">
+    <a href="#container">본문 바로가기</a>
+</div>  <!--//accessibility-->
+<div id="wrapper">
+    <header id="header">
+        <div class="header_gnb">
+            <div class="wrap clearfix">
+                <div class="etc_site">
+                    <ul class="etc_site_list">
+                        <li class="etc_site_item">
+                            <a href="/www/index.do" target="_blank" title="새창" class="etc_site_link">
+                                <em class="link_text">옥천군청</em>
+                                <em class="link_text type2">옥천군청</em>
+                            </a>    <!--//etc_site_link-->
+                        </li>    <!--//etc_site_item-->
+                        <li class="etc_site_item">
+                            <a href="/gunsu/index.do" target="_blank" title="새창" class="etc_site_link">
+                                <em class="link_text">열린군수실</em>
+                                <em class="link_text type2">열린군수실</em>
+                            </a>    <!--//etc_site_link-->
+                        </li>    <!--//etc_site_item-->
+                        <li class="etc_site_item">
+                            <a href="/council/index.do" target="_blank" title="새창" class="etc_site_link">
+                                <em class="link_text">옥천군의회</em>
+                                <em class="link_text type2">옥천군의회</em>
+                            </a>    <!--//etc_site_link-->
+                        </li>    <!--//etc_site_item-->
+                        <li class="etc_site_item">
+                            <a href="/tour/index.do" target="_blank" title="새창" class="etc_site_link">
+                                <em class="link_text">문화관광</em>
+                                <em class="link_text type2">문화관광</em>
+                            </a>    <!--//etc_site_link-->
+                        </li>    <!--//etc_site_item-->
+                        <li class="etc_site_item">
+                            <a href="/edulife/index.do" target="_blank" title="새창" class="etc_site_link">
+                                <em class="link_text">교육포털</em>
+                                <em class="link_text type2">교육포털</em>
+                            </a>    <!--//etc_site_link-->
+                        </li>    <!--//etc_site_item-->
+                    </ul>    <!--//etc_site_list-->
+                </div>    <!--//etc_site-->
+                <div class="etc_choice">
+                    <ul class="etc_choice_list">
+                        <li class="etc_choice_item korea_quick">
+                            <a href="" class="etc_choice_link">
+                                <em class="link_text">국가상징바로알기</em>    <!--//link_text-->
+                            </a>    <!--//etc_choice_link-->
+                        </li>    <!--//etc_choice_item korea_quick-->
+                        <li class="etc_choice_item login">
+                            <a href="" class="etc_choice_link">
+                                <!--//로그인 이 되었다면 로그아웃으로 텍스트 변경-->
+                                <!--//로그아웃 이 되었다면 로그인으로 텍스트 변경-->
+                                <em class="link_text">로그인</em>    <!--//link_text-->
+                            </a>    <!--//etc_choice_link-->
+                        </li>    <!--//etc_choice_item login-->
+                        <li class="etc_choice_item language">
+                            <button type="button" title="언어별 사이트 바로가기 리스트 열기" class="etc_choice_link">
+                                <em class="link_text">KOR</em>    <!--//link_text-->
+                            </button>    <!--//etc_choice_link-->
+                            <div class="lang_layer">
+                                <ul class="lang_list">
+                                    <li class="lang_item">
+                                        <a href="/www/index.do" target="_blank" title="새창" class="lang_link">KOR</a>    <!--//lang_link-->
+                                    </li>    <!--//lang_item-->
+                                    <li class="lang_item">
+                                        <a href="/en/index.do" target="_blank" title="새창" class="lang_link">ENG</a>    <!--//lang_link-->
+                                    </li>    <!--//lang_item-->
+                                    <li class="lang_item">
+                                        <a href="/cn/index.do" target="_blank" title="새창" class="lang_link">CHI</a>    <!--//lang_link-->
+                                    </li>    <!--//lang_item-->
+                                    <li class="lang_item">
+                                        <a href="/jn/index.do" target="_blank" title="새창" class="lang_link">JAP</a>    <!--//lang_link-->
+                                    </li>    <!--//lang_item-->
+                                </ul>    <!--//lang_list-->
+                            </div>    <!--//lang_layer-->
+                        </li>    <!--//etc_choice_item language-->
+                    </ul>    <!--//etc_choice_list-->
+                </div>    <!--//etc_choice-->
+            </div>    <!--//wrap-->
+        </div>    <!--//header_gnb-->
+        <div class="header_box">
+            <div class="wrap">
+                <h1 class="logo">
+                    <a href="./index.do" class="logo_link">
+                        <i class="logo_text_img">행복드림 옥천</i>    <!--//logo_text_img-->
+                        <span class="logo_site_name">교육포털</span>    <!--//logo_site_name-->
+                    </a>    <!--//logo_link-->
+                </h1>    <!--//logo-->
+                <div class="m_btn_list">
+                    <div class="search_show m_btn_item">
+                        <button type="button" class="m_btn">검색창열기</button>    <!--//m_btn-->
+                    </div>    <!--//search_show-->
+                    <div class="menu_show m_btn_item">
+                        <button type="button" class="menu_button m_btn">메뉴열기</button>    <!--//m_btn-->
+                    </div>    <!--//menu_show-->
+                </div>    <!--//m_btn_list-->
+            </div>    <!--//wrap-->
+            <div class="m_search">
+                <button type="button" class="m_search_close">검색창닫기</button>    <!--//m_search_close-->
+                <form action="">    <!--//action값 꼭 채워주세요-->
+                    <fieldset>
+                        <legend>통합검색 검색영역</legend>
+                        <div class="search_inner">
+                            <div class="input_box">
+                                <div class="input_list">
+                                    <div class="input_item select_type">
+                                        <select title="검색 카테고리 선택" class="search_select">
+                                            <option>통합검색</option>
+                                            <option>전체</option>
+                                            <option>직원/업무</option>
+                                            <option>메뉴검색</option>
+                                            <option>소식/공지</option>
+                                            <option>게시판</option>
+                                            <option>웹페이지</option>
+                                        </select>    <!--//search_select-->
+                                    </div>    <!--//input_item-->
+                                    <div class="input_item input_type">
+                                        <input type="text" value="" placeholder="무엇을 도와드릴까요?" title="검색어 입력" class="search_input" />
+                                    </div>    <!--//input_item-->
+                                </div>    <!--//input_list-->
+                            </div>    <!--//input_box-->
+                            <div class="submit_box">
+                                <input type="submit" title="검색하기" value="통합검색" class="submit_input" />
+                                <i class="submit_icon"></i>    <!--//submit_icon-->
+                            </div>    <!--//submit_box-->
+                        </div>    <!--//search_inner-->
+                    </fieldset>
+                </form>
+            </div>    <!--//m_search-->
+        </div>    <!--//header_box-->
+        <div class="lnb">
+            <div class="lnb_topbox">
+                <div class="m_gnb">
+                    <div class="logo">
+                        <i class="logo_text_img">행복드림 옥천</i>    <!--//logo_text_img-->
+                    </div>    <!--//logo-->
+                    <div class="etc_choice">
+                        <ul class="etc_choice_list">
+                            <li class="etc_choice_item login">
+                                <a href="" class="etc_choice_link">
+                                    <!--//로그인 이 되었다면 로그아웃으로 텍스트 변경-->
+                                    <!--//로그아웃 이 되었다면 로그인으로 텍스트 변경-->
+                                    <em class="link_text">로그인</em>    <!--//link_text-->
+                                </a>    <!--//etc_choice_link-->
+                            </li>    <!--//etc_choice_item login-->
+                        </ul>    <!--//etc_choice_list-->
+                    </div>    <!--//etc_choice-->
+                </div>    <!--//m_gnb-->
+                <div class="m_search">
+                    <form action="">    <!--//action값 꼭 채워주세요-->
+                        <fieldset>
+                            <legend>통합검색 검색영역</legend>
+                            <div class="search_inner">
+                                <div class="input_box">
+                                    <div class="input_list">
+                                        <div class="input_item input_type">
+                                            <input type="text" value="" placeholder="무엇을 도와드릴까요?" title="검색어 입력" class="search_input" />
+                                        </div>    <!--//input_item input_type-->
+                                    </div>    <!--//input_list-->
+                                </div>    <!--//input_box-->
+                                <div class="submit_box">
+                                    <input type="submit" title="검색하기" value="통합검색" class="submit_input" />
+                                    <i class="submit_icon"></i>    <!--//submit_icon-->
+                                </div>    <!--//submit_box-->
+                            </div>    <!--//search_inner-->
+                        </fieldset>
+                    </form>
+                </div>    <!--//m_search-->
+                <div class="m_site">
+                    <div class="etc_site">
+                        <ul class="etc_site_list">
+                            <li class="etc_site_item">
+                                <a href="/www/index.do" target="_blank" title="새창" class="etc_site_link">
+                                    <em class="link_text">옥천군청</em>
+                                </a>    <!--//etc_site_link-->
+                            </li>    <!--//etc_site_item-->
+                            <li class="etc_site_item">
+                                <a href="/gunsu/index.do" target="_blank" title="새창" class="etc_site_link">
+                                    <em class="link_text">열린군수실</em>
+                                </a>    <!--//etc_site_link-->
+                            </li>    <!--//etc_site_item-->
+                            <li class="etc_site_item">
+                                <a href="/council/index.do" target="_blank" title="새창" class="etc_site_link">
+                                    <em class="link_text">옥천군의회</em>
+                                </a>    <!--//etc_site_link-->
+                            </li>    <!--//etc_site_item-->
+                            <li class="etc_site_item">
+                                <a href="/tour/index.do" target="_blank" title="새창" class="etc_site_link">
+                                    <em class="link_text">문화관광</em>
+                                </a>    <!--//etc_site_link-->
+                            </li>    <!--//etc_site_item-->
+                            <li class="etc_site_item active">
+                                <a href="/edulife/index.do" target="_blank" title="새창" class="etc_site_link">
+                                    <em class="link_text">교육포털</em>
+                                </a>    <!--//etc_site_link-->
+                            </li>    <!--//etc_site_item-->
+                            <li class="etc_site_item language">
+                                <button type="button" title="언어별 사이트 바로가기 리스트 열기" class="etc_site_link">
+                                    <em class="link_text">KOR</em>    <!--//link_text-->
+                                </button>    <!--//etc_site_link-->
+                                <div class="lang_layer">
+                                    <ul class="lang_list">
+                                        <li class="lang_item">
+                                            <a href="/www/index.do" target="_blank" title="새창" class="lang_link">KOR</a>    <!--//lang_link-->
+                                        </li>    <!--//lang_item-->
+                                        <li class="lang_item">
+                                            <a href="/en/index.do" target="_blank" title="새창" class="lang_link">ENG</a>    <!--//lang_link-->
+                                        </li>    <!--//lang_item-->
+                                        <li class="lang_item">
+                                            <a href="/cn/index.do" target="_blank" title="새창" class="lang_link">CHI</a>    <!--//lang_link-->
+                                        </li>    <!--//lang_item-->
+                                        <li class="lang_item">
+                                            <a href="/jn/index.do" target="_blank" title="새창" class="lang_link">JAP</a>    <!--//lang_link-->
+                                        </li>    <!--//lang_item-->
+                                    </ul>    <!--//lang_list-->
+                                </div>    <!--//lang_layer-->
+                            </li>    <!--//etc_site_item language-->
+                        </ul>    <!--//etc_site_list-->
+                    </div>    <!--//etc_site-->
+                </div>    <!--//m_site-->
+            </div>    <!--//lnb_topbox-->
+            <nav class="menu eachdown">
+                <!--// 모바일을 위해 초기에 4차 메뉴까지 개발 필요 -->
+                <!--// 와이드에서는 3차메뉴까지만 표출되게 css 잡아놓음 -->
+                <!--// 내가 어떤 메뉴를 선택하든 그 해당메뉴의 ★★★마지막차수★★★ a태그 .depth_text 클레스명에 spy 클레스 및 title="선택됨" 필수로 달아주시는 개발 부탁드립니다 -->
+                <!--// ex1) 1차메뉴명 - 2차메뉴명 - (3차메뉴명1, 3차메뉴명2)에서 2차메뉴명을 클릭했을 때 3차메뉴명들 중 첫번째인 3차메뉴명1 에 spy 클레스와 title="선택됨" 달림 -->
+                <!--// ex2) 1차메뉴명 - 2차메뉴명 - (3차메뉴명1, 3차메뉴명2) - (4차메뉴명1, 4차메뉴명2)에서 2차메뉴명을 클릭했을 때 4차메뉴명들 중 첫번째인 4차메뉴명1 에 spy 클레스와 title="선택됨" 달림 -->
+                <!--// CMS에서 새창 설정일때 a태그 .depth_text 클레스명에 target="_blank" title="새창" 필수 개발 부탁드립니다 -->
+                <h2 class="skip">메뉴</h2>    <!--//skip-->
+                <div class="depth depth1">
+                    <ul class="depth_list depth1_list">
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>평생학습 옥천군</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <div class="depth2_title_box">
+                                    <span class="deco"><i></i><i></i><i></i><i></i><i></i><i></i></span>    <!--//deco-->
+                                    <div class="title_inner">
+                                        <!--//1차 메뉴명 개발 필요-->
+                                        <span class="title">평생학습 옥천군</span>    <!--//title-->
+                                        <span class="desc"><em class="green">사이트별로</em><em class="purple">문구 달라질 수</em><em class="black">있음</em></span>    <!--//desc-->
+                                    </div>    <!--//title_inner-->
+                                </div>    <!--//depth2_title_box-->
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" target="_blank" title="새창" class="depth_text depth3_text"><span><em>3차메뉴 새창</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" title="선택됨" class="depth_text depth4_text spy"><span><em>4차메뉴명 spy</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" target="_blank" title="새창" class="depth_text depth4_text"><span><em>4차메뉴 새창</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" target="_blank" title="새창" class="depth_text depth2_text"><span><em>2차메뉴 새창</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴 단일</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>교육사업</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <div class="depth2_title_box">
+                                    <span class="deco"><i></i><i></i><i></i><i></i><i></i><i></i></span>    <!--//deco-->
+                                    <div class="title_inner">
+                                        <!--//1차 메뉴명 개발 필요-->
+                                        <span class="title">교육사업</span>    <!--//title-->
+                                        <span class="desc"><em class="green">사이트별로</em><em class="purple">문구 달라질 수</em><em class="black">있음</em></span>    <!--//desc-->
+                                    </div>    <!--//title_inner-->
+                                </div>    <!--//depth2_title_box-->
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" target="_blank" title="새창" class="depth_text depth4_text"><span><em>4차메뉴 새창</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" target="_blank" title="새창" class="depth_text depth2_text"><span><em>2차메뉴 새창</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴 단일</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>평생학습 네트워크</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <div class="depth2_title_box">
+                                    <span class="deco"><i></i><i></i><i></i><i></i><i></i><i></i></span>    <!--//deco-->
+                                    <div class="title_inner">
+                                        <!--//1차 메뉴명 개발 필요-->
+                                        <span class="title">평생학습 네트워크</span>    <!--//title-->
+                                        <span class="desc"><em class="green">사이트별로</em><em class="purple">문구 달라질 수</em><em class="black">있음</em></span>    <!--//desc-->
+                                    </div>    <!--//title_inner-->
+                                </div>    <!--//depth2_title_box-->
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" target="_blank" title="새창" class="depth_text depth4_text"><span><em>4차메뉴 새창</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" target="_blank" title="새창" class="depth_text depth2_text"><span><em>2차메뉴 새창</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴 단일</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>정보마당</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <div class="depth2_title_box">
+                                    <span class="deco"><i></i><i></i><i></i><i></i><i></i><i></i></span>    <!--//deco-->
+                                    <div class="title_inner">
+                                        <!--//1차 메뉴명 개발 필요-->
+                                        <span class="title">정보마당</span>    <!--//title-->
+                                        <span class="desc"><em class="green">사이트별로</em><em class="purple">문구 달라질 수</em><em class="black">있음</em></span>    <!--//desc-->
+                                    </div>    <!--//title_inner-->
+                                </div>    <!--//depth2_title_box-->
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" target="_blank" title="새창" class="depth_text depth4_text"><span><em>4차메뉴 새창</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" target="_blank" title="새창" class="depth_text depth2_text"><span><em>2차메뉴 새창</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴 단일</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>참여마당</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <div class="depth2_title_box">
+                                    <span class="deco"><i></i><i></i><i></i><i></i><i></i><i></i></span>    <!--//deco-->
+                                    <div class="title_inner">
+                                        <!--//1차 메뉴명 개발 필요-->
+                                        <span class="title">참여마당</span>    <!--//title-->
+                                        <span class="desc"><em class="green">사이트별로</em><em class="purple">문구 달라질 수</em><em class="black">있음</em></span>    <!--//desc-->
+                                    </div>    <!--//title_inner-->
+                                </div>    <!--//depth2_title_box-->
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴명</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" target="_blank" title="새창" class="depth_text depth4_text"><span><em>4차메뉴 새창</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴명 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴명</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" target="_blank" title="새창" class="depth_text depth2_text"><span><em>2차메뉴 새창</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴 단일</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                    </ul>    <!--//depth1_list-->
+                </div>    <!--//depth1-->
+            </nav>    <!--//menu-->
+            <div class="menu_hide">
+                <button type="button" class="menu_button">메뉴 닫기</button>    <!--//menu_button-->
+            </div>    <!--//menu_hide-->
+        </div>    <!--//lnb-->
+        <div class="lnb_curtain">
+            <button type="button">메뉴 닫기</button>
+        </div>    <!--//lnb_curtain-->
+        <div class="header_info">
+            <div class="info_list">
+                <div class="info_item sitemap">
+                    <a href="" class="info_link">사이트맵</a>    <!--//info_link-->
+                </div>    <!--//info_item sitemap-->
+            </div>    <!--//info_list-->
+        </div>    <!--//header_info-->
+    </header>    <!--//#header-->
+    <div id="container">
+        <main>
+            <div class="rowgroup rowgroup1">
+                <div class="rowgroup_deco">
+                    <i class="bg_deco wave"></i>    <!--//bg_deco-->
+                    <i class="bg_deco icons"></i>    <!--//bg_deco-->
+                    <i class="bg_deco flower"></i>    <!--//bg_deco-->
+                </div>    <!--//rowgroup_deco-->
+                <div class="rowgroup_inner">
+                    <section class="colgroup visual">
+                        <h2 class="skip">비주얼팝업 영역</h2>    <!--//skip-->
+                        <div class="visual_wrap">
+                            <div class="visual_slide_list">
+                                <div class="visual_slide_item">
+                                    <!--//★ 공통적용) a태그에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 동일하게 들어오도록 해주세요! -->
+                                    <a href="" class="visual_slide_link">
+                                        <span class="link_inner">
+                                            <!--// .visual_slide_link .link_inner .link_bg / .visual_slide_link .link_inner .link_img -->
+                                            <!--// 1) 메인 비주얼 이미지 경로 개발 ▷ .link_bg의 background-image의 url 경로와 .link_img의 src 경로가 동일하게 들어오도록 개발 요청드립니다. -->
+                                            <!--// 2) CMS에서 .link_img의 alt="" 속성 안에 대체텍스트 입력할 수 있도록 개발 요청드립니다. -->
+                                            <span class="link_bg" style="background-image:url(./images/main/visual_img1.jpg)"></span>    <!--//link_bg-->
+                                            <img src="./images/main/visual_img1.jpg" alt="평생학습도시 행복드림 옥천. 행복드림 옥천에서 배움의 기쁨을 느껴보세요." class="link_img"/>    <!--//link_img-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//visual_slide_link-->
+                                </div>    <!--//visual_slide_item-->
+                                <div class="visual_slide_item">
+                                    <a href="" class="visual_slide_link">
+                                        <span class="link_inner">
+                                            <span class="link_bg" style="background-image:url(https://via.placeholder.com/960x486)"></span>    <!--//link_bg-->
+                                            <img src="https://via.placeholder.com/960x486" alt="비쥬얼 예시사진2" class="link_img"/>    <!--//link_img-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//visual_slide_link-->
+                                </div>    <!--//visual_slide_item-->
+                                <div class="visual_slide_item">
+                                    <a href="" class="visual_slide_link">
+                                        <span class="link_inner">
+                                            <span class="link_bg" style="background-image:url(https://via.placeholder.com/960x486)"></span>    <!--//link_bg-->
+                                            <img src="https://via.placeholder.com/960x486" alt="비쥬얼 예시사진3" class="link_img"/>    <!--//link_img-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//visual_slide_link-->
+                                </div>    <!--//visual_slide_item-->
+                            </div>    <!--//visual_slide_list-->
+                            <div class="visual_slide_control">
+                                <button type="button" class="visual_slide_btn prev">이전</button>    <!--//visual_slide_btn prev-->
+                                <button type="button" class="visual_slide_btn next">다음</button>    <!--//visual_slide_btn next-->
+                            </div>    <!--//visual_slide_control-->
+                        </div>    <!--//visual_wrap-->
+                    </section>    <!--//colgroup visual-->
+                    <section class="colgroup quick">
+                        <h2 class="skip">교육센터 바로가기 영역</h2>    <!--//skip-->
+                        <div class="quick_wrap">
+                            <div class="quick_deco_box">
+                                <i class="people people1"></i>    <!--//people-->
+                                <i class="people people2"></i>    <!--//people-->
+                                <i class="people people3"></i>    <!--//people-->
+                                <i class="people people4"></i>    <!--//people-->
+                            </div>    <!--//quick_deco_box-->
+                            <div class="quick_slide_list">
+                                <div class="quick_slide_item type1">
+                                    <!--//해상도 640px~ 이하로 슬라이드 적용됩니다 -->
+                                    <!--//★ 공통적용) a태그에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 동일하게 들어오도록 해주세요! -->
+                                    <a href="" class="quick_slide_link">
+                                        <span class="link_inner">
+                                            <span class="link_text">평생학습<br />정기과정</span>    <!--//link_text-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//quick_slide_link-->
+                                </div>    <!--//quick_slide_item type1-->
+                                <div class="quick_slide_item type2">
+                                    <a href="" class="quick_slide_link">
+                                        <span class="link_inner">
+                                            <span class="link_text">두드림<br />지원서비스</span>    <!--//link_text-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//quick_slide_link-->
+                                </div>    <!--//quick_slide_item type2-->
+                                <div class="quick_slide_item type3">
+                                    <a href="" class="quick_slide_link">
+                                        <span class="link_inner">
+                                            <span class="link_text">평생교육 실습</span>    <!--//link_text-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//quick_slide_link-->
+                                </div>    <!--//quick_slide_item type3-->
+                                <div class="quick_slide_item type4">
+                                    <a href="" class="quick_slide_link">
+                                        <span class="link_inner">
+                                            <span class="link_text">정기과정<br />수강신청</span>    <!--//link_text-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//quick_slide_link-->
+                                </div>    <!--//quick_slide_item type4-->
+                                <div class="quick_slide_item type5">
+                                    <a href="" class="quick_slide_link">
+                                        <span class="link_inner">
+                                            <span class="link_text">수강신청현황</span>    <!--//link_text-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//quick_slide_link-->
+                                </div>    <!--//quick_slide_item type5-->
+                                <div class="quick_slide_item type6">
+                                    <a href="" class="quick_slide_link">
+                                        <span class="link_inner">
+                                            <span class="link_text">학습동아리<br />신청</span>    <!--//link_text-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//quick_slide_link-->
+                                </div>    <!--//quick_slide_item type6-->
+                                <div class="quick_slide_item type7">
+                                    <a href="" class="quick_slide_link">
+                                        <span class="link_inner">
+                                            <span class="link_text">제안프로그램</span>    <!--//link_text-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//quick_slide_link-->
+                                </div>    <!--//quick_slide_item type7-->
+                            </div>    <!--//quick_slide_list-->
+                        </div>    <!--//quick_wrap-->
+                    </section>    <!--//colgroup quick-->
+                </div>    <!--//rowgroup_inner-->
+            </div>    <!--//rowgroup rowgroup1-->
+            <div class="rowgroup rowgroup2 scroll_event">
+                <div class="rowgroup_deco">
+                    <i class="bg_deco wave"></i>    <!--//bg_deco-->
+                    <i class="bg_deco plant1"></i>    <!--//bg_deco-->
+                    <i class="bg_deco plant2"></i>    <!--//bg_deco-->
+                </div>    <!--//rowgroup_deco-->
+                <div class="rowgroup_inner">
+                    <section class="colgroup course">
+                        <h2>교육포털 강좌현황</h2>
+                        <div class="tab_box">
+                            <ul class="tab_list">
+                                <li class="tab_item active">
+                                    <!--// .tab_btn ▶ type1 = 접수중, type2 = 접수예정-->
+                                    <button type="button" title="선택됨" class="tab_btn type1">접수중</button>    <!--//tab_btn-->
+                                </li>       <!--//tab_item-->
+                                <li class="tab_item">
+                                    <!--// type1 = 접수중, type2 = 접수예정-->
+                                    <button type="button" class="tab_btn type2">접수예정</button>    <!--//tab_btn-->
+                                </li>       <!--//tab_item-->
+                            </ul>    <!--//tab-list-->
+                        </div>    <!--//tab_box-->
+                        <div class="tab_slide_box">
+                            <div class="tab_slide_item active">
+                                <div class="course_slide_list">
+                                    <!--// 해상도 641px~ 이상에서는 슬라이드 미적용되고, 해상도 ~640px 이하부터 슬라이드 적용됩니다. -->
+                                    <!--// 화면에서 강좌현황 .course_slide_item 최대 4개까지 표출되도록 CSS 잡아두었으므로, .course_slide_item 최소 4개 이상(5~10개 사이로) 들어오게해주세요 -->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status wait2">
+                                                                    <!--// [진행상태] 종류(.eud_status) ▷ .wait1: 접수대기, .wait2: 교육대기, .ing: 접수중, .end: 접수마감 -->
+                                                                    <!--// 텝메뉴 '접수중' 일때(.tab_btn.type1) ▶ [진행상태]에 교육대기(.wait2) / 접수중(.ing) / 접수마감(.end)만 들어옵니다. -->
+                                                                    <!--// .eud_status에 해당 진행상태 종류에 따른 클레스명 붙도록 해주세요!-->
+                                                                    <span class="text">교육대기</span>
+                                                                </span>    <!--//edu_status wait2-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">대한중장비학원</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type1">
+                                                                <!--// [분야] 종류 ▷ type1: 역량강화교육, type2: 생활과정, type3: 문화예술, type4: 인문교양, type5: 교양과정, type6: 어학과정, type7: 취미, type8: 미디어강좌, type9: 정보화교육 -->
+                                                                <!--// .edu_field에 해당 분야종류에 따른 .type 클레스명 붙도록 해주세요! -->
+                                                                역량강화교육
+                                                            </span>    <!--//edu_field type1-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <!--// 모집인원(.num) ▶ .current = 현재 모집된 인원, .total = 총 모집인원 -->
+                                                                    <em class="current">40</em>/<em class="total">40</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <!--// 기간 ▶ .accept_time = 접수기간, .study_time = 교육기간-->
+                                                            <!--// 접수기간 및 교육기간 둘다 종료기간이 다음해로 넘어갈 경우에도 년도가 나타나지않도록 해주세요. -->
+                                                            <!--// 예) 접수기간이 2023-12-01 ~ 2024-01-31 인 경우 마크업(.time)에는 2023-12-01 ~ 01-31로 들어와야합니다! -->
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-08-18 ~ 08-31</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2023-09-19 ~ 11-30</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">하반기 생애주기별 전문인력 양성과정 소형 중장비(굴착기, 지게차)</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status ing">
+                                                                    <span class="text">접수중</span>
+                                                                </span>    <!--//edu_status ing-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">옥천군청</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type2">
+                                                                생활과정
+                                                            </span>    <!--//edu_field type2-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <em class="current">5</em>/<em class="total">200</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-08-18 ~ 12-31</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2023-08-08 ~ 12-31</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">옥천 교육 거버넌스 회원 모집</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status end">
+                                                                    <span class="text">접수마감</span>
+                                                                </span>    <!--//edu_status end-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">옥천군민도서관 평생학습실</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type3">
+                                                                문화예술
+                                                            </span>    <!--//edu_field type3-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <em class="current">16</em>/<em class="total">20</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-08-08 ~ 12-31</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2023-08-08 ~ 12-31</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">하반기 신중년 청춘대학(건강) - ’손, 발 마사지’</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status end">
+                                                                    <span class="text">접수마감</span>
+                                                                </span>    <!--//edu_status end-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">군민도서관 다목적실</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type4">
+                                                                인문교양
+                                                            </span>    <!--//edu_field type4-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <em class="current">13</em>/<em class="total">20</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-07-10 ~ 07-14</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2023-08-11 ~ 12-01</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">[정기과정] 우쿨렐레 중급</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status end">
+                                                                    <span class="text">접수마감</span>
+                                                                </span>    <!--//edu_status end-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">군민도서관 다목적실</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type3">
+                                                                문화예술
+                                                            </span>    <!--//edu_field type3-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <em class="current">13</em>/<em class="total">20</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-07-10 ~ 07-14</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2023-08-11 ~ 12-01</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">[정기과정] 우쿨렐레 중급</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status end">
+                                                                    <span class="text">접수마감</span>
+                                                                </span>    <!--//edu_status end-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">군민도서관 다목적실</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type3">
+                                                                문화예술
+                                                            </span>    <!--//edu_field type3-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <em class="current">13</em>/<em class="total">20</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-07-10 ~ 07-14</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2023-08-11 ~ 12-01</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">[정기과정] 우쿨렐레 중급</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                </div>    <!--//course_slide_list-->
+                                <div class="course_more_box">
+                                    <!--// .tab_box .tab_list .tab_item .tab_btn.type1 ▶ '접수중'의 더보기 링크입니다. -->
+                                    <!--//★ a태그에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 동일하게 들어오도록 해주세요! -->
+                                    <a href="" class="more_link">더보기</a>    <!--//more_link-->
+                                </div>    <!--//course_more_box-->
+                            </div>    <!--//tab_slide_item-->
+                            <div class="tab_slide_item">
+                                <div class="course_slide_list">
+                                    <!--// 해상도 641px~ 이상에서는 슬라이드 미적용되고, 해상도 ~640px 이하부터 슬라이드 적용됩니다. -->
+                                    <!--// 화면에서 강좌현황 .course_slide_item 최대 4개까지 표출되도록 CSS 잡아두었으므로,  .course_slide_item 최소 4개 이상(5~10개 사이로) 들어오게해주세요 -->
+                                    <div class="course_slide_item">
+                                        <!--//★ a태그에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 동일하게 들어오도록 해주세요! -->
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status wait1">
+                                                                    <!--// [진행상태] 종류(.eud_status) ▶ .wait1: 접수대기, .wait2: 교육대기, .ing: 접수중, .end: 접수마감 -->
+                                                                    <!--// 텝메뉴 '접수예정' 일때(.tab_btn.type2) ▶ [진행상태]에 접수대기(.wait1)만 들어옵니다. -->
+                                                                    <!--// .eud_status에 해당 진행상태 종류에 따른 클레스명 붙도록 해주세요!-->
+                                                                    <span class="text">접수대기</span>
+                                                                </span>    <!--//edu_status wait1-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">대한중장비학원</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type5">
+                                                                <!--// [분야] 종류 ▷ type1: 역량강화교육, type2: 생활과정, type3: 문화예술, type4: 인문교양, type5: 교양과정, type6: 어학과정, type7: 취미, type8: 미디어강좌, type9: 정보화교육 -->
+                                                                <!--// .edu_field에 해당 분야종류에 따른 .type 클레스명 붙도록 해주세요! -->
+                                                                교양과정
+                                                            </span>    <!--//edu_field type5-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <!--// 모집인원(.num) ▶ .current = 현재 모집된 인원, .total = 총 모집인원 -->
+                                                                    <em class="current">40</em>/<em class="total">40</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <!--// 기간 ▶ .accept_time = 접수기간, .study_time = 교육기간-->
+                                                            <!--// 접수기간 및 교육기간 둘다 종료기간이 다음해로 넘어갈 경우에도 년도가 나타나지않도록 해주세요. -->
+                                                            <!--// 예) 접수기간이 2023-12-01 ~ 2024-01-31 인 경우 마크업(.time)에는 2023-12-01 ~ 01-31로 들어와야합니다! -->
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-08-18 ~ 08-31</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2023-09-19 ~ 11-30</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">하반기 생애주기별 전문인력 양성과정 소형 중장비(굴착기, 지게차)</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status wait1">
+                                                                    <span class="text">접수대기</span>
+                                                                </span>    <!--//edu_status wait1-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">교육장소 두줄입니다</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type6">
+                                                                어학과정
+                                                            </span>    <!--//edu_field type6-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <em class="current">00</em>/<em class="total">00</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2000-00-00 ~ 00-00</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2000-00-00 ~ 00-00</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">[ㅇㅇㅇㅇ] 교육강좌명 텍스트가 길어서 한줄을 넘어갈 경우에는 말줄임 처리했습니다.</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status wait1">
+                                                                    <span class="text">접수대기</span>
+                                                                </span>    <!--//edu_status wait1-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">교육장소 세줄까지 가능합니다</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type7">
+                                                                취미
+                                                            </span>    <!--//edu_field type7-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <em class="current">000</em>/<em class="total">000</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-12-28 ~ 01-10</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2024-02-01 ~ 03-30</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">교육강좌명 텍스트 넣어주세요</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status wait1">
+                                                                    <!--// wait1: 교육대기, ing: 접수중, end: 접수마감 -->
+                                                                    <span class="text">접수대기</span>
+                                                                </span>    <!--//edu_status wait1-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">한신정보기술</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type9">
+                                                                정보화교육
+                                                            </span>    <!--//edu_field type9-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <em class="current">00</em>/<em class="total">10</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-10-25 ~ 11-25</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2023-11-23 ~ 02-28</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">교육강좌명 교육강좌명 교육강좌명 교육강좌명 교육강좌명 교육강좌명 교육강좌명 교육강좌명</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                    <div class="course_slide_item">
+                                        <a href="" class="course_slide_link">
+                                            <div class="link_inner">
+                                                <div class="inner_box">
+                                                    <div class="desc_box">
+                                                        <span class="edu_type">
+                                                            <span class="edu_left">
+                                                                <span class="edu_status wait1">
+                                                                    <span class="text">접수대기</span>
+                                                                </span>    <!--//edu_status wait1-->
+                                                                <span class="edu_place">
+                                                                    <span class="text">한신정보기술</span>
+                                                                </span>    <!--//edu_place-->
+                                                            </span>    <!--//edu_left-->
+                                                            <span class="edu_field type8">
+                                                                미디어강좌
+                                                            </span>    <!--//edu_field type8-->
+                                                            <span class="edu_people">
+                                                                <em class="text">모집인원 : </em>
+                                                                <em class="num">
+                                                                    <em class="current">00</em>/<em class="total">00</em>
+                                                                </em>
+                                                            </span>    <!--//edu_people-->
+                                                        </span>    <!--//edu_type-->
+                                                        <span class="edu_time">
+                                                            <span class="accept_time">
+                                                                <em class="text">접수기간</em>
+                                                                <em class="time">2023-10-25 ~ 11-25</em>
+                                                            </span>    <!--//accept_time-->
+                                                            <span class="study_time">
+                                                                <em class="text">교육기간</em>
+                                                                <em class="time">2023-11-23 ~ 02-28</em>
+                                                            </span>    <!--//study_time-->
+                                                        </span>    <!--//edu_time-->
+                                                    </div>    <!--//desc_box-->
+                                                    <div class="title_box">교육강좌명 교육강좌명 교육강좌명 교육강좌명 교육강좌명 교육강좌명 교육강좌명 교육강좌명</div>    <!--//title_box-->
+                                                </div>    <!--//inner_box-->
+                                            </div>    <!--//link_inner-->
+                                        </a>    <!--//course_slide_link-->
+                                    </div>    <!--//course_slide_item-->
+                                </div>    <!--//course_slide_list-->
+                                <div class="course_more_box">
+                                    <!--// .tab_box .tab_list .tab_item .tab_btn.type2 ▶ '접수예정'의 더보기 링크입니다. -->
+                                    <!--//★ a태그에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 동일하게 들어오도록 해주세요! -->
+                                    <a href="" class="more_link">더보기</a>    <!--//more_link-->
+                                </div>    <!--//course_more_box-->
+                            </div>    <!--//tab_slide_item-->
+                        </div>    <!--//tab_slide_box-->
+                    </section>    <!--//colgroup course-->
+                    <section class="colgroup search">
+                        <h2 class="skip">나의 수강신청 정보검색 및 교육 프로그램 검색 영역</h2>    <!--//skip-->
+                        <div class="search_wrap">
+                            <div class="top_box">
+                                <div class="top_inner">
+                                    <div class="title">나의 수강신청 정보검색</div>    <!--//title-->
+                                    <div class="my_search">
+                                        <form action="">    <!--//action값 필수로 채워주세요! -->
+                                            <fieldset>
+                                                <legend>나의 수강신청 정보검색 폼</legend>
+                                                <span class="oc_form_box">
+                                                    <span class="oc_form round_type">
+                                                        <input type="text" id="" title="이름" placeholder="이름을 입력하세요." class="oc_input" />    <!--//oc_input-->
+                                                    </span>    <!--//oc_form round_type-->
+                                                    <span class="oc_form round_type">
+                                                        <input type="text" id="" title="연락처" placeholder="연락처('-' 기호없이 입력)" class="oc_input" />    <!--//oc_input-->
+                                                    </span>    <!--//oc_form round_type-->
+                                                </span>    <!--//oc_form_box-->
+                                                <span class="oc_btn_box">
+                                                    <span class="oc_btn icon_type">
+                                                        <input type="submit" id="" title="검색" value="검색" class="btn"/>    <!--//btn-->
+                                                        <i class="icon search"></i>    <!--//icon search-->
+                                                    </span>    <!--//oc_btn icon_type-->
+                                                </span>    <!--//oc_btn_box-->
+                                            </fieldset>
+                                        </form>
+                                    </div>    <!--//my_search-->
+                                </div>    <!--//top_inner-->
+                            </div>    <!--//top_box-->
+                            <div class="bottom_box">
+                                <div class="bottom_inner">
+                                    <div class="title">교육프로그램 검색</div>    <!--//title-->
+                                    <div class="class_search">
+                                        <form action="">    <!--//action값 필수로 채워주세요! -->
+                                            <fieldset>
+                                                <legend>교육 프로그램 검색 폼</legend>
+                                                <div class="edu_form_box">
+                                                    <div class="edu_form oc_select_box">
+                                                        <select name="" id="" title="교육기관 선택" class="oc_select">
+                                                            <option value="">교육기관 선택</option>
+                                                            <option value="">교육기관1</option>
+                                                            <option value="">교육기관2</option>
+                                                        </select>    <!--/oc_select-->
+                                                    </div>    <!--//oc_select_box-->
+                                                    <div class="edu_form oc_select_box">
+                                                        <select name="" id="" title="진행상태 선택" class="oc_select">
+                                                            <option value="">진행상태 선택</option>
+                                                            <option value="">진행상태1</option>
+                                                            <option value="">진행상태2</option>
+                                                        </select>    <!--/oc_select-->
+                                                    </div>    <!--//oc_select_box-->
+                                                    <div class="edu_form oc_date_box type2">
+                                                        <div class="p-date-group">
+                                                            <div class="p-form-group p-date" data-date="datepicker">
+                                                                <input type="text" title="시작날짜 입력" class="p-input" placeholder="연도-월-일" />    <!--//p-p-input-->
+                                                                <div class="p-input__split">
+                                                                    <button type="button" class="p-input__item  p-date__icon">달력 열기</button>    <!--//p-date__icon-->
+                                                                </div>    <!--//p-input__split-->
+                                                            </div>    <!--//p-form-group p-date-->
+                                                            <span class="p-form__split">-</span>    <!--//p-form__split-->
+                                                            <div class="p-form-group p-date" data-date="datepicker">
+                                                                <input type="text" title="종료날짜 입력" class="p-input" placeholder="연도-월-일" />    <!--//p-p-input-->
+                                                                <div class="p-input__split">
+                                                                    <button type="button" class="p-input__item  p-date__icon">달력 열기</button>    <!--//p-date__icon-->
+                                                                </div>    <!--//p-input__split-->
+                                                            </div>    <!--//p-form-group p-date-->
+                                                        </div>    <!--//p-date-group-->
+                                                    </div>    <!--//oc_date_box type2-->
+                                                    <div class="edu_form oc_form">
+                                                        <input type="text" id="" title="강좌명"  placeholder="강좌명을 입력하세요." class="oc_input" />    <!--//oc_input-->
+                                                    </div>    <!--//oc_form-->
+                                                </div>     <!--//edu_form_box-->
+                                                <div class="oc_btn_box">
+                                                   <span class="oc_btn icon_type">
+                                                        <input type="submit" id="" title="검색" value="검색" class="btn"/>    <!--//btn-->
+                                                        <i class="icon search"></i>    <!--//icon search-->
+                                                    </span>    <!--//oc_btn icon_type-->
+                                                </div>     <!--//oc_btn_box-->
+                                            </fieldset>
+                                        </form>
+                                    </div>     <!--//class_search-->
+                                </div>     <!--//bottom_inner-->
+                            </div>    <!--//bottom_box-->
+                        </div>    <!--//search_wrap-->
+                    </section>    <!--//colgroup search-->
+                </div>    <!--//rowgroup_inner-->
+            </div>    <!--//rowgroup rowgroup2-->
+            <div class="rowgroup rowgroup3">
+                <div class="rowgroup_deco1">
+                    <i class="wave wave1"></i>    <!--//wave1-->
+                    <i class="wave wave2"></i>    <!--//wave2-->
+                </div>    <!--//rowgroup_deco-->
+                <div class="rowgroup_deco2">
+                    <i class="bg_deco flower"></i>    <!--//flower-->
+                    <i class="bg_deco book"></i>    <!--//book-->
+                </div>    <!--//rowgroup_deco2-->
+                <div class="rowgroup_inner scroll_event">
+                    <section class="colgroup gallery">
+                        <h2>평생학습 갤러리</h2>    <!--//skip-->
+                        <div class="gallery_wrap">
+                            <div class="gallery_slide_list">
+                                <!--// 해상도 1001px~ 이상에서는 슬라이드 미적용되고, 해상도 ~1000px 이하부터 슬라이드 적용됩니다. -->
+                                <!--// 화면에서 갤러리 글 .gallery_slide_item 최대 4개까지 표출되도록 CSS 잡아두었으므로, .gallery_slide_item 최소 4개 이상(5~10개 사이로) 들어오게해주세요! -->
+                                <div class="gallery_slide_item">
+                                    <!--//★ a태그에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 동일하게 들어오도록 해주세요! -->
+                                    <a href="" class="gallery_slide_link">
+                                        <span class="link_inner">
+                                            <span class="img_wrap">
+                                                <!--// .gallery_slide_link .link_inner .link_bg / .gallery_slide_link .link_inner .link_img -->
+                                                <!--// 1) 메인 비주얼 이미지 경로 개발 ▷ .link_bg의 background-image의 url 경로와 .link_img의 src 경로가 동일하게 들어오도록 개발 요청드립니다. -->
+                                                <!--// 2) CMS에서 .link_img의 alt="" 속성 안에 대체텍스트 입력할 수 있도록 개발 요청드립니다. -->
+                                                <span class="link_bg" style="background-image:url(./images/main/edulife_gallery_img1.jpg)"></span>    <!--//link_bg-->
+                                                <img src="./images/main/edulife_gallery_img1.jpg" alt="원데이 클레스 꽃바구니 만들기 사진" class="link_img" />    <!--//link_img-->
+                                            </span>    <!--//img_wrap-->
+                                            <span class="desc_wrap">
+                                                <span class="desc_title">평생학습 갤러리 제목의 텍스트는 두줄까지 들어올 수 있고 두줄 이상은 말줄임 처리했습니다</span>    <!--//desc_title-->
+                                                <span class="desc_date">0000-00-00</span>    <!--//desc_date-->
+                                            </span>    <!--//desc_wrap-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//gallery_slide_link-->
+                                </div>    <!--//gallery_slide_item-->
+                                <div class="gallery_slide_item">
+                                    <a href="" class="gallery_slide_link">
+                                        <span class="link_inner">
+                                            <span class="img_wrap">
+                                                <span class="link_bg" style="background-image:url(./images/main/edulife_gallery_img2.jpg)"></span>    <!--//link_bg-->
+                                                <img src="./images/main/edulife_gallery_img2.jpg" alt="전문인력 양성 '반려동물 관리사' 취득 과정 야외실습 사진" class="link_img" />    <!--//link_img-->
+                                            </span>    <!--//img_wrap-->
+                                            <span class="desc_wrap">
+                                                <span class="desc_title">생애주기별 전문인력 양성 '반려동물 관리사' 취득 과정 야외실습</span>    <!--//desc_title-->
+                                                <span class="desc_date">2023-07-28</span>    <!--//desc_date-->
+                                            </span>    <!--//desc_wrap-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//gallery_slide_link-->
+                                </div>    <!--//gallery_slide_item-->
+                                <div class="gallery_slide_item">
+                                    <a href="" class="gallery_slide_link">
+                                        <span class="link_inner">
+                                            <span class="img_wrap">
+                                                <span class="link_bg" style="background-image:url(./images/main/edulife_gallery_img3.jpg)"></span>    <!--//link_bg-->
+                                                <img src="./images/main/edulife_gallery_img3.jpg" alt="생애주기별 전문인력 양성 '목공지도사 3급' 취득과정 사진" class="link_img" />    <!--//link_img-->
+                                            </span>    <!--//img_wrap-->
+                                            <span class="desc_wrap">
+                                                <span class="desc_title">생애주기별 전문인력 양성 '목공지도사 3급' 취득 과정</span>    <!--//desc_title-->
+                                                <span class="desc_date">2023-07-11</span>    <!--//desc_date-->
+                                            </span>    <!--//desc_wrap-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//gallery_slide_link-->
+                                </div>    <!--//gallery_slide_item-->
+                                <div class="gallery_slide_item">
+                                    <a href="" class="gallery_slide_link">
+                                        <span class="link_inner">
+                                            <span class="img_wrap">
+                                                <span class="link_bg" style="background-image:url(./images/main/edulife_gallery_img4.jpg)"></span>    <!--//link_bg-->
+                                                <img src="./images/main/edulife_gallery_img4.jpg" alt="생애주기별 전문인력 양성 소형중장비(굴착기, 지게차) 과정 운영 사진" class="link_img" />    <!--//link_img-->
+                                            </span>    <!--//img_wrap-->
+                                            <span class="desc_wrap">
+                                                <span class="desc_title">2023년 생애주기별 전문인력 양성 소형중장비(굴착기, 지게차) 과정 운영</span>    <!--//desc_title-->
+                                                <span class="desc_date">2023-06-12</span>    <!--//desc_date-->
+                                            </span>    <!--//desc_wrap-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//gallery_slide_link-->
+                                </div>    <!--//gallery_slide_item-->
+                                <div class="gallery_slide_item">
+                                    <a href="" class="gallery_slide_link">
+                                        <span class="link_inner">
+                                            <span class="img_wrap">
+                                                <span class="link_bg" style="background-image:url(https://via.placeholder.com/300x180)"></span>    <!--//link_bg-->
+                                                <img src="https://via.placeholder.com/300x180" alt="생애주기별 전문인력 양성 소형중장비(굴착기, 지게차) 과정 운영 사진" class="link_img" />    <!--//link_img-->
+                                            </span>    <!--//img_wrap-->
+                                            <span class="desc_wrap">
+                                                <span class="desc_title">2023년 생애주기별 전문인력 양성 소형중장비(굴착기, 지게차) 과정 운영</span>    <!--//desc_title-->
+                                                <span class="desc_date">2023-06-12</span>    <!--//desc_date-->
+                                            </span>    <!--//desc_wrap-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//gallery_slide_link-->
+                                </div>    <!--//gallery_slide_item-->
+                                <div class="gallery_slide_item">
+                                    <a href="" class="gallery_slide_link">
+                                        <span class="link_inner">
+                                            <span class="img_wrap">
+                                                <span class="link_bg" style="background-image:url(https://via.placeholder.com/300x180)"></span>    <!--//link_bg-->
+                                                <img src="https://via.placeholder.com/300x180" alt="생애주기별 전문인력 양성 소형중장비(굴착기, 지게차) 과정 운영 사진" class="link_img" />    <!--//link_img-->
+                                            </span>    <!--//img_wrap-->
+                                            <span class="desc_wrap">
+                                                <span class="desc_title">2023년 생애주기별 전문인력 양성 소형중장비(굴착기, 지게차) 과정 운영</span>    <!--//desc_title-->
+                                                <span class="desc_date">2023-06-12</span>    <!--//desc_date-->
+                                            </span>    <!--//desc_wrap-->
+                                        </span>    <!--//link_inner-->
+                                    </a>    <!--//gallery_slide_link-->
+                                </div>    <!--//gallery_slide_item-->
+                            </div>    <!--//gallery_slide_list-->
+                            <div class="gallery_more_box">
+                                <!--//★ a태그에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 동일하게 들어오도록 해주세요! -->
+                                <!--// 평생학습 갤러리 더보기는 해상도 1000px~ 이하에서만 나타나도록 작업해두었습니다. -->
+                                <a href="" class="more_link">더보기</a>    <!--//more_link -->
+                            </div>    <!--//gallery_more_box-->
+                        </div>    <!--//gallery_wrap-->
+                    </section>    <!--//colgroup gallery-->
+                    <section class="colgroup notice">
+                        <h2>공지사항</h2>
+                        <div class="notice_list">
+                            <div class="notice_item">
+                                <!--//★ a태그에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 동일하게 들어오도록 해주세요! -->
+                                <a href="" class="notice_link">
+                                    <span class="link_inner">
+                                        <span class="notice_date">
+                                            <span class="day">31</span>    <!--//day-->
+                                            <span class="year_month">2024-00</span>    <!--//year_month-->
+                                        </span>    <!--//notice_date-->
+                                        <span class="notice_text">
+                                            <span class="title">공지사항 제목 텍스트가 길어서 한줄이 넘어갈 경우 말줄임 처리했습니다.</span>    <!--//title-->
+                                            <span class="desc">공지사항 내용 텍스트도 동일하게 텍스트가 길어서 한줄이 넘어갈 경우 말줄임 처리해두었습니다.</span>    <!--//desc-->
+                                        </span>    <!--//notice_text-->
+                                    </span>    <!--//link_inner-->
+                                </a>    <!--//notice_link-->
+                            </div>    <!--//notice_item-->
+                            <div class="notice_item">
+                                <a href="" class="notice_link">
+                                    <span class="link_inner">
+                                        <span class="notice_date">
+                                            <span class="day">21</span>    <!--//day-->
+                                            <span class="year_month">2023-08</span>    <!--//year_month-->
+                                        </span>    <!--//notice_date-->
+                                        <span class="notice_text">
+                                            <span class="title">2023년 하반기 신중년 청춘대학 운영 수강생 모집(인문학&amp;건강)</span>    <!--//title-->
+                                            <span class="desc">퇴직 이후 은퇴자에게 제2의 인생설계 동기 부여를 위한 『2023년 하반기 신중년 청춘청춘청춘청춘청춘청춘청춘청춘</span>    <!--//desc-->
+                                        </span>    <!--//notice_text-->
+                                    </span>    <!--//link_inner-->
+                                </a>    <!--//notice_link-->
+                            </div>    <!--//notice_item-->
+                            <div class="notice_item">
+                                <a href="" class="notice_link">
+                                    <span class="link_inner">
+                                        <span class="notice_date">
+                                            <span class="day">18</span>    <!--//day-->
+                                            <span class="year_month">2023-08</span>    <!--//year_month-->
+                                        </span>    <!--//notice_date-->
+                                        <span class="notice_text">
+                                            <span class="title">2023년 하반기 생애주기별 전문인력 양성과정 수강생 모집	</span>    <!--//title-->
+                                            <span class="desc">2023년 평생학습 군민아카데미 하반기 『생애주기별 전문인력 양성과정』 수강생 모집</span>    <!--//desc-->
+                                        </span>    <!--//notice_text-->
+                                    </span>    <!--//link_inner-->
+                                </a>    <!--//notice_link-->
+                            </div>    <!--//notice_item-->
+                            <div class="notice_item">
+                                <a href="" class="notice_link">
+                                    <span class="link_inner">
+                                        <span class="notice_date">
+                                            <span class="day">08</span>    <!--//day-->
+                                            <span class="year_month">2023-08</span>    <!--//year_month-->
+                                        </span>    <!--//notice_date-->
+                                        <span class="notice_text">
+                                            <span class="title">2023년 하반기 신중년 청춘대학 운영 수강생 모집(역량강화 과정)</span>    <!--//title-->
+                                            <span class="desc">옥천군 공고 제 2023-1078호 2023년 옥천군 평생학습 프로그램 하반기 「신중년 청춘청춘청춘청춘청춘청춘청춘청춘</span>    <!--//desc-->
+                                        </span>    <!--//notice_text-->
+                                    </span>    <!--//link_inner-->
+                                </a>    <!--//notice_link-->
+                            </div>    <!--//notice_item-->
+                            <div class="notice_item">
+                                <a href="" class="notice_link">
+                                    <span class="link_inner">
+                                        <span class="notice_date">
+                                            <span class="day">08</span>    <!--//day-->
+                                            <span class="year_month">2023-08</span>    <!--//year_month-->
+                                        </span>    <!--//notice_date-->
+                                        <span class="notice_text">
+                                            <span class="title">2023년 하반기 신중년 청춘대학 운영 수강생 모집(역량강화 과정)</span>    <!--//title-->
+                                            <span class="desc">옥천군 공고 제2023-1078호 2023년 옥천군 평생학습 프로그램 하반기 「신중년 청춘청춘청춘청춘청춘청춘청춘청춘</span>    <!--//desc-->
+                                        </span>    <!--//notice_text-->
+                                    </span>    <!--//link_inner-->
+                                </a>    <!--//notice_link-->
+                            </div>    <!--//notice_item-->
+                        </div>    <!--//notice_list-->
+                        <div class="notice_more_box">
+                            <a href="" class="more_link">더보기</a>    <!--//more_link-->
+                        </div>    <!--//notice_more_box-->
+                    </section>    <!--//colgroup notice-->
+                </div>    <!--//rowgroup_inner-->
+            </div>    <!--//rowgroup rowgroup3-->
+        </main>
+    </div>    <!--//#container-->
+    <footer id="footer">
+        <div class="footer_quick">
+            <ul class="quick_list">
+                <!--// type1 = 실과 , type2 = 직속기관/사업소 , type3 = 읍면 , type4 = 관련 홈페이지 -->
+                <li class="quick_item type1">
+                    <button type="button" title="하위 리스트 열기" class="quick_open_btn"><span><em>실과</em></span></button>    <!--//quick_open_btn-->
+                    <div class="quick_layer">
+                        <ul class="layer_list">
+                            <li class="layer_item">
+                                <a href="" class="layer_link">기획예산담당관</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">성장정책과</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">행복교육과</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">경제과</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">문화관광과</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">복지정책과</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">주민복지과</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">8개 부터 스크롤</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                        </ul>    <!--//layer_list-->
+                    </div>    <!--//quick_layer-->
+                </li>    <!--//quick_item type1-->
+                <li class="quick_item type2">
+                    <button type="button" title="하위 리스트 열기" class="quick_open_btn"><span><em>직속기관/사업소</em></span></button>    <!--//quick_open_btn-->
+                    <div class="quick_layer">
+                        <ul class="layer_list">
+                            <li class="layer_item">
+                                <a href="" class="layer_link">보건소</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">농업기술센터</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">상하수도사업소</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">체육사업소</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                        </ul>    <!--//layer_list-->
+                    </div>    <!--//quick_layer-->
+                </li>    <!--//quick_item type2-->
+                <li class="quick_item type3">
+                    <button type="button" title="하위 리스트 열기" class="quick_open_btn"><span><em>읍면</em></span></button>    <!--//quick_open_btn-->
+                    <div class="quick_layer">
+                        <ul class="layer_list">
+                            <li class="layer_item">
+                                <a href="" class="layer_link">옥천읍</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">동이면</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">안남면</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">안내면</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">청성면</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">청산면</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">이원면</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">군서면</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">군북면</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                        </ul>    <!--//layer_list-->
+                    </div>    <!--//quick_layer-->
+                </li>    <!--//quick_item type3-->
+                <li class="quick_item type4">
+                    <button type="button" title="하위 리스트 열기" class="quick_open_btn"><span><em>관련 홈페이지</em></span></button>    <!--//quick_open_btn-->
+                    <div class="quick_layer">
+                        <ul class="layer_list">
+                            <li class="layer_item">
+                                <a href="" class="layer_link">평생학습(행복교육과)</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">미디어센터(정보화교육)</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">옥천전통문화체험관</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">옥천문화예술회관</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">장령산휴양림</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">도시재생지원센터</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                            <li class="layer_item">
+                                <a href="" class="layer_link">옥천치매안심센터</a>    <!--//layer_link-->
+                            </li>    <!--//layer_item-->
+                        </ul>    <!--//layer_list-->
+                    </div>    <!--//quick_layer-->
+                </li>    <!--//quick_item type4-->
+            </ul>    <!--//quick_list-->
+            <div class="footer_go">
+                <button type="button" title="맨 위로" class="go_btn">TOP</button>    <!--//go_btn-->
+            </div>    <!--//footer_go-->
+        </div>    <!--//footer_quick-->
+        <div class="footer_box">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="./index.do" class="logo_link">
+                        <i class="logo_text_img">행복드림 옥천</i>    <!--//logo_text_img-->
+                        <span class="logo_site_name">교육포털</span>    <!--//logo_site_name-->
+                    </a>    <!--//logo_link-->
+                </div>    <!--//logo-->
+                <div class="total_box">
+                    <div class="link_box">
+                        <ul class="link_list">
+                            <li class="link_item privacy"><a href="">개인정보처리방침</a></li>    <!--//link_item privacy-->
+                            <li class="link_item"><a href="">저작권정책</a></li>    <!--//link_item-->
+                            <li class="link_item"><a href="">이메일주소무단수집거부</a></li>    <!--//link_item-->
+                            <li class="link_item"><a href="">관리자에게</a></li>    <!--//link_item-->
+                        </ul>    <!--//link_list-->
+                    </div>    <!--//link_box-->
+                    <div class="sns_box">
+                        <ul class="sns_list">
+                            <li class="sns_item facebook"><a href="" target="_blank" title="새창" rel="noopener noreferrer">페이스북 바로가기</a></li>    <!--//sns_item facebook-->
+                            <li class="sns_item blog"><a href="" target="_blank" title="새창" rel="noopener noreferrer">블로그 바로가기</a></li>    <!--//sns_item blog-->
+                            <li class="sns_item youtube"><a href="" target="_blank" title="새창" rel="noopener noreferrer">유튜브 바로가기</a></li>    <!--//sns_item youtube-->
+                            <li class="sns_item instagram"><a href="" target="_blank" title="새창" rel="noopener noreferrer">인스타그램 바로가기</a></li>    <!--//sns_item instagram-->
+                        </ul>    <!--//sns_list-->
+                    </div>    <!--//sns_box-->
+                    <div class="info_box">
+                        <ul class="info_list">
+                            <li class="info_item address">
+                                <address>(29046) 충청북도 옥천군 옥천읍 관성로 4길 10 행복교육과</address>
+                            </li>    <!--//info_item address-->
+                            <li class="info_item tel">
+                                <span>대표전화 : 043-730-3114</span>
+                            </li>    <!--//info_item tel-->
+                            <li class="info_item fax">
+                                <span>팩스 : 043-731-2696</span>
+                            </li>    <!--//info_item fax-->
+                        </ul>    <!--//info_list-->
+                        <p class="info_desc">본 사이트에 게시된 이메일주소의 자동수집을 거부하며, 이를 위반 시 정보통신망법에 의해 형사처벌됨을 유념하시기 바랍니다.</p>    <!--//info_desc-->
+                        <p class="copyright">Copyright (C) OKCHEON. All rights reserved.</p>    <!--//copyright-->
+                    </div>    <!--//info_box-->
+                </div>    <!--//total_box-->
+            </div>    <!--//wrap-->
+        </div>    <!--//footer_box-->
+    </footer>    <!--//#footer-->
+</div>    <!--//#wrapper-->
+</body>
+</html>
+

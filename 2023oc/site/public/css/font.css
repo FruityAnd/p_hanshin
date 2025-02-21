@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* SUITE */
+@font-face{
+    font-family:'SUITE';
+    font-weight:200;
+    src:url("../font/SUITE-Light.woff2") format('woff2'),
+    url("../font/SUITE-Light.woff") format('woff');
+}
+@font-face{
+    font-family:'SUITE';
+    font-weight:400;
+    src:url("../font/SUITE-Regular.woff2") format('woff2'),
+    url("../font/SUITE-Regular.woff") format('woff');
+}
+@font-face{
+    font-family:'SUITE';
+    font-weight:500;
+    src:url("../font/SUITE-Medium.woff2") format('woff2'),
+    url("../font/SUITE-Medium.woff") format('woff');
+}
+@font-face{
+    font-family:'SUITE';
+    font-weight:600;
+    src:url("../font/SUITE-Bold.woff2") format('woff2'),
+    url("../font/SUITE-Bold.woff") format('woff');
+}
+@font-face{
+    font-family:'SUITE';
+    font-weight:700;
+    src:url("../font/SUITE-SemiBold.woff2") format('woff2'),
+    url("../font/SUITE-SemiBold.woff") format('woff');
+}
+@font-face{
+    font-family:'SUITE';
+    font-weight:800;
+    src:url("../font/SUITE-ExtraBold.woff2") format('woff2'),
+    url("../font/SUITE-ExtraBold.woff") format('woff');
+}
+@font-face{
+    font-family:'SUITE';
+    font-weight:900;
+    src:url("../font/SUITE-Heavy.woff2") format('woff2'),
+    url("../font/SUITE-Heavy.woff") format('woff');
+}
+
+/* Pretendard */
+@font-face{
+    font-family:'Pretendard';
+    font-weight:200;
+    src:url("../font/Pretendard-Light.woff2") format('woff2'),
+    url("../font/Pretendard-Light.woff") format('woff');
+}
+@font-face{
+    font-family:'Pretendard';
+    font-weight:400;
+    src:url("../font/Pretendard-Regular.woff2") format('woff2'),
+    url("../font/Pretendard-Regular.woff") format('woff');
+}
+@font-face{
+    font-family:'Pretendard';
+    font-weight:500;
+    src:url("../font/Pretendard-Medium.woff2") format('woff2'),
+    url("../font/Pretendard-Medium.woff") format('woff');
+}
+@font-face{
+    font-family:'Pretendard';
+    font-weight:600;
+    src:url("../font/Pretendard-Bold.woff2") format('woff2'),
+    url("../font/Pretendard-Bold.woff") format('woff');
+}
+@font-face{
+    font-family:'Pretendard';
+    font-weight:700;
+    src:url("../font/Pretendard-SemiBold.woff2") format('woff2'),
+    url("../font/Pretendard-SemiBold.woff") format('woff');
+}
+@font-face{
+    font-family:'Pretendard';
+    font-weight:800;
+    src:url("../font/Pretendard-ExtraBold.woff2") format('woff2'),
+    url("../font/Pretendard-ExtraBold.woff") format('woff');
+}
+
+/* Saria */
+@font-face{
+    font-family:'Saria';
+    font-weight:200;
+    src:url("../font/Saira-Light.woff") format('woff');
+}
+@font-face{
+    font-family:'Saria';
+    font-weight:400;
+    src:url("../font/Saira-Regular.woff") format('woff');
+}
+
+/* Jalnan */
+@font-face{
+    font-family:'Jalnan';
+    font-weight:400;
+    src:url("../font/Jalnan.woff") format('woff');
+}
+
+/* NotoKr */
+@font-face{
+    font-family:'NotoKr';
+    font-weight:400;
+    src:url("../font/noto-sans-kr-v13-latin_korean-regular.woff2") format('woff2'),
+    url("../font/noto-sans-kr-v13-latin_korean-regular.woff") format('woff');
+}
+
+/* RaleWay */
+@font-face{
+    font-family:'RaleWay';
+    font-weight:400;
+    src:url("../font/Raleway-Regular.woff") format('woff');
+}
+@font-face{
+    font-family:'RaleWay';
+    font-weight:700;
+    src:url("../font/Raleway-SemiBold.woff") format('woff');
+}
+
+/* Y */
+@font-face{
+    font-family:'Y';
+    font-weight:400;
+    src:url("../font/YClover-Regular.woff") format('woff');
+}
+@font-face{
+    font-family:'Y';
+    font-weight:600;
+    src:url("../font/YClover-Bold.woff") format('woff');
+}
+
+/* O */
+@font-face{
+    font-family:'O';
+    font-weight:100;
+    src:url("../font/OhnoBlazeface-12Point.woff") format('woff');
+}
+@font-face{
+    font-family:'O';
+    font-weight:200;
+    src:url("../font/OhnoBlazeface-14Point.woff") format('woff');
+}
+@font-face{
+    font-family:'O';
+    font-weight:300;
+    src:url("../font/OhnoBlazeface-16Point.woff") format('woff');
+}
+@font-face{
+    font-family:'O';
+    font-weight:400;
+    src:url("../font/OhnoBlazeface-18Point.woff") format('woff');
+}
+@font-face{
+    font-family:'O';
+    font-weight:500;
+    src:url("../font/OhnoBlazeface-24Point.woff") format('woff');
+}
+@font-face{
+    font-family:'O';
+    font-weight:600;
+    src:url("../font/OhnoBlazeface-36Point.woff") format('woff');
+}
+@font-face{
+    font-family:'O';
+    font-weight:700;
+    src:url("../font/OhnoBlazeface-48Point.woff") format('woff');
+}
+@font-face{
+    font-family:'O';
+    font-weight:800;
+    src:url("../font/OhnoBlazeface-60Point.woff") format('woff');
+}
+@font-face{
+    font-family:'O';
+    font-weight:900;
+    src:url("../font/OhnoBlazeface-72Point.woff") format('woff');
+}
+
+/* S */
+@font-face{
+    font-family:'S';
+    font-weight:600;
+    src:url("../font/SBAggroB.woff") format('woff');
+}

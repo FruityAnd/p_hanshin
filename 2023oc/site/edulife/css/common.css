@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* (주)한신정보기술 권나람 - 2023.10 */
+
+/* lnb */
+@media screen and (min-width:1001px) {
+    .edulife .lnb .menu .depth2 .depth2_title_box .title_inner .title{word-break:keep-all;}
+}
+@media screen and (min-width:1001px) and (max-width:1200px) {
+    .edulife .lnb .menu .depth1 .depth1_list .depth1_item{padding:0 1.5%;}
+}
+@media screen and (min-width:1201px) and (max-width:1460px) {
+    .edulife .lnb .menu .depth1 .depth1_list .depth1_item{padding:0 3.5%;}
+}
+@media screen and (max-width:1000px) {
+    .edulife .lnb .menu .depth1 .depth1_list .depth1_item .depth1_text span em{word-break:keep-all;}
+}
+@media screen and (min-width:1001px){
+    .lnb .menu .depth2 .depth2_list{max-height:450px;overflow-y:auto;}
+    .lnb .menu .depth2 .depth2_list::-webkit-scrollbar{width:8px;}
+    .lnb .menu .depth2 .depth2_list::-webkit-scrollbar-thumb{height:10%;background-color:#8936a0;border-radius:4px;}
+    .lnb .menu .depth2 .depth2_list::-webkit-scrollbar-track{background-color:#e7e7e7;}
+    .lnb .menu .depth1_item.active .depth2 .depth2_list .depth2_item:nth-child(2):before,
+    .lnb .menu .depth1_item.active .depth2 .depth2_list .depth2_item:nth-child(3):before,
+    .lnb .menu .depth1_item.active .depth2 .depth2_list .depth2_item:nth-child(4):before{display:none;}
+    .lnb .menu .depth3 .depth3_list .depth3_item .depth3_text span em{word-break:break-all;}
+}
