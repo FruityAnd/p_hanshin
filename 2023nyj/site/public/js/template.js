@@ -301,7 +301,7 @@
             });
         });
         //큐앤에이 끝
-
+        
         //지도 시작
         $('.tab_obj.n13').find('.nyj_map_box').not($('.tab_content').not('.active').children()).each(function () {
             var $this = $(this),
@@ -393,24 +393,23 @@
             }
         });
         //지도 끝
-
         // 아이프레임 높이 자동 조정
         if($('iframe.auto_height').length > 0){
             function iframe_auto_height(e)
             {
                 $('iframe.auto_height')
-                    .attr('scrolling', 'no')
+                    .attr('scrolling', 'auto')
                     .each(function(index)
                     {
                         var self = $(this);
-
                         try
                         {
+							
                             var doc = self.contents(),
                                 height1 = doc.outerHeight(),
                                 body = doc.find('body'),
                                 height2 = body.outerHeight();
-
+							console.log(doc);
                             body.css({
                                 'padding' : '0',
                                 'margin' : '0'
@@ -424,6 +423,7 @@
                             height1 = doc.outerHeight();
                             height2 = body.outerHeight();
                             self.height(height1 > height2 ? height1 : height2);
+							console.log(height1);
                         }
                         catch(e)
                         {
@@ -432,9 +432,37 @@
                     });
             }
 
+			
+
             $(window).bind('load resize', iframe_auto_height);
-            $('iframe.auto_height').bind('load resize', iframe_auto_height);
+            //$('iframe.auto_height').bind('load resize', iframe_auto_height);
         }
+
+        //24.3 게시판큐엔에이 추가 
+        var $accordionBox = $container.find('.temp_accordion');
+        
+        $accordionBox.each(function(){
+            var $accordionBox = $(this),                
+                $accordionItem = $accordionBox.find('.accordion_item'),
+                $accordionBtn = $accordionItem.find('button.accordion_btn');
+
+                $accordionBtn.on('click', function(){
+                var $accordionBtn = $(this),
+                    $thisItem = $accordionBtn.closest('.accordion_item'),
+                    $thisCon = $thisItem.find('.accordion_con'),
+                    IsActive = $thisItem.is('.active');
+
+                if (!IsActive) {
+                    $thisCon.slideDown(250, 'swing');
+                    $thisItem.addClass('active');
+                    $accordionBtn.attr('title', '닫기');
+                } else {
+                    $thisCon.slideUp(250, 'swing');
+                    $thisItem.removeClass('active');
+                    $accordionBtn.attr('title', '열기');
+                }
+            });            
+        });       
 
         $window.on('screen:tablet screen:phone', function(event) {
             
