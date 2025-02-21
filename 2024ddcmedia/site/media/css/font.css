@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* Yangju */
+@font-face {
+    font-family: 'Yangju';
+    font-weight: 400;
+    src: url("../font/YangJuByeolsan.woff2") format('font-woff2'),
+    url("../font/YangJuByeolsan.woff") format('woff');
+}
+
+/* WantedSans */
+@font-face {
+    font-family: 'WantedSans';
+    font-weight: 400;
+    src: url("../font/WantedSans-Regular.woff2") format('woff2'),
+    url("../font/WantedSans-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: 'WantedSans';
+    font-weight: 500;
+    src: url("../font/WantedSans-Medium.woff2") format('woff2'),
+    url("../font/WantedSans-Medium.woff") format('woff');
+}
+@font-face {
+    font-family: 'WantedSans';
+    font-weight: 600;
+    src: url("../font/WantedSans-Bold.woff2") format('woff2'),
+    url("../font/WantedSans-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: 'WantedSans';
+    font-weight: 700;
+    src: url("../font/WantedSans-SemiBold.woff2") format('woff2'),
+    url("../font/WantedSans-SemiBold.woff") format('woff');
+}
+@font-face {
+    font-family: 'WantedSans';
+    font-weight: 800;
+    src: url("../font/WantedSans-ExtraBlack.woff2") format('woff2'),
+    url("../font/WantedSans-ExtraBlack.woff") format('woff');
+    }
+
+/* Pretendard */
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    src: url("../font/Pretendard-Light.woff2") format('woff2'),
+    url("../font/Pretendard-Light.woff") format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    src: url("../font/Pretendard-Regular.woff2") format('woff2'),
+    url("../font/Pretendard-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    src: url("../font/Pretendard-Medium.woff2") format('woff2'),
+    url("../font/Pretendard-Medium.woff") format('woff');
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'Mont';
+    font-weight: 600;
+    src: url("../font/Montserrat-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: 'Mont';
+    font-weight: 500;
+    src: url("../font/Montserrat-Medium.woff") format('woff');
+}
+
+/* Lato */
+@font-face {
+    font-family: 'Loto';
+    font-weight: 500;
+    src: url("../font/Lato-Regular.woff2") format('woff2'),
+    url("../font/Lato-Regular.woff") format('woff');
+}

@@ -1,0 +1,13 @@
+.program.clean_memo{padding:20px;}
+.program.clean_memo h3{font-size: 20px; text-align:center; margin-bottom:20px;}
+.program.clean_memo .p-table{border:1px solid #d9d9d9; width:100%;}
+.program.clean_memo .p-table tbody tr:first-child th, .program.clean_memo .p-table tbody tr:first-child td{border-top:2px #000 solid;}
+.program.clean_memo .p-table tbody th, .program.clean_memo .p-table tbody td{border-bottom:1px solid #d9d9d9; padding:10px; vertical-align: middle;}
+.program.clean_memo .p-table tbody th{border-right:1px solid #d9d9d9; background-color: #f5f5f5; color:#1d1d1d;}
+.program.clean_memo .p-table tbody td li{position:relative; padding-left:15px; line-height: 26px;}
+.program.clean_memo .p-table tbody td li:before{display: block; content:''; position:absolute; top:calc(50% - 1px); left:0; width:6px; height:2px; background-color: darkslategray;}
+.program.clean_memo .p-table tbody td .p-input{border: solid 1px #c7c6c6; border-radius: 3px;}
+.program.clean_memo .p-table tbody td .point{color:#001b59; font-weight: bold; margin-top:5px; font-size:14px;}
+.program.clean_memo .btn_wrap{position:relative; margin-top:20px; text-align:center;}
+.program.clean_memo .btn_wrap .cancel{position:absolute; right:0; background-color: #4d5360; color:#fff; width:90px; height:30px; line-height: 30px;}
+.program.clean_memo .btn_wrap .edit{background-color: #064b7e; color:#fff; width:110px; height:30px; line-height: 30px; border:none;}
