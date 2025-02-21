@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* Layout */
+@import url('../../../common/css/default.css');
+@import url('common.css');
+@import url('sub_layout.css');
+@import url('main_layout.css');

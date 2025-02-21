@@ -1,0 +1,171 @@
+(function($) {
+    'use strict';
+    
+    var $window = $(window),
+        $document = $(document),
+        $html = $('html'),
+        $head = $('head'),
+        $screen = $.screen,
+        $inArray = $.inArray;
+    
+    $(function() {
+        
+        var $container = $('#container');
+        
+        //스크롤 애니메이션 시작
+        function eachAniOn(){
+            var $AniOn = $('.motion');
+            $AniOn.each(function () {
+                var $this = $(this),
+                    WinTop = $window.scrollTop(),
+                    WinBottom = WinTop + $window.height(),
+                    WinMiddle = (WinTop + WinBottom) / 2,
+                    ThisOffset = $this.offset(),
+                    ThisOffsetTop = ThisOffset.top;
+                if (ThisOffsetTop < WinMiddle + 300) {
+                    $this.addClass('on');
+                }
+                else {
+                    $this.removeClass('on');
+                }
+            });
+        }
+        eachAniOn();
+        $window.on('scroll', function(){
+            eachAniOn();
+        });
+        //스크롤 애니메이션 끝
+        
+        //비주얼팝업 슬라이드 시작
+        var $vizWrap = $('.viz_wrap'),
+            $vizList = $vizWrap.find('.viz_slide_list'),
+            $vizItem = $vizList.find('.viz_slide_item'),
+            $vizPrev = $vizWrap.find('.viz_control .viz_btn.prev'),
+            $vizNext = $vizWrap.find('.viz_control .viz_btn.next');
+        $vizList.slick({
+            autoplay: true,
+            autoplaySpeed : 1800,
+            speed : 1500,
+            dots: false,
+            draggable: true,
+            swipe: true,
+            slidesToShow: 5,
+            slidesToScroll : 1,
+            variableWidth: true,
+            centerMode: true,
+            infinite: true,
+            arrows: true,
+            prevArrow: $vizPrev,
+            nextArrow: $vizNext,
+            pauseOnHover: true,
+            pauseOnArrowClick: true,
+            pauseOnSwipe : true,
+            zIndex: 1,
+            responsive: [{
+                breakpoint: 451,
+                settings: {
+                    autoplaySpeed : 2000,
+                    speed : 2000,
+                    fade: true,
+                    slidesToShow: 1,
+                    slidesToScroll : 1,
+                    variableWidth: false,
+                    swipe: true,
+                    swipeToSlide: true,
+                }
+            }]
+        });
+        //비주얼팝업 슬라이드 끝
+        
+        //영상미디어센터 소식 슬라이드 시작
+        var $notice = $container.find('.notice_wrap'),
+            $noticeSlide = $notice.find('.notice_slide_list');
+        $noticeSlide.slick({
+            autoplay: false,
+            infinite: false,
+            dots: false,
+            draggable: true,
+            swipe: true,
+            swipeToSlide: true,
+            slidesToShow: 3,
+            slidesToScroll : 1,
+            variableWidth: false,
+            arrows: false,
+            pauseOnHover: true,
+            pauseOnArrowClick: true,
+            pauseOnSwipe : true,
+            responsive: [{
+                breakpoint: 1301,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 1001,
+                settings: {
+                    slidesToShow: 3
+                }
+            }, {
+                breakpoint: 801,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 501,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true
+                }
+            }, {
+                breakpoint: 401,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false
+                }
+            }]
+        });
+        //영상미디어센터 소식 슬라이드 끝
+        
+        //영상미디어센터 주간일정 슬라이드 시작
+        var $sch = $container.find('.sch_wrap'),
+            $schInner = $sch.find('.sch_inner'),
+            $schSlide = $schInner.find('.sch_slide_list'),
+            schSlideItemToday = $schSlide.find('.sch_slide_item.today').attr('data-day'),
+            $schSlidePrev = $sch.find('.sch_control button.sch_btn.prev'),
+            $schSlideNext = $sch.find('.sch_control button.sch_btn.next');
+        for(var i=0; i<5; i++){
+            $schSlide.append('<div></div>');
+        }
+        $schSlide.slick({
+            autoplay: false,
+            infinite: false,
+            dots: false,
+            draggable: true,
+            swipe: true,
+            swipeToSlide: false,
+            slidesToShow: 6,
+            slidesToScroll : 6,
+            variableWidth: false,
+            arrows: true,
+            prevArrow: $schSlidePrev,
+            nextArrow: $schSlideNext,
+            pauseOnHover: true,
+            pauseOnArrowClick: true,
+            pauseOnSwipe : true,
+            initialSlide : schSlideItemToday - 1,
+            responsive: [{
+                breakpoint: 1001,
+                settings: {
+                    vertical: true, //세로모드 유무
+                    verticalSwiping: true,
+                    variableWidth: false,
+                    initialSlide : schSlideItemToday - 1, //초기 스타트 하는 슬라이드 번호
+                }
+            }]
+        });
+        //영상미디어센터 주간일정 슬라이드 끝
+        
+        $window.on('screen:tablet screen:phone', function(event) {
+        
+        });
+    });
+})(jQuery);
