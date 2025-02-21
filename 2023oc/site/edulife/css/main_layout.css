@@ -130,9 +130,9 @@
 .rowgroup1 .rowgroup_deco{display:block;position:absolute;top:0;left:0;width:100%;height:100%;font-size:0;line-height:0;box-sizing:border-box;}
 .rowgroup1 .rowgroup_deco .bg_deco{display:block;position:absolute;box-sizing:border-box;animation-duration:1500ms;animation-delay:1500ms;animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);animation-fill-mode:both;}
 .rowgroup1 .rowgroup_deco .bg_deco:before{display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-repeat:no-repeat;background-position:left top;content:'';box-sizing:border-box;animation-duration:3000ms;animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);animation-direction:alternate;animation-iteration-count:infinite;}
-.rowgroup1 .rowgroup_deco .bg_deco.wave{bottom:-886px;left:0;width:100%;height:0px;opacity:0;visibility:hidden;transition-property:height, opacity, visibility;transition-duration:1500ms;transition-timing-function:cubic-bezier(.52, .08, .04, 1.18);}
+.rowgroup1 .rowgroup_deco .bg_deco.wave{bottom:-986px;left:0;width:100%;height:0px;opacity:0;visibility:hidden;transition-property:height, opacity, visibility;transition-duration:1500ms;transition-timing-function:cubic-bezier(.52, .08, .04, 1.18);}
 .rowgroup1 .rowgroup_deco .bg_deco.wave:before{background-image:url(../images/main/visual_wave.png);background-size:cover;}
-.start_ani .rowgroup1 .rowgroup_deco .bg_deco.wave{height:1313px;opacity:1;visibility:visible;}
+.start_ani .rowgroup1 .rowgroup_deco .bg_deco.wave{height:1413px;opacity:1;visibility:visible;}
 .rowgroup1 .rowgroup_deco .bg_deco.icons{top:410px;left:0;width:100%;height:408px;opacity:0;visibility:hidden;transition-property:opacity, visibility;transition-duration:1500ms;transition-delay:1500ms;transition-timing-function:cubic-bezier(.52, .08, .04, 1.18);}
 .start_ani .rowgroup1 .rowgroup_deco .bg_deco.icons{opacity:1;visibility:visible;}
 .rowgroup1 .rowgroup_deco .bg_deco.icons:before{background-image:url(../images/main/visual_bg_icons.png);background-size:cover;}
@@ -220,6 +220,7 @@
     .visual .visual_wrap .visual_slide_control .visual_slide_btn.prev{left:-22.5px;}
     .visual .visual_wrap .visual_slide_control .visual_slide_btn.next{right:-22.5px;}
     .quick{width:32%;margin-left:3%;}
+    .start_ani .rowgroup1 .rowgroup_deco .bg_deco.wave{height:1313px;}
     .quick .quick_wrap .quick_deco_box .people.people1{left:36px;}
     .quick .quick_wrap .quick_deco_box .people.people2{left:112px;}
     .quick .quick_wrap .quick_deco_box .people.people3{left:178px;}
