@@ -6,7 +6,9 @@
 @import url('sub_layout.css')/* 아카데미 서브레이아웃 */;
 @import url('template.css')/* 아카데미 템플릿 */;
 @import url('../../../common/css/program.css')/* 게시판 */;
-@import url('program.css')/* 아카데미 프로그램 - 박남규 */;
-@import url('program2.css')/* 아카데미 프로그램 - 권나람 */;
-@import url('sub_content.css')/* 아카데미 컨텐츠 - 이재홍 */;
-@import url('sub_content2.css')/* 아카데미 컨텐츠 - 박남규 */;
+/*
+@import url('program.css')/* 아카데미 프로그램 - 박남규 
+@import url('program2.css')/* 아카데미 프로그램 - 권나람 
+@import url('sub_content.css')/* 아카데미 컨텐츠 - 이재홍 
+@import url('sub_content2.css')/* 아카데미 컨텐츠 - 박남규 
+*/
