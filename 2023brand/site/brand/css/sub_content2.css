@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/* (주)한신정보기술 권나람 - 2023.05 */
+
+/* 청년브랜드 참여단 공통적용 css */
+.brand_action .info_box{display:block;width:100%;font-size:0;line-height:0;background-color:#faf4ff;box-sizing:border-box;}
+.brand_action .info_box .info_inner{display:block;position:relative;width:100%;padding-top:54px;padding-bottom:67px;box-sizing:border-box;text-align:center;}
+.brand_action .info_box .info_inner:before{display:block;position:absolute;bottom:0;left:38px;width:224px;height:228px;background-image:url(../images/contents/brand_action_icon01.png);background-repeat:no-repeat;background-position:left top;background-size:cover;content:'';box-sizing:border-box;}
+.brand_action .info_box .info_inner:after{display:block;position:absolute;bottom:0;right:19px;width:252px;height:236px;background-image:url(../images/contents/brand_action_icon02.png);background-repeat:no-repeat;background-position:left top;background-size:cover;content:'';box-sizing:border-box;}
+.brand_action .info_box .info_inner .text{display:block;padding-top:3px;font-size:20px;color:#343434;line-height:28px;letter-spacing:-0.03em;font-weight:500;font-family:'Gmarket';box-sizing:border-box;}
+.brand_action .info_box .info_inner .emphasis{display:block;margin-top:12px;font-size:0;line-height:0;box-sizing:border-box;}
+.brand_action .info_box .info_inner .emphasis span{display:inline-block;position:relative;width:auto;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.brand_action .info_box .info_inner .emphasis span.space{margin-left:8px;}
+.brand_action .info_box .info_inner .emphasis span.yellow:before{display:block;position:absolute;left:-8px;bottom:-5px;width:calc(100% + 16px);height:25px;background-color:#fff882;content:'';box-sizing:border-box;}
+.brand_action .info_box .info_inner .emphasis span em{display:inline-block;position:relative;width:auto;font-size:31px;color:#6806ae;line-height:36px;letter-spacing:-0.03em;font-weight:600;font-family:'Gmarket';vertical-align:top;box-sizing:border-box;}
+@media screen and (max-width:1400px) {
+    .brand_action .info_box .info_inner:before{left:0;width:124px;height:128px;}
+    .brand_action .info_box .info_inner:after{right:0;width:152px;height:136px;}
+}
+@media screen and (max-width:1000px) {
+    .brand_action .info_box .info_inner{padding:30px 20px 40px;}
+    .brand_action .info_box .info_inner:before,
+    .brand_action .info_box .info_inner:after{display:none;}
+    .brand_action .info_box .info_inner .text{font-size:19px;}
+    .brand_action .info_box .info_inner .emphasis span em{font-size:30px;}
+}
+@media screen and (max-width:640px) {
+    .brand_action .info_box .info_inner{padding:20px 20px 30px;}
+    .brand_action .info_box .info_inner .text{font-size:17px;line-height:26px;word-break:keep-all;}
+    .brand_action .info_box .info_inner .text > br{display:none;}
+    .brand_action .info_box .info_inner .emphasis span,
+    .brand_action .info_box .info_inner .emphasis span em{display:block;}
+    .brand_action .info_box .info_inner .emphasis span.yellow{margin-left:5px;}
+    .brand_action .info_box .info_inner .emphasis span.yellow:before{display:none;}
+    .brand_action .info_box .info_inner .emphasis span.space{margin-left:0;}
+    .brand_action .info_box .info_inner .emphasis span em{font-size:22px;line-height:28px;word-break:keep-all;}
+}
+@media screen and (max-width:390px) {
+    .brand_action .info_box .info_inner .emphasis > br{display:none;}
+}
+
+.brand_action .bu_brand_list{margin-top:3px;}
+.brand_action .bu_brand_list .bu_brand_item .point:before{top:9px;}
+.brand_action .bu_brand_list .bu_brand_item .point .title{color:#686868;line-height:36px;font-weight:200;}
+.brand_action .brand_vw_box{padding:50px 0;}
+.brand_action .brand_vw_box:before{background-color:#fafafb;}
+.brand_action .brand_vw_box h3{margin-top:0;}
+@media screen and (max-width:1000px) {
+    .brand_action .bu_brand_list .bu_brand_item .point:before{top:7px;}
+    .brand_action .bu_brand_list .bu_brand_item .point .title{line-height:30px;}
+}
+@media screen and (max-width:640px) {
+    .brand_action .brand_vw_box{margin-top:0;padding:0;}
+    .brand_action .brand_vw_box h3{margin-top:30px;}
+}
+
+/* 소통브랜드_청년브랜드참여단_브랜드위원회_활동소개 */
+.brand_action .brand_list_box{display:block;position:relative;width:100%;box-sizing:border-box;}
+.brand_action .brand_list_box:before{display:none;position:absolute;top:18px;right:0;width:349px;height:220px;background-image:url(../images/contents/brand_action_img01.png);background-repeat:no-repeat;background-position:left top;background-size:cover;content:'';box-sizing:border-box;}
+
+.brand_action .icon_box{display:block;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.brand_action .icon_box .icon_box_item{display:inline-block;width:calc(50% - 15px);border:1px solid #c6c6d0;border-radius:17px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.brand_action .icon_box .icon_box_item.people{margin-left:30px;}
+.brand_action .icon_box .icon_box_item .item_inner{display:block;position:relative;width:100%;min-height:120px;padding:20px 80px 10px 135px;font-size:0;line-height:0;box-sizing:border-box;}
+.brand_action .icon_box .icon_box_item .item_inner:before{display:block;position:absolute;top:23px;left:44px;width:58px;height:60px;background-repeat:no-repeat;background-position:left top;background-size:cover;content:'';box-sizing:border-box;}
+.brand_action .icon_box .icon_box_item.name .item_inner:before{background-image:url(../images/contents/brand_action_icon03.png);}
+.brand_action .icon_box .icon_box_item.people .item_inner:before{background-image:url(../images/contents/brand_action_icon04.png);}
+.brand_action .icon_box .icon_box_item .item_inner .bu_brand_list{margin-top:5px;}
+.brand_action .icon_box .icon_box_item .item_inner .bu_brand_list .bu_brand_item .point .title{line-height:30px;letter-spacing:-0.05em;}
+
+.brand_action .step_box{display:block;width:100%;box-sizing:border-box;}
+.brand_action .step_box .step_list{display:block;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.brand_action .step_box .step_list .step_item{display:inline-block;position:relative;width:calc((100% - 64px)/ 3);margin-right:32px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.brand_action .step_box .step_list .step_item:last-child{margin-right:0;}
+.brand_action .step_box .step_list .step_item:before{display:block;position:absolute;top:calc((100% - 13px) / 2);right:-21px;width:9px;height:13px;background-image:url(../images/contents/brand_action_arrow.png);background-repeat:no-repeat;background-position:left top;content:'';box-sizing:border-box;}
+.brand_action .step_box .step_list .step_item:last-child:before{display:none;}
+.brand_action .step_box .step_list .step_item .item_inner{display:block;overflow:hidden;width:100%;border:1px solid #9344cc;border-radius:20px;font-size:0;line-height:0;box-sizing:border-box;}
+.brand_action .step_box .step_list .step_item .item_inner .title{display:block;width:100%;height:60px;background-color:#9344cc;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.brand_action .step_box .step_list .step_item .item_inner .title .text{display:inline-block;position:relative;top:50%;transform:translateY(-50%);padding-top:2px;font-size:18px;color:#fff;line-height:23px;font-weight:600;font-family:'OmniGothic';vertical-align:top;box-sizing:border-box;}
+.brand_action .step_box .step_list .step_item .item_inner .bu.brand{display:block;width:auto;height:auto;min-height:100px;margin:0;padding:10px 20px;box-sizing:border-box;}
+.brand_action .step_box .step_list .step_item .item_inner .bu.brand li{display:block;position:relative;margin:0;padding-left:11px;font-size:17px;color:#222;line-height:24px;font-weight:700;font-family:'OmniGothic';box-sizing:border-box;word-break:keep-all;}
+.brand_action .step_box .step_list .step_item .item_inner .bu.brand li:before{display:block;position:absolute;top:8px;left:0;width:7px;height:7px;background-image:none;background-color:#ddadff;border-radius:7px;content:'';box-sizing:border-box;}
+.brand_action .step_box .step_list .step_item .item_inner .bu.brand li > span{display:inline-block;font-size:16px;line-height:24px;font-weight:500;vertical-align:top;box-sizing:border-box;}
+.brand_action .step_box .step_list .step_item .item_inner .bu.brand li + li{margin-top:4px;margin-bottom:0;}
+.brand_action .step_box .step_list .step_item .item_inner .bu.brand li > .bu{margin-top:1px;margin-bottom:0;}
+.brand_action .step_box .step_list .step_item .item_inner .bu.brand li > .bu li{font-size:15px;line-height:20px;font-weight:200;}
+.brand_action .step_box .step_list .step_item .item_inner .bu.brand li > .bu li:before{top:8px;width:6px;height:2px;background-color:#444;border-radius:unset;}
+.brand_action .step_box .step_list .step_item .item_inner .period{display:block;width:100%;padding:5px 0 2px;background-color:#e8d9ff;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.brand_action .step_box .step_list .step_item .item_inner .period .text{display:inline-block;font-size:16px;color:#9344cc;line-height:19px;letter-spacing:-0.03em;font-weight:400;font-family:'OmniGothic';vertical-align:top;box-sizing:border-box;}
+/* 23.06.01 추가 수정 시작 */
+.brand_action .step_box .step_list .step_item:nth-child(3n){margin-right:0;}
+.brand_action .step_box .step_list .step_item:nth-child(3n):before{display:none;}
+.brand_action .step_box .step_list .step_item:nth-child(n+4){margin-top:30px;}
+/* 23.06.01 추가 수정 완료 */
+@media screen and (min-width:1401px) {
+    .brand_action .brand_list_box:before{display:block;}
+}
+@media screen and (max-width:1400px) {
+    .brand_action .icon_box .icon_box_item .item_inner{padding-left:100px;padding-right:30px;}
+    .brand_action .icon_box .icon_box_item .item_inner:before{left:20px;}
+    .brand_action .step_box .step_list .step_item:nth-child(n+4){margin-top:30px;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand{min-height:124px;}
+}
+@media screen and (max-width:1000px) {
+    .brand_action .brand_vw_box{padding-bottom:20px;}
+    .brand_action .icon_box .icon_box_item{width:calc(50% - 10px);}
+    .brand_action .icon_box .icon_box_item.people{margin-left:20px;}
+    .brand_action .icon_box .icon_box_item .item_inner{min-height:132px;padding:20px 20px 10px 60px;}
+    .brand_action .icon_box .icon_box_item .item_inner:before{top:19px;left:12px;width:38px;height:40px;}
+    .brand_action .icon_box .icon_box_item .item_inner .bu_brand_list .bu_brand_item .point:before{top:3px;}
+    .brand_action .icon_box .icon_box_item .item_inner .bu_brand_list .bu_brand_item .point .title{font-size:18px;line-height:24px;}
+    .brand_action .icon_box .icon_box_item .item_inner .bu_brand_list .bu_brand_item .point .title > br{display:none;}
+    .brand_action .step_box .step_list .step_item{width:calc((100% - 30px) / 2);margin-top:0;margin-right:30px;margin-bottom:30px;}
+    .brand_action .step_box .step_list .step_item:before{right:auto;left:calc(100% + 10px);}
+    .brand_action .step_box .step_list .step_item:nth-child(n+4){margin-top:0;}
+    .brand_action .step_box .step_list .step_item:nth-child(3n){margin-top:0;margin-right:30px;}
+    .brand_action .step_box .step_list .step_item:nth-child(3n):before{display:block;}
+    .brand_action .step_box .step_list .step_item:nth-child(2n){margin-top:0;margin-right:0;}
+    .brand_action .step_box .step_list .step_item:nth-child(2n):before{display:none;}
+    .brand_action .step_box .step_list .step_item .item_inner .title .text{font-size:18px;line-height:25px;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand{min-height:104px;padding:15px;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand li{font-size:16px;line-height:22px;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand li:before{top:6px;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand li > span{font-size:15px;line-height:22px;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand li > .bu li{font-size:15px;line-height:20px;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand li > .bu li:before{top:7px;}
+    .brand_action .step_box .step_list .step_item .item_inner .period .text{font-size:15px;line-height:18px;}
+}
+@media screen and (max-width:640px) {
+    .brand_action .brand_vw_box{margin-top:10px;padding:20px 0;}
+    .brand_action .brand_vw_box h3{margin-top:0;}
+    .brand_action h3{margin-top:30px;}
+    .brand_action .icon_box .icon_box_item{width:100%;height:auto;margin-left:0;}
+    .brand_action .icon_box .icon_box_item.people{margin-left:0;margin-top:15px;}
+    .brand_action .icon_box .icon_box_item .item_inner{min-height:0;}
+    .brand_action .icon_box .icon_box_item .item_inner .bu_brand_list .bu_brand_item .point:before{top:1px;}
+    .brand_action .step_box .step_list .step_item{display:block;width:100%;margin-top:30px;margin-right:0;}
+    .brand_action .step_box .step_list .step_item:first-child{margin-top:0;}
+    .brand_action .step_box .step_list .step_item:nth-child(3n){margin-right:0;}
+    .brand_action .step_box .step_list .step_item:before{top:calc(100% + 10px);left:calc(50% - 6.5px);transform:rotate(90deg);}
+    .brand_action .step_box .step_list .step_item:nth-child(2n):before{display:block;}
+    .brand_action .step_box .step_list .step_item:last-child{margin-bottom:0;}
+    .brand_action .step_box .step_list .step_item:last-child:before{display:none;}
+    .brand_action .step_box .step_list .step_item .item_inner .title{height:auto;padding-top:4px;padding-bottom:3px;}
+    .brand_action .step_box .step_list .step_item .item_inner .title .text{top:0;transform:none;font-size:16px;line-height:23px;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand{min-height:0;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand li{font-size:15px;}
+    .brand_action .step_box .step_list .step_item .item_inner .bu.brand li > .bu li{font-size:14px;}
+    /* 23.06.01 추가 수정 시작 */
+    .brand_action .pink_title{padding-right:50px;margin-bottom:5px;}
+    .brand_action .pink_title.title_margin{padding-top:0px;margin-top:8px;}
+    .brand_action .bu_brand_list:nth-child(2) .pink_title{margin-top:5px;}
+    .brand_action .bu_brand_list .bu_brand_item:first-child{margin-left:5px;}
+    .brand_action .bu_brand_list .bu_brand_item .point .title{font-size:14px;line-height:20px;}
+    .brand_action .bu_brand_list .bu_brand_item .point:before{top:2px;}
+    .brand_action .icon_box .icon_box_item .item_inner .bu_brand_list .bu_brand_item .point .title{font-size:14px;line-height:20px;padding-top:0px;}
+    /* 23.06.01 추가 수정 끝 */
+}

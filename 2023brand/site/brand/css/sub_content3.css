@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* (주)한신정보기술 안형주 - 2023.05 */
+@font-face{
+	font-family: 'Lato';
+	font-weight: 500;
+	src: url("/common/common2021/font/Lato-Bold.woff2") format('woff2'),
+	url("/common/common2021/font/Lato-Bold.woff") format('woff');
+}
+
+/* 소통브랜드_청년브랜드참여단_활동소개 */
+.brand_action.action_type2 .info_box .info_inner:before{left:20px;width:220px;height:220px;background-image:url(../images/contents/type2brand_action_icon01.png);background-repeat:no-repeat;}
+.brand_action.action_type2 .info_box .info_inner:after{right:27px;width:246px;height:206px;background-image:url(../images/contents/type2brand_action_icon02.png);background-repeat:no-repeat;}         
+.brand_action.action_type2 .info_box .info_inner .emphasis span.yellow:before{left:6px;width:calc(100% - 12px);}
+
+
+/* .brand_action.action_type2 .info_box .info_inner .emphasis span{display:inline-block;width:auto;font-size:0px;line-height:0px;box-sizing:border-box;}
+.brand_action.action_type2 .info_box .info_inner .emphasis span:before{position:absolute;width:calc(100% - 11px);bottom:0;left:6px;width:100%;height:25px;background-color:#fff882;content:'';box-sizing:border-box;} */
+
+.brand_action.action_type2 .brand_list_box{padding-right:400px;}
+.brand_action.action_type2 .brand_list_box:before{top:69px;right:118px;width:252px;height:116px;background-image:url(../images/contents/type2brand_action_img01.png)}
+.brand_action.action_type2 .pink_title.title_margin{padding-top:0px;margin-top:8px;}
+/* 구성 운영 */
+.brand_action.action_type2 .num_ul{display:block;position:relative;font-size:0px;line-height:0px;box-sizing:top;}
+.brand_action.action_type2 .num_ul li span{display:inline-block;font-size:18px;line-height:34px;letter-spacing:-0.025em;box-sizing:border-box;vertical-align:top;font-family:'OmniGothic';}
+.brand_action.action_type2 .num_ul li .list_number{width:22px;height:22px;margin-top:4.5px;background-color:#761db7;border-radius:100%;font-size:14px;line-height:22px;letter-spacing:-0.025em;color:#fff;font-weight:400;font-family:'';text-align:center;}
+.brand_action.action_type2 .num_ul li .bu_title{margin-left:7px;margin-right:7px;font-weight:700;color:#761db7;}
+.brand_action.action_type2 .num_ul li .bu_desc{font-weight:200;color:#444;}
+.brand_action.action_type2 .num_ul li .bu_desc .bu_desc_side{display:inline-block;font-size:15px;line-height:34px;box-sizing:border-box;font-weight:200;letter-spacing:-0.025em;color:#444;font-family:'OmniGothic';}
+/* 테이블 */
+/* .brand_action.action_type2.cts_brand .table{width:634px;margin:16px auto 0px auto;} */
+.brand_action.action_type2.cts_brand .table thead th{padding:0px 10px;background-color:#f5edfc;color:#0b0c0d;line-height:30px;font-weight:700;}
+.brand_action.action_type2.cts_brand .table tbody td{padding:6px 33px;;font-size:18px;line-height:34px;font-weight:500;}
+.brand_action.action_type2.cts_brand .table tbody td .bu.brand{padding-left:0px;}
+.brand_action.action_type2.cts_brand .table tbody td .bu.brand li{padding-left:11px;}
+.brand_action.action_type2.cts_brand .table tbody td .bu.brand li:before{width:5px;height:5px;border-radius:100%;background-image:none;background-color:#000;}
+/* 추진일정 */
+.brand_action.action_type2 .day_step_wrap{position:relative;display:block;box-sizing:border-box;}
+.brand_action.action_type2 .day_step_wrap .day_step_box{display:block;font-size:0px;line-height:0px;box-sizing:border-box;}
+.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list{display:block;font-size:0px;line-height:0px;box-sizing:border-box;}
+.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item{position:relative;display:inline-block;width:calc((100% - 130px) / 4);margin-left:43px;font-size:0px;line-height:0px;box-sizing:border-box;border:1px solid #a1a3ac;border-radius:5px;text-align:center;}
+.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:before{display:block;position:absolute;top:50%;right:-28px;width:9px;height:13px;background:url(../images/contents/brand_action_arrow.png) no-repeat;transform:translateY(-50%);}
+.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:first-child{margin-left:0px;}
+.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item .step_title{display:block;font-size:20px;line-height:54px;letter-spacing:0;color:#fff;font-weight:700;background-color:#70478b;font-family:'OmniGothic';}
+.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item .step_ima{display:block;border-top:1px solid #a1a3ac;border-bottom:1px solid #a1a3ac;font-size:0px;line-height:0px;box-sizing:border-box;}
+.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item .step_day{display:block;padding:11px 0px;;font-size:16px;line-height:22px;letter-spacing:-0.025em;font-weight:200;color:#292e42;font-family:'OmniGothic';}
+
+@media screen and (max-width:1400px) {
+	.brand_action.action_type2 .info_box .info_inner:before{left:0px;width:130px;height:130px;background-size:contain;}
+	.brand_action.action_type2 .info_box .info_inner:after{right:0px;width:143px;height:120px;background-size:contain;}
+	.brand_action.action_type2 .brand_list_box{padding-right:0px;}
+	.brand_action.action_type2 .num_ul li .bu_desc .bu_desc_side{display:block;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item .step_title{font-size:16px;}
+}
+@media screen and (max-width:1000px) {
+	.brand_action.action_type2 .brand_vw_box{padding:30px 0px;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item{width:calc((100% - 130px) / 3);margin-left:40px;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:before{right:-26px;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:last-child{margin-top:20px;margin-left:0px;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:last-child:before{display:none}
+}
+@media screen and (max-width:640px) {
+	.brand_action.action_type2 .brand_vw_box{margin-top:30px;}
+	.bu_brand_list.action_type2 .bu_brand_item .point .title{font-size:14px;}
+	.brand_action.action_type2 .num_ul li span{font-size:16px;line-height:30px;}
+	.brand_action.action_type2 .num_ul li .bu_title{font-size:16px;}
+	.brand_action.action_type2 .num_ul li .bu_desc{width:77%;font-size:14px;}
+	.brand_action.action_type2 .num_ul li .bu_desc .bu_desc_side{font-size:14px;line-height:25px;}
+	.brand_action.action_type2 .num_ul li .list_number{margin-top:3.5px;}
+	.brand_action.action_type2.cts_brand .table tbody td{padding:10px 5px;font-size:16px;line-height:26px;}
+	.brand_action.action_type2.cts_brand .table .bu{margin:5px 0px;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item{width:calc((100% - 100px) / 2);}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:nth-child(3){margin-left:0px;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:last-child{margin-left:40px}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item .step_title{font-size:15px;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item .step_day{font-size:14px;}
+}
+@media screen and (max-width:500px) {
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item{display:block;width:250px;margin:0 auto 20px auto;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:first-child{margin:0 auto 20px auto;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:nth-child(3){margin:0 auto 20px auto;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:last-child{margin:0 auto;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item:before{display:none;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item .step_title{line-height:40px;}
+	.brand_action.action_type2 .day_step_wrap .day_step_box .day_step_list .day_step_item .step_day{padding:9px 0px;}
+}

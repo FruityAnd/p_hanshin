@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* 본고딕 */
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 200;
+	src: url("/common/common2021/font/SpoqaHanSans-Light.woff2") format('woff2'),
+	url("/common/common2021/font/SpoqaHanSans-Light.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 400;
+	src: url("/common/common2021/font/SpoqaHanSans-Regular.woff2") format('woff2'),
+	url("/common/common2021/font/SpoqaHanSans-Regular.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 600;
+	src: url("/common/common2021/font/SpoqaHanSans-Bold.woff2") format('woff2'),
+	url("/common/common2021/font/SpoqaHanSans-Bold.woff") format('woff');
+}
+
+/* Lato */
+@font-face{
+	font-family: 'Lato';
+	font-weight: 200;
+	src: url("/common/common2021/font/Lato-Light.woff2") format('woff2'),
+	url("/common/common2021/font/Lato-Light.woff") format('woff');
+}
+@font-face{
+	font-family: 'Lato';
+	font-weight: 400;
+	src: url("/common/common2021/font/Lato-Regular.woff2") format('woff2'),
+	url("/common/common2021/font/Lato-Regular.woff") format('woff');
+}
+@font-face{
+	font-family: 'Lato';
+	font-weight: 600;
+	src: url("/common/common2021/font/Lato-Bold.woff2") format('woff2'),
+	url("/common/common2021/font/Lato-Bold.woff") format('woff');
+}
+
+/* Gmarket */
+@font-face{
+	font-family: 'Gmarket';
+	font-weight: 200;
+	src: url("../font/GmarketSansTTFLight.woff") format('woff');
+}
+@font-face{
+	font-family: 'Gmarket';
+	font-weight: 500;
+	src: url("../font/GmarketSansTTFMedium.woff") format('woff');
+}
+@font-face{
+	font-family: 'Gmarket';
+	font-weight: 600;
+	src: url("../font/GmarketSansTTFBold.woff") format('woff');
+}
+
+/* OmniGothic */
+@font-face{
+	font-family: 'OmniGothic';
+	font-weight: 200;
+	src: url("../font/OmniGothic_200.woff") format('woff');
+}
+@font-face{
+	font-family: 'OmniGothic';
+	font-weight: 400;
+	src: url("../font/OmniGothic_400.woff") format('woff');
+}
+@font-face{
+	font-family: 'OmniGothic';
+	font-weight: 500;
+	src: url("../font/OmniGothic_500.woff") format('woff');
+}
+@font-face{
+	font-family: 'OmniGothic';
+	font-weight: 600;
+	src: url("../font/OmniGothic_600.woff") format('woff');
+}
+@font-face{
+	font-family: 'OmniGothic';
+	font-weight: 700;
+	src: url("../font/OmniGothic_700.woff") format('woff');
+}
+@font-face{
+	font-family: 'OmniGothic';
+	font-weight: 800;
+	src: url("../font/OmniGothic_800.woff") format('woff');
+}
