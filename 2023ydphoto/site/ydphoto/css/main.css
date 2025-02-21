@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+@import url('../../../common/css/default.css?v=202402')/* 디폴트 */;
+@import url('layout.css?v=202402')/* 본문바로가기, 공공누리 */;
+@import url('common.css?v=202402')/* 영덕사진DB 기본세팅 및 상하단 */;
+@import url('main_layout.css?v=202402')/* 영덕사진DB 서브 */;

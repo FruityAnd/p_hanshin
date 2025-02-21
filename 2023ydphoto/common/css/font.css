@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* 본고딕 NotoKR */
+@font-face{
+    font-family:'NotoKr';
+    font-weight: 400;
+    src:url("../font/SpoqaHanSans-Regular.woff2") format('woff2'),
+    url("../font/SpoqaHanSans-Regular.woff") format('woff');
+}
+@font-face{
+    font-family:'NotoKr';
+    font-weight: 600;
+    src:url("../font/SpoqaHanSans-Bold.woff2") format('woff2'),
+    url("../font/SpoqaHanSans-Bold.woff") format('woff');
+}
+
+/* 원스토어 ONE */
+@font-face{
+    font-family:'ONE';
+    font-weight: 400;
+    src:url("../font/ONE_Mobile_Regular.woff2") format('woff2'),
+    url("../font/ONE_Mobile_Regular.woff") format('woff');
+}
+@font-face{
+    font-family:'ONE';
+    font-weight: 600;
+    src:url("../font/ONE_Mobile_Bold.woff2") format('woff2'),
+    url("../font/ONE_Mobile_Bold.woff") format('woff');
+}
+
+/* 원스토어 제목 ONETitle */
+@font-face{
+    font-family:'ONETitle';
+    font-weight: 400;
+    src:url("../font/ONE_Mobile_Title.woff2") format('woff2'),
+    url("../font/ONE_Mobile_Title.woff") format('woff');
+}
+
+/* 영덕해파랑 YDHaeparang */
+@font-face{
+    font-family:'YDHaeparang';
+    font-weight: 400;
+    src:url("../font/Yeongdeok-Haeparang.woff2") format('woff2'),
+    url("../font/Yeongdeok-Haeparang.woff") format('woff');
+}
+
+/* 몬세라트 Montserrat */
+@font-face{
+    font-family:'Montserrat';
+    font-weight: 300;
+    src:url("../font/Montserrat-Light.woff") format('woff');
+}
+@font-face{
+    font-family:'Montserrat';
+    font-weight: 400;
+    src:url("../font/Montserrat-Regular.woff") format('woff');
+}
+@font-face{
+    font-family:'Montserrat';
+    font-weight: 600;
+    src:url("../font/Montserrat-Bold.woff") format('woff');
+}
+@font-face{
+    font-family:'Montserrat';
+    font-weight: 700;
+    src:url("../font/Montserrat-SemiBold.woff") format('woff');
+}
+@font-face{
+    font-family:'Montserrat';
+    font-weight: 800;
+    src:url("../font/Montserrat-ExtraBold.woff") format('woff');
+}

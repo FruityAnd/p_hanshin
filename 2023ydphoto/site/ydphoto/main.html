@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../../common/favicon.ico">
+    <link rel="icon" href="../../common/favicon.ico">
+    <link rel="stylesheet" href="../../common/css/font.css?v=202402" />
+    <link rel="stylesheet" href="./css/main.css?v=202402" />
+    <script src="../../common/js/jquery-1.12.4.HS-20200709.min.js?v=202402"></script>
+    <script src="../../common/js/jquery.screen.min.js?v=202402"></script>
+    <script src="../../common/js/slick.min.custom.1.8.0.12.js?v=202402"></script>
+    <script src="../../common/js/slick.extensions.min.js?v=202402"></script>
+    <script src="./js/common.js?v=202402"></script>
+    <script src="./js/splitting.min.js?v=202402"></script>
+    <script src="./js/main.js?v=202402"></script>
+    <title>영덕 사진DB 메인페이지</title>
+</head>
+
+<body id="main" class="main">
+    <div class="accessibility">
+        <a href="#contents">본문 바로가기</a>
+    </div>
+    <div id="wrapper">
+        <header id="header">
+            <div class="header_box">
+                <div class="wrap">
+                    <h1 class="logo">
+                        <a href="./index.do" class="logo_link">
+                            <i class="logo_img">영뎍군청</i>
+                            <span class="site_name">사진DB</span>
+                        </a>    <!--//logo_link-->
+                    </h1>    <!--//logo-->
+                    <div class="menu_show">
+                        <button type="button" class="menu_button">메뉴열기</button>
+                    </div>    <!--//menu_show-->
+                </div>    <!--//wrap-->
+            </div>    <!--//header_box-->
+            <div class="lnb">
+                <div class="lnb_topbox">
+                    <div class="m_gnb">
+                        <div class="m_logo">
+                            <a href="./index.do" class="logo_link">
+                                <i class="logo_img">영뎍군청</i>
+                                <span class="site_name">사진DB</span>
+                            </a>
+                        </div>    <!--//m_logo-->
+                    </div>    <!--//m_gnb-->
+                </div>    <!--//lnb_topbox-->
+                <nav class="menu eachdown">
+                    <h2 class="skip">메뉴</h2>
+                    <div class="depth depth1">
+                        <ul class="depth_list depth1_list">
+                            <li class="depth_item depth1_item">
+                                <a href="" class="depth_text depth1_text"><span><em>주제별</em></span></a>
+                                <div class="depth depth2">
+                                    <div class="menu_title">
+                                        <div class="text">
+                                            영덕의<br />
+                                            아름다운 경치와<br />
+                                            다양한 행사사진을<br />
+                                            소개합니다!
+                                        </div>
+                                    </div>
+                                    <ul class="depth_list depth2_list">
+                                        <li class="depth_item depth2_item">
+                                            <a href="" target="_blank" class="depth_text depth2_text"><span><em>군정/행정/유관기관/교육</em></span></a>
+                                            <div class="depth depth3">
+                                                <ul class="depth_list depth3_list">
+                                                    <li class="depth_item depth3_item">
+                                                        <a href="" target="_blank" class="depth_text depth3_text"><span><em>정치/선거</em></span></a>
+                                                    </li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>경상북도</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>영덕군의회</em></span></a></li>
+                                                    <li class="depth_item depth3_item">
+                                                        <a href="" class="depth_text depth3_text"><span><em>유관기관/단체</em></span></a>
+                                                        <div class="depth depth4">
+                                                            <ul class="depth_list depth4_list">
+                                                                <li class="depth_item depth4_item"><a href="" target="_blank" class="depth_text depth4_text spy"><span><em>유관기관</em></span></a></li><!-- 현재 선택된메뉴 맨 마지막차수에 spy 클래스 부여해주세요!! -->
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>단체</em></span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>국내외 교류</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>향우회</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>교육</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>고향사랑 기부금</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>공무원 노동조합</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>전국민주연합노동조합</em></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="depth_item depth2_item">
+                                            <a href="" class="depth_text depth2_text"><span><em>경제/산업/시설물/교통</em></span></a>
+                                            <div class="depth depth3">
+                                                <ul class="depth_list depth3_list">
+                                                    <li class="depth_item depth3_item">
+                                                        <a href="" class="depth_text depth3_text"><span><em>경제</em></span></a>
+                                                        <div class="depth depth4">
+                                                            <ul class="depth_list depth4_list">
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>전통시장</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>기타</em></span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="depth_item depth3_item">
+                                                        <a href="" class="depth_text depth3_text"><span><em>산업/일자리</em></span></a>
+                                                        <div class="depth depth4">
+                                                            <ul class="depth_list depth4_list">
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>산업</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>신재생에너지</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>일자리</em></span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>공공시설</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>교통시설</em></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="depth_item depth2_item">
+                                            <a href="" class="depth_text depth2_text"><span><em>문화/관광/관내 전경</em></span></a>
+                                            <div class="depth depth3">
+                                                <ul class="depth_list depth3_list">
+                                                    <li class="depth_item depth3_item">
+                                                        <a href="" class="depth_text depth3_text"><span><em>문화</em></span></a>
+                                                        <div class="depth depth4">
+                                                            <ul class="depth_list depth4_list">
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>문화시설</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>문화행사</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>문화제</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>문화예술 단체</em></span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="depth_item depth3_item">
+                                                        <a href="" class="depth_text depth3_text"><span><em>관광</em></span></a>
+                                                        <div class="depth depth4">
+                                                            <ul class="depth_list depth4_list">
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>축제</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>관광명소</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>전시관/체험시설</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>사진공모전</em></span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="depth_item depth3_item">
+                                                        <a href="" class="depth_text depth3_text"><span><em>관내 전경</em></span></a>
+                                                        <div class="depth depth4">
+                                                            <ul class="depth_list depth4_list">
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>강/바다</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>자연/생태계</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>산/계곡</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>해수욕장</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>읍면 전경(9개읍면)</em></span></a></li>
+                                                                <li class="depth_item depth4_item"><a href="" class="depth_text depth4_text"><span><em>기타</em></span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="depth_item depth2_item">
+                                            <a href="" class="depth_text depth2_text"><span><em>복지/보건(의료)/환경(위생)</em></span></a>
+                                            <div class="depth depth3">
+                                                <ul class="depth_list depth3_list">
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>복지</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>보건(의료)</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>환경(위생)</em></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="depth_item depth2_item">
+                                            <a href="" class="depth_text depth2_text"><span><em>체육/재난(재해)/시위(집회)</em></span></a>
+                                            <div class="depth depth3">
+                                                <ul class="depth_list depth3_list">
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>체육대회</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>축구대회</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>체육단체(종목별)</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>재난/재해</em></span></a></li>
+                                                    <li class="depth_item depth3_item"><a href="" class="depth_text depth3_text"><span><em>시위(집회)</em></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="depth_item depth2_item"><a href="" class="depth_text depth2_text"><span><em>기타</em></span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="" class="depth_text depth1_text"><span><em>지역별</em></span></a>
+                                <div class="depth depth2">
+                                    <div class="menu_title">
+                                        <div class="text">
+                                            영덕의<br />
+                                            아름다운 경치와<br />
+                                            다양한 행사사진을<br />
+                                            소개합니다!
+                                        </div>
+                                    </div>
+                                    <ul class="depth_list depth2_list">
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>영덕읍</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>강구면</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>남정면</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>달산면</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>지품면</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>축산면</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>영해면</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>병곡면</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>창수면</em></span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="" class="depth_text depth1_text"><span><em>시대별</em></span></a>
+                                <div class="depth depth2">
+                                    <div class="menu_title">
+                                        <div class="text">
+                                            영덕의<br />
+                                            아름다운 경치와<br />
+                                            다양한 행사사진을<br />
+                                            소개합니다!
+                                        </div>
+                                    </div>
+                                    <ul class="depth_list depth2_list">
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>1920년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>1930년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>1940년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>1950년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>1960년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>1970년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>1980년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>1990년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>2000년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>2010년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>2020년대</em></span></a></li>
+                                        <li class="depth_item depth2_item"><a href="" target="_blank" class="depth_text depth2_text"><span><em>기타</em></span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text"><span><em>옛사진</em></span></a></li>
+                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text"><span><em>영상 기록관</em></span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="menu_hide">
+                    <button type="button" class="menu_button">메뉴 닫기</button>
+                </div>
+            </div>
+            <div class="lnb_curtain"><button type="button">메뉴 닫기</button></div>
+            <div class="sitemap-icon">
+                <a href="" class="link">사이트맵</a>
+            </div>    <!--//sitemap-icon-->
+        </header>    <!--//#header-->
+        <div id="container">
+            <main>
+                <div class="rowgroup rowgroup1">
+                    <section class="visual_photo">
+                        <h2 class="skip">비쥬얼사진 슬라이드 및 영덕군 사진DB 검색 영역</h2>
+                        <div class="visual_wrap">
+                            <div class="visual_slide_list">
+                                <div class="visual_slide_item" data-visual="1">
+                                    <!--//▼ .vusual_imag_wrap는 CMS에서 비주얼 팝업 등록시 링크가 있다면 a로, 링크가 없다면 div 그대로 유지해주세요.-->
+                                    <!--//▼ a로 변경시 title="바로가기" 속성 추가해주세요.(접근성)-->
+                                    <div class="visual_img_wrap">
+                                        <span style="background-image:url(./images/main/visual_bg01.jpg)" class="visual_bg"></span>    <!--//visual_bg-->
+                                        <img src="./images/main/visual_bg01.jpg" alt="푸르른 영덕군 바다 풍경 사진" class="visual_img" />    <!--//visual_img-->
+                                    </div>    <!--//visual_img_wrap-->
+                                </div>    <!--//visual_slide_item-->
+                                <div class="visual_slide_item" data-visual="2">
+                                    <div class="visual_img_wrap">
+                                        <span style="background-image:url(./images/main/visual_bg02.jpg)" class="visual_bg"></span>    <!--//visual_bg-->
+                                        <img src="./images/main/visual_bg02.jpg" alt="아름다운 영덕군 등대 사진" class="visual_img" />    <!--//visual_img-->
+                                    </div>    <!--//visual_img_wrap-->
+                                </div>    <!--//visual_slide_item-->
+                                <div class="visual_slide_item" data-visual="3">
+                                    <div class="visual_img_wrap">
+                                        <span style="background-image:url(./images/main/visual_bg03.jpg)" class="visual_bg"></span>    <!--//visual_bg-->
+                                        <img src="./images/main/visual_bg03.jpg" alt="바다와 마을이 훤히 보이는 영덕군 지도 사진" class="visual_img" />    <!--//visual_img-->
+                                    </div>    <!--//visual_img_wrap-->
+                                </div>    <!--//visual_slide_item-->
+                                <div class="visual_slide_item" data-visual="4">
+                                    <div class="visual_img_wrap">
+                                        <span style="background-image:url(./images/main/visual_bg04.jpg)" class="visual_bg"></span>    <!--//visual_bg-->
+                                        <img src="./images/main/visual_bg04.jpg" alt="알록달록한 영덕군 달산 옥계계곡 사진" class="visual_img" />    <!--//visual_img-->
+                                    </div>    <!--//visual_img_wrap-->
+                                </div>    <!--//visual_slide_item-->
+                                <div class="visual_slide_item" data-visual="5">
+                                    <div class="visual_img_wrap">
+                                        <span style="background-image:url(./images/main/visual_bg05.jpg)" class="visual_bg"></span>    <!--//visual_bg-->
+                                        <img src="./images/main/visual_bg05.jpg" alt="옛느낌이 가득한 영덕군 영해 괴시리 전통마을 사진" class="visual_img" />    <!--//visual_img-->
+                                    </div>    <!--//visual_img_wrap-->
+                                </div>    <!--//visual_slide_item-->
+                                <div class="visual_slide_item" data-visual="6">
+                                    <div class="visual_img_wrap">
+                                        <span style="background-image:url(./images/main/visual_bg06.jpg)" class="visual_bg"></span>    <!--//visual_bg-->
+                                        <img src="./images/main/visual_bg06.jpg" alt="노을이 지는 영덕군 바다 사진" class="visual_img" />    <!--//visual_img-->
+                                    </div>    <!--//visual_img_wrap-->
+                                </div>    <!--//visual_slide_item-->
+                            </div>    <!--//visual_slide_list-->
+                            <div class="deco_box">
+                                <div class="wave wave1">
+                                    <i class="mini_wave type1"></i>    <!--//mini_wave type1-->
+                                    <i class="mini_wave type2"></i>    <!--//mini_wave type2-->
+                                </div>    <!--//wave-->
+                            </div>    <!--//deco_box-->
+                            <div class="content_box">
+                                <div class="slogan_box">
+                                    <div class="slogan_logo">
+                                        <img src="./images/main/visual_logo.png" alt="영덕 슬로건 이미지. 머무르는 영덕~ STAY 영덕" class="slogan_img" />    <!--//slogan_img-->
+                                    </div>    <!--//slogan_logo-->
+                                    <div class="slogan_text_list">
+                                        <div class="slogan_text_item word-split" data-visual-text="1" data-splitting data-css-property="animation" data-speed="0.15" data-speed-delay="1">보고 먹고 즐기고</div>    <!--//slogan_text_item-->
+                                    </div>    <!--//slogan_text_list-->
+                                </div>    <!--//slogan_box-->
+                                <div class="search_box">
+                                    <form action="">    <!--// ★ action값 꼭 채워주세요 ★ -->
+                                        <fieldset>
+                                            <legend>영덕군 사진 검색 폼</legend>
+                                            <div class="form_box">
+                                                <!--// .form_box 안의 input이나 a는 개발하실 때 불편하다고 느끼신다면 다른 태그(a, button, input)로 변경해서 사용해주세요! 동일한 모양으로 유지됩니다. (단, 클레스명 동일하게 유지★)-->
+                                                <!--// a로 변경 시, 새창일 경우 title="새창" rel="noopener noreferrer" 속성, 새창이 아닌 경우 title="바로가기" 속성을 넣어주세요. (접근성) -->
+                                                <!--// button으로 변경 시, type="" 속성 꼭 지정해주세요.(접근성)-->
+                                                <!--// input으로 변경 시, title="" 속성 안에 내용 꼭 추가해주세요.(접근성) -->
+                                                <span class="form_item">
+                                                    <input type="text" id="" title="사진 검색어 입력" placeholder="검색어를 입력하세요." class="search_input" />    <!--//search_input-->
+                                                    <span class="form_submit">
+                                                        <input type="submit" id="" title="사진 검색" class="submit_input" />    <!--//submit_input-->
+                                                    </span>    <!--//form_submit-->
+                                                </span>    <!--//form_box-->
+                                                <span class="detail_item">
+                                                    <a href="" title="새창" rel="noopener noreferrer" class="detail_btn">상세검색</a>    <!--//detail_btn-->
+                                                </span>    <!--//detail_box-->
+                                            </div>    <!--//form_box-->
+                                        </fieldset>
+                                    </form>
+                                </div>    <!--//search_box-->
+                            </div>    <!--//content_box-->
+                            <div class="visual_slide_control">
+                                <div class="visual_count_box">
+                                    <span class="text current"></span>    <!--//current-->
+                                    <span class="text slash">/</span>    <!--//slash-->
+                                    <span class="text total"></span>    <!--//total-->
+                                </div>    <!--//visual_count_box-->
+                                <div class="visual_btn_box">
+                                    <button type="button" class="visual_btn prev">이전</button>    <!--//prev-->
+                                    <button type="button" class="visual_btn next">다음</button>    <!--//next-->
+                                    <button type="button" class="visual_btn auto">정지</button>    <!--//auto-->
+                                </div>    <!--//visual_btn_box-->
+                            </div>    <!--//visual_slide_control-->
+                        </div>    <!--//visual_wrap-->
+                    </section>    <!--//visual_photo-->
+                </div>    <!--//rowgroup rowgroup1-->
+                <div class="rowgroup rowgroup2">
+                    <section class="travel_photo">
+                        <h2 class="skip">살펴보는 관광여행 이미지 영역</h2>
+                        <div class="title_wrap ani_on">
+                            <span class="title">살펴보는 관광여행</span>    <!--//title-->
+                        </div>    <!--//title_wrap-->
+                        <div class="travel_wrap ani_on">
+                            <div class="travel_slide_list">
+                                <div class="travel_slide_item">
+                                    <!--// ▼ a에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 .travel_slide_link 동일하게 들어오도록 개발 요청드립니다! -->
+                                    <a href="" title="바로가기" class="travel_slide_link">
+                                        <div class="travel_img_wrap">
+                                            <div class="img_inner">
+                                                <!--// travel_bg ▶ .travel_slide_link .travel_img_wrap .img_inner .travel_bg-->
+                                                <!--// travel_img ▶ .travel_slide_link .travel_img_wrap .img_inner .travel_img-->
+                                                <!--// (1) 메인 비주얼 이미지 경로 개발  ▶ travel_bg의 background-image의 url 경로와 travel_img의 src 경로가 동일하게 들어오도록 개발 요청드립니다. -->
+                                                <!--// (2) CMS에서 travel_img의 alt="" 속성 안에 대체텍스트 입력할 수 있도록 개발 요청드립니다. -->
+                                                <span style="background-image:url(./images/main/travel_img01.jpg)" class="travel_bg"></span>    <!--//travel_bg-->
+                                                <img src="./images/main/travel_img01.jpg" alt="영덕군 영해 괴시리 전통마을 이미지" class="travel_img"/>    <!--//travel_img-->
+                                            </div>    <!--//img_inner-->
+                                        </div>    <!--//travel_img_wrap-->
+                                        <div class="travel_con_wrap">
+                                            <div class="con_title">
+                                                <span class="title">영해 괴시리 전통마을</span>    <!--//title-->
+                                            </div>    <!--//con_title-->
+                                            <div class="con_date">
+                                                <span class="text year">2023</span>    <!--//year-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text month">03</span>    <!--//month-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text date">16</span>    <!--//date-->
+                                            </div>    <!--//con_date-->
+                                        </div>    <!--//travel_con_wrap-->
+                                    </a>    <!--//travel_slide_link-->
+                                </div>    <!--//travel_slide_item-->
+                                <div class="travel_slide_item">
+                                    <a href="" title="바로가기" class="travel_slide_link">
+                                        <div class="travel_img_wrap">
+                                            <div class="img_inner">
+                                                <span style="background-image:url(./images/main/travel_img02.jpg)" class="travel_bg"></span>    <!--//travel_bg-->
+                                                <img src="./images/main/travel_img02.jpg" alt="영덕군 강구 삼사해상산책로 이미지" class="travel_img"/>    <!--//travel_img-->
+                                            </div>    <!--//img_inner-->
+                                        </div>    <!--//travel_img_wrap-->
+                                        <div class="travel_con_wrap">
+                                            <div class="con_title">
+                                                <span class="title">강구 삼사해상산책로</span>    <!--//title-->
+                                            </div>    <!--//con_title-->
+                                            <div class="con_date">
+                                                <span class="text year">2023</span>    <!--//year-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text month">08</span>    <!--//month-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text date">05</span>    <!--//date-->
+                                            </div>    <!--//con_date-->
+                                        </div>    <!--//travel_con_wrap-->
+                                    </a>    <!--//travel_slide_link-->
+                                </div>    <!--//travel_slide_item-->
+                                <div class="travel_slide_item">
+                                    <a href="" title="바로가기" class="travel_slide_link">
+                                        <div class="travel_img_wrap">
+                                            <div class="img_inner">
+                                                <span style="background-image:url(./images/main/travel_img03.jpg)" class="travel_bg"></span>    <!--//travel_bg-->
+                                                <img src="./images/main/travel_img03.jpg" alt="영덕군 달산 옥계계곡 이미지" class="travel_img"/>    <!--//travel_img-->
+                                            </div>    <!--//img_inner-->
+                                        </div>    <!--//travel_img_wrap-->
+                                        <div class="travel_con_wrap">
+                                            <div class="con_title">
+                                                <span class="title">달산 옥계계곡</span>    <!--//title-->
+                                            </div>    <!--//con_title-->
+                                            <div class="con_date">
+                                                <span class="text year">2023</span>    <!--//year-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text month">10</span>    <!--//month-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text date">31</span>    <!--//date-->
+                                            </div>    <!--//con_date-->
+                                        </div>    <!--//travel_con_wrap-->
+                                    </a>    <!--//travel_slide_link-->
+                                </div>    <!--//travel_slide_item-->
+                                <div class="travel_slide_item">
+                                    <a href="" title="바로가기" class="travel_slide_link">
+                                        <div class="travel_img_wrap">
+                                            <div class="img_inner">
+                                                <span style="background-image:url(./images/main/travel_img04.jpg)" class="travel_bg"></span>    <!--//travel_bg-->
+                                                <img src="./images/main/travel_img04.jpg" alt="영덕군 축산 대소산 봉수대 이미지" class="travel_img"/>    <!--//travel_img-->
+                                            </div>    <!--//img_inner-->
+                                        </div>    <!--//travel_img_wrap-->
+                                        <div class="travel_con_wrap">
+                                            <div class="con_title">
+                                                <span class="title">축산 대소산 봉수대</span>    <!--//title-->
+                                            </div>    <!--//con_title-->
+                                            <div class="con_date">
+                                                <span class="text year">2022</span>    <!--//year-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text month">12</span>    <!--//month-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text date">24</span>    <!--//date-->
+                                            </div>    <!--//con_date-->
+                                        </div>    <!--//travel_con_wrap-->
+                                    </a>    <!--//travel_slide_link-->
+                                </div>    <!--//travel_slide_item-->
+                                <div class="travel_slide_item">
+                                    <a href="" title="바로가기" class="travel_slide_link">
+                                        <div class="travel_img_wrap">
+                                            <div class="img_inner">
+                                                <span style="background-image:url(https://via.placeholder.com/340x255)" class="travel_bg"></span>    <!--//travel_bg-->
+                                                <img src="https://via.placeholder.com/340x255" alt="이미지" class="travel_img"/>    <!--//travel_img-->
+                                            </div>    <!--//img_inner-->
+                                        </div>    <!--//travel_img_wrap-->
+                                        <div class="travel_con_wrap">
+                                            <div class="con_title">
+                                                <span class="title">사진 제목이 엄청나게 길때에는 이렇게나와요</span>    <!--//title-->
+                                            </div>    <!--//con_title-->
+                                            <div class="con_date">
+                                                <span class="text year">2023</span>    <!--//year-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text month">03</span>    <!--//month-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text date">16</span>    <!--//date-->
+                                            </div>    <!--//con_date-->
+                                        </div>    <!--//travel_con_wrap-->
+                                    </a>    <!--//travel_slide_link-->
+                                </div>    <!--//travel_slide_item-->
+                                <div class="travel_slide_item">
+                                    <a href="" title="바로가기" class="travel_slide_link">
+                                        <div class="travel_img_wrap">
+                                            <div class="img_inner">
+                                                <span style="background-image:url(https://via.placeholder.com/340x255)" class="travel_bg"></span>    <!--//travel_bg-->
+                                                <img src="https://via.placeholder.com/340x255" alt="이미지" class="travel_img"/>    <!--//travel_img-->
+                                            </div>    <!--//img_inner-->
+                                        </div>    <!--//travel_img_wrap-->
+                                        <div class="travel_con_wrap">
+                                            <div class="con_title">
+                                                <span class="title">사진 제목이 엄청나게 길때에는 이렇게나와요</span>    <!--//title-->
+                                            </div>    <!--//con_title-->
+                                            <div class="con_date">
+                                                <span class="text year">2023</span>    <!--//year-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text month">03</span>    <!--//month-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text date">16</span>    <!--//date-->
+                                            </div>    <!--//con_date-->
+                                        </div>    <!--//travel_con_wrap-->
+                                    </a>    <!--//travel_slide_link-->
+                                </div>    <!--//travel_slide_item-->
+                                <div class="travel_slide_item">
+                                    <a href="" title="바로가기" class="travel_slide_link">
+                                        <div class="travel_img_wrap">
+                                            <div class="img_inner">
+                                                <span style="background-image:url(https://via.placeholder.com/340x255)" class="travel_bg"></span>    <!--//travel_bg-->
+                                                <img src="https://via.placeholder.com/340x255" alt="이미지" class="travel_img"/>    <!--//travel_img-->
+                                            </div>    <!--//img_inner-->
+                                        </div>    <!--//travel_img_wrap-->
+                                        <div class="travel_con_wrap">
+                                            <div class="con_title">
+                                                <span class="title">사진 제목이 엄청나게 길때에는 이렇게나와요</span>    <!--//title-->
+                                            </div>    <!--//con_title-->
+                                            <div class="con_date">
+                                                <span class="text year">2023</span>    <!--//year-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text month">03</span>    <!--//month-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text date">16</span>    <!--//date-->
+                                            </div>    <!--//con_date-->
+                                        </div>    <!--//travel_con_wrap-->
+                                    </a>    <!--//travel_slide_link-->
+                                </div>    <!--//travel_slide_item-->
+                                <div class="travel_slide_item">
+                                    <a href="" title="바로가기" class="travel_slide_link">
+                                        <div class="travel_img_wrap">
+                                            <div class="img_inner">
+                                                <span style="background-image:url(https://via.placeholder.com/340x255)" class="travel_bg"></span>    <!--//travel_bg-->
+                                                <img src="https://via.placeholder.com/340x255" alt="이미지" class="travel_img"/>    <!--//travel_img-->
+                                            </div>    <!--//img_inner-->
+                                        </div>    <!--//travel_img_wrap-->
+                                        <div class="travel_con_wrap">
+                                            <div class="con_title">
+                                                <span class="title">사진 제목이 엄청나게 길때에는 이렇게나와요</span>    <!--//title-->
+                                            </div>    <!--//con_title-->
+                                            <div class="con_date">
+                                                <span class="text year">2023</span>    <!--//year-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text month">03</span>    <!--//month-->
+                                                <span class="text dash">-</span>    <!--//dash-->
+                                                <span class="text date">16</span>    <!--//date-->
+                                            </div>    <!--//con_date-->
+                                        </div>    <!--//travel_con_wrap-->
+                                    </a>    <!--//travel_slide_link-->
+                                </div>    <!--//travel_slide_item-->
+                            </div>    <!--//travel_slide_list-->
+                            <div class="travel_slide_control">
+                                <button type="button" class="travel_btn prev">이전</button>    <!--//prev-->
+                                <button type="button" class="travel_btn next">다음</button>    <!--//next-->
+                                <button type="button" class="travel_btn auto">정지</button>    <!--//auto-->
+                            </div>    <!--//travel_slide_control-->
+                        </div>    <!--//travel_wrap-->
+                    </section>    <!--//travel_photo-->
+                </div>    <!--//rowgroup rowgroup2-->
+                <div class="rowgroup rowgroup3">
+                    <section class="specialty_photo ani_on">
+                        <h2 class="skip">맛있는 영덕 특산물 이미지 영역</h2>
+                        <div class="title_wrap ani_on ">
+                            <div class="title">맛있는 영덕 특산물</div>    <!--//title-->
+                        </div>    <!--//title_wrap-->
+                        <div class="specialty_wrap ani_on">
+                            <div class="special_con_box">
+                                <div class="special_text_box">
+                                    <div class="mini_title">영덕을 대표하는 특산물!</div>    <!--//mini_title-->
+                                    <div class="mini_title eng">How delicious!</div>    <!--//mini_title-->
+                                    <div class="title word-split" data-splitting data-css-property="animation" data-speed="0.2" data-speed-delay="0.5">드셔 볼텨?</div>    <!--//title-->
+                                </div>    <!--//special_text_box-->
+                                <div class="special_slide_control">
+                                    <button type="button" class="special_btn prev">이전</button>    <!--//prev-->
+                                    <button type="button" class="special_btn next">다음</button>    <!--//next-->
+                                    <button type="button" class="special_btn auto">정지</button>    <!--//next-->
+                                </div>    <!--//special_slide_control-->
+                                <div class="special_deco">
+                                    <i class="deco crap"></i>    <!--//crap-->
+                                    <i class="deco peach"></i>    <!--//peach-->
+                                    <i class="deco vegetable"></i>    <!--//vegetable-->
+                                </div>    <!--//special_deco-->
+                            </div>    <!--//special_con_box-->
+                            <div class="special_slide_list">
+                                <div class="special_slide_item">
+                                    <!--// ▼ a에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 .special_slide_link 동일하게 들어오도록 개발 요청드립니다!-->
+                                    <a href="" title="바로가기" class="special_slide_link">
+                                        <div class="special_img_wrap">
+                                                <!--// special_bg ▶ .special_slide_link .special_img_wrap .special_bg-->
+                                                <!--// special_img ▶ .special_slide_link .special_img_wrap .special_img-->
+                                                <!--// (1) 메인 비주얼 이미지 경로 개발 ▶ special_bg의 background-image의 url 경로와 special_img의 src 경로가 동일하게 들어오도록 개발 요청드립니다. -->
+                                                <!--// (2) CMS에서 special_img의 alt="" 속성 안에 대체텍스트 입력할 수 있도록 개발 요청드립니다. -->
+                                            <span style="background-image:url(./images/main/specialty_img01.jpg)" class="special_bg"></span>    <!--//special_bg-->
+                                            <img src="./images/main/specialty_img01.jpg" alt="영덕을 대표하는 특산물, 영덕대게 이미지" class="special_img" />    <!--//special_img-->
+                                        </div>    <!--//special_img_wrap-->
+                                        <div class="special_con_wrap">
+                                            <div class="title">영덕대게</div>    <!--//title-->
+                                        </div>    <!--//special_con_wrap-->
+                                    </a>    <!--//special_slide_link-->
+                                </div>    <!--//special_slide_item-->
+                                <div class="special_slide_item">
+                                    <a href="" title="바로가기" class="special_slide_link">
+                                        <div class="special_img_wrap">
+                                            <span style="background-image:url(./images/main/specialty_img02.jpg)" class="special_bg"></span>    <!--//special_bg-->
+                                            <img src="./images/main/specialty_img02.jpg" alt="영덕을 대표하는 특산물, 영덕 복숭아 이미지" class="special_img" />    <!--//special_img-->
+                                        </div>    <!--//special_img_wrap-->
+                                        <div class="special_con_wrap">
+                                            <div class="title">영덕 복숭아</div>    <!--//title-->
+                                        </div>    <!--//special_con_wrap-->
+                                    </a>    <!--//special_slide_link-->
+                                </div>    <!--//special_slide_item-->
+                                <div class="special_slide_item">
+                                    <a href="" title="바로가기" class="special_slide_link">
+                                        <div class="special_img_wrap">
+                                            <span style="background-image:url(./images/main/specialty_img03.jpg)" class="special_bg"></span>    <!--//special_bg-->
+                                            <img src="./images/main/specialty_img03.jpg" alt="영덕을 대표하는 특산물, 영덕 송이버섯 이미지" class="special_img" />    <!--//special_img-->
+                                        </div>    <!--//special_img_wrap-->
+                                        <div class="special_con_wrap">
+                                            <div class="title">영덕 송이버섯</div>    <!--//title-->
+                                        </div>    <!--//special_con_wrap-->
+                                    </a>    <!--//special_slide_link-->
+                                </div>    <!--//special_slide_item-->
+                                <div class="special_slide_item">
+                                    <a href="" title="바로가기" class="special_slide_link">
+                                        <div class="special_img_wrap">
+                                            <span style="background-image:url(https://via.placeholder.com/340x441.jpg)" class="special_bg"></span>    <!--//special_bg-->
+                                            <img src="https://via.placeholder.com/340x441.jpg" alt="영덕을 대표하는 특산물 이미지" class="special_img" />    <!--//special_img-->
+                                        </div>    <!--//special_img_wrap-->
+                                        <div class="special_con_wrap">
+                                            <div class="title">이미지 타이틀입니다</div>    <!--//title-->
+                                        </div>    <!--//special_con_wrap-->
+                                    </a>    <!--//special_slide_link-->
+                                </div>    <!--//special_slide_item-->
+                                <div class="special_slide_item">
+                                    <a href="" title="바로가기" class="special_slide_link">
+                                        <div class="special_img_wrap">
+                                            <span style="background-image:url(https://via.placeholder.com/340x441.jpg)" class="special_bg"></span>    <!--//special_bg-->
+                                            <img src="https://via.placeholder.com/340x441.jpg" alt="영덕을 대표하는 특산물 이미지" class="special_img" />    <!--//special_img-->
+                                        </div>    <!--//special_img_wrap-->
+                                        <div class="special_con_wrap">
+                                            <div class="title">텍스트가 긴 이미지 타이틀인 경우에는 이렇게</div>    <!--//title-->
+                                        </div>    <!--//special_con_wrap-->
+                                    </a>    <!--//special_slide_link-->
+                                </div>    <!--//special_slide_item-->
+                                <div class="special_slide_item">
+                                    <a href="" title="바로가기" class="special_slide_link">
+                                        <div class="special_img_wrap">
+                                            <span style="background-image:url(https://via.placeholder.com/340x441.jpg)" class="special_bg"></span>    <!--//special_bg-->
+                                            <img src="https://via.placeholder.com/340x441.jpg" alt="영덕을 대표하는 특산물 이미지" class="special_img" />    <!--//special_img-->
+                                        </div>    <!--//special_img_wrap-->
+                                        <div class="special_con_wrap">
+                                            <div class="title">이미지 타이틀입니다</div>    <!--//title-->
+                                        </div>    <!--//special_con_wrap-->
+                                    </a>    <!--//special_slide_link-->
+                                </div>    <!--//special_slide_item-->
+                                <div class="special_slide_item">
+                                    <a href="" title="바로가기" class="special_slide_link">
+                                        <div class="special_img_wrap">
+                                            <span style="background-image:url(https://via.placeholder.com/340x441.jpg)" class="special_bg"></span>    <!--//special_bg-->
+                                            <img src="https://via.placeholder.com/340x441.jpg" alt="영덕을 대표하는 특산물 이미지" class="special_img" />    <!--//special_img-->
+                                        </div>    <!--//special_img_wrap-->
+                                        <div class="special_con_wrap">
+                                            <div class="title">텍스트가 긴 이미지 타이틀인 경우에는 이렇게</div>    <!--//title-->
+                                        </div>    <!--//special_con_wrap-->
+                                    </a>    <!--//special_slide_link-->
+                                </div>    <!--//special_slide_item-->
+                                <div class="special_slide_item">
+                                    <a href="" title="바로가기" class="special_slide_link">
+                                        <div class="special_img_wrap">
+                                            <span style="background-image:url(https://via.placeholder.com/340x441.jpg)" class="special_bg"></span>    <!--//special_bg-->
+                                            <img src="https://via.placeholder.com/340x441.jpg" alt="영덕을 대표하는 특산물 이미지" class="special_img" />    <!--//special_img-->
+                                        </div>    <!--//special_img_wrap-->
+                                        <div class="special_con_wrap">
+                                            <div class="title">이미지 타이틀입니다</div>    <!--//title-->
+                                        </div>    <!--//special_con_wrap-->
+                                    </a>    <!--//special_slide_link-->
+                                </div>    <!--//special_slide_item-->
+                            </div>    <!--//special_slide_list-->
+                        </div>    <!--//specialty_wrap-->
+                    </section>    <!--//specialty_photo-->
+                </div>    <!--//rowgroup rowgroup3-->
+                <div class="rowgroup rowgroup4">
+                    <section class="old_photo">
+                        <h2 class="skip">옛사진 이미지 영역</h2>
+                        <div class="deco_box ani_on">
+                            <i class="old_wave"></i>    <!--//old_wave-->
+                            <i class="cloud left"></i>    <!--//cloud left-->
+                            <i class="cloud right"></i>    <!--//cloud right-->
+                            <i class="old_text"></i>    <!--//old_text-->
+                        </div>    <!--//deco_box-->
+                        <div class="title_wrap ani_on">
+                            <div class="title">옛사진</div>    <!--//title-->
+                        </div>    <!--//title_wrap-->
+                        <div class="old_wrap ani_on">
+                            <div class="old_slide_list">
+                                <!--//.old_slide_item에 data-old-height="" 속성이 붙고, 해당 속성 안에 [1, 2, 3]이라는 값이 순환하여 반복되게 들어오도록 개발 요청드립니다.-->
+                                <div class="old_slide_item" data-old-height="1">
+                                    <!--// ▼ a에 링크가 없을 경우, 태그는 div로 변경해주시고 클레스명은 .old_slide_link 동일하게 들어오도록 개발 요청드립니다!-->
+                                    <a href="" title="바로가기" class="old_slide_link">
+                                        <div class="old_img_wrap">
+                                            <!--// old_bg ▶ .old_slide_link .old_img_wrap .old_bg-->
+                                            <!--// old_img ▶ .old_slide_link .old_img_wrap .old_img-->
+                                            <!--// (1) 메인 비주얼 이미지 경로 개발  ▶ old_bg의 background-image의 url 경로와 old_img의 src 경로가 동일하게 들어오도록 개발 요청드립니다. -->
+                                            <!--// (2) CMS에서 old_img의 alt="" 속성 안에 대체텍스트 입력할 수 있도록 개발 요청드립니다. -->
+                                            <span style="background-image:url(./images/main/old_img01.jpg)" class="old_bg"></span>    <!--//old_bg-->
+                                            <img src="./images/main/old_img01.jpg" alt="영덕군 옛사진 새마을학교훈련 이미지" class="old_img" />    <!--//old_img-->
+                                        </div>    <!--//old_img_wrap-->
+                                        <div class="old_con_wrap">
+                                            <div class="title">새마을학교훈련</div>    <!--//title-->
+                                        </div>    <!--//old_con_wrap-->
+                                    </a>    <!--//old_slide_link-->
+                                </div>    <!--//old_slide_item-->
+                                <div class="old_slide_item" data-old-height="2">
+                                    <a href="" title="바로가기" class="old_slide_link">
+                                        <div class="old_img_wrap">
+                                            <span style="background-image:url(./images/main/old_img02.jpg)" class="old_bg"></span>    <!--//old_bg-->
+                                            <img src="./images/main/old_img02.jpg" alt="영덕군 옛사진 새마을학교훈련 이미지" class="old_img" />    <!--//old_img-->
+                                        </div>    <!--//old_img_wrap-->
+                                        <div class="old_con_wrap">
+                                            <div class="title">새마을학교훈련</div>    <!--//title-->
+                                        </div>    <!--//old_con_wrap-->
+                                    </a>    <!--//old_slide_link-->
+                                </div>    <!--//old_slide_item-->
+                                <div class="old_slide_item" data-old-height="3">
+                                    <a href="" title="바로가기" class="old_slide_link">
+                                        <div class="old_img_wrap">
+                                            <span style="background-image:url(./images/main/old_img03.jpg)" class="old_bg"></span>    <!--//old_bg-->
+                                            <img src="./images/main/old_img03.jpg" alt="영덕군 옛사진 이미지" class="old_img" />    <!--//old_img-->
+                                        </div>    <!--//old_img_wrap-->
+                                        <div class="old_con_wrap">
+                                            <div class="title">옛사진 타이틀</div>    <!--//title-->
+                                        </div>    <!--//old_con_wrap-->
+                                    </a>    <!--//old_slide_link-->
+                                </div>    <!--//old_slide_item-->
+                                <div class="old_slide_item" data-old-height="1">
+                                    <a href="" title="바로가기" class="old_slide_link">
+                                        <div class="old_img_wrap">
+                                            <span style="background-image:url(./images/main/old_img04.jpg)" class="old_bg"></span>    <!--//old_bg-->
+                                            <img src="./images/main/old_img04.jpg" alt="영덕군 옛사진 이미지" class="old_img" />    <!--//old_img-->
+                                        </div>    <!--//old_img_wrap-->
+                                        <div class="old_con_wrap">
+                                            <div class="title">이미지 타이틀<br />새로 가운데 정렬</div>    <!--//title-->
+                                        </div>    <!--//old_con_wrap-->
+                                    </a>    <!--//old_slide_link-->
+                                </div>    <!--//old_slide_item-->
+                                <div class="old_slide_item" data-old-height="2">
+                                    <a href="" title="바로가기" class="old_slide_link">
+                                        <div class="old_img_wrap">
+                                            <span style="background-image:url(https://via.placeholder.com/520x520.jpg)" class="old_bg"></span>    <!--//old_bg-->
+                                            <img src="(https://via.placeholder.com/520x520.jpg" alt="영덕군 옛사진 새마을학교훈련 이미지" class="old_img" />    <!--//old_img-->
+                                        </div>    <!--//old_img_wrap-->
+                                        <div class="old_con_wrap">
+                                            <div class="title">옛사진 이미지 타이틀</div>    <!--//title-->
+                                        </div>    <!--//old_con_wrap-->
+                                    </a>    <!--//old_slide_link-->
+                                </div>    <!--//old_slide_item-->
+                                <div class="old_slide_item" data-old-height="3">
+                                    <a href="" title="바로가기" class="old_slide_link">
+                                        <div class="old_img_wrap">
+                                            <span style="background-image:url(https://via.placeholder.com/520x520.jpg)" class="old_bg"></span>    <!--//old_bg-->
+                                            <img src="https://via.placeholder.com/520x520.jpg" alt="영덕군 옛사진 이미지" class="old_img" />    <!--//old_img-->
+                                        </div>    <!--//old_img_wrap-->
+                                        <div class="old_con_wrap">
+                                            <div class="title">이미지 타이틀<br />새로 가운데 정렬</div>    <!--//title-->
+                                        </div>    <!--//old_con_wrap-->
+                                    </a>    <!--//old_slide_link-->
+                                </div>    <!--//old_slide_item-->
+                                <div class="old_slide_item" data-old-height="1">
+                                    <a href="" title="바로가기" class="old_slide_link">
+                                        <div class="old_img_wrap">
+                                            <span style="background-image:url(https://via.placeholder.com/520x520.jpg)" class="old_bg"></span>    <!--//old_bg-->
+                                            <img src="https://via.placeholder.com/520x520.jpg" alt="영덕군 옛사진 이미지" class="old_img" />    <!--//old_img-->
+                                        </div>    <!--//old_img_wrap-->
+                                        <div class="old_con_wrap">
+                                            <div class="title">옛사진 이미지 타이틀</div>    <!--//title-->
+                                        </div>    <!--//old_con_wrap-->
+                                    </a>    <!--//old_slide_link-->
+                                </div>    <!--//old_slide_item-->
+                                <div class="old_slide_item" data-old-height="2">
+                                    <a href="" title="바로가기" class="old_slide_link">
+                                        <div class="old_img_wrap">
+                                            <span style="background-image:url(https://via.placeholder.com/520x520.jpg)" class="old_bg"></span>    <!--//old_bg-->
+                                            <img src="https://via.placeholder.com/520x520.jpg" alt="영덕군 옛사진 새마을학교훈련 이미지" class="old_img" />    <!--//old_img-->
+                                        </div>    <!--//old_img_wrap-->
+                                        <div class="old_con_wrap">
+                                            <div class="title">이미지 타이틀<br />새로 가운데 정렬</div>    <!--//title-->
+                                        </div>    <!--//old_con_wrap-->
+                                    </a>    <!--//old_slide_link-->
+                                </div>    <!--//old_slide_item-->
+                            </div>    <!--//old_slide_list-->
+                            <div class="old_slide_control">
+                                <div class="old_progress_box">
+                                    <span class="total_bar">
+                                        <span class="current_bar"></span>    <!--//current_bar-->
+                                    </span>    <!--//total_bar-->
+                                </div>    <!--//old_progress_box-->
+                                <div class="old_btn_box">
+                                    <button type="button" class="old_btn prev">이전</button>    <!--//prev-->
+                                    <span class="old_count_box">
+                                        <span class="text current"></span>    <!--//current-->
+                                        <span class="text slash">/</span>    <!--//slash-->
+                                        <span class="text total"></span>    <!--//total-->
+                                    </span>    <!--//old_count_box-->
+                                    <button type="button" class="old_btn auto">정지</button>    <!--//auto-->
+                                    <button type="button" class="old_btn next">다음</button>    <!--//next-->
+                                </div>    <!--//old_btn_box-->
+                            </div>    <!--//old_slide_control-->
+                        </div>    <!--//old_slide_list-->
+                    </section>    <!--//old_photo-->
+                </div>    <!--//rowgroup rowgroup4-->
+            </main>
+        </div>
+        <!-- //#container -->
+        <footer id="footer">
+            <div class="footer_wrap">
+                <div class="footer_inner">
+                    <div class="footer_quick">
+                        <ul class="quick_list">
+                            <li class="quick_item"><a href="" class="link">개인정보처리방침</a></li>
+                            <li class="quick_item"><a href="" class="link">영상정보처리기기운영·관리방침</a></li>
+                            <li class="quick_item"><a href="" class="link">행정전화번호안내</a></li>
+                            <li class="quick_item"><a href="" class="link">이메일무단수집거부</a></li>
+                            <li class="quick_item"><a href="" class="link">저작권정책</a></li>
+                        </ul>    <!--//quick_list-->
+                    </div>    <!--//footer_quick-->
+                    <div class="footer_link">
+                        <div class="f_link_button"><button type="button" title="바로가기 메뉴 열기" class="btn"><span>홈페이지 바로가기</span></button></div>
+                        <ul class="f_link_list">
+                            <li class="f_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link"><span>영덕군청</span></a></li>
+                            <li class="f_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link"><span>영덕군의회</span></a></li>
+                            <li class="f_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link"><span>영덕관광포털</span></a></li>
+                        </ul>    <!--//f_link_list-->
+                    </div>
+                    <div class="footer_info">
+                        <address class="address">[36429] 경상북도 영덕군 영덕읍 군청길 116(남석리 310-3)</address>
+                        <span class="tel_number">TEL. <a href="tel:054-730-6061">054-730-6061~5</a></span>
+                        <p class="copyright">Copyright © YOUNG DUK COUNTY. All Rights Reserved.</p>
+                    </div>    <!--//footer_info-->
+                </div>    <!--//footer_inner-->
+            </div>    <!--//footer_wrap-->
+        </footer>    <!--//#footer-->
+    </div>
+    <!-- //#wrapper -->
+</body>
+</html>
