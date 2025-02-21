@@ -4,40 +4,40 @@
 @font-face{
 	font-family: 'NotoKr';
 	font-weight: 200;
-	src: url("/common/common2021/font/SpoqaHanSans-Light.woff2") format('woff2'),
-	url("/common/common2021/font/SpoqaHanSans-Light.woff") format('woff');
+	src: url("../../../common/common2021/font/SpoqaHanSans-Light.woff2") format('woff2'),
+	url("../../../common/common2021/font/SpoqaHanSans-Light.woff") format('woff');
 }
 @font-face{
 	font-family: 'NotoKr';
 	font-weight: 400;
-	src: url("/common/common2021/font/SpoqaHanSans-Regular.woff2") format('woff2'),
-	url("/common/common2021/font/SpoqaHanSans-Regular.woff") format('woff');
+	src: url("../../../common/common2021/font/SpoqaHanSans-Regular.woff2") format('woff2'),
+	url("../../../common/common2021/font/SpoqaHanSans-Regular.woff") format('woff');
 }
 @font-face{
 	font-family: 'NotoKr';
 	font-weight: 600;
-	src: url("/common/common2021/font/SpoqaHanSans-Bold.woff2") format('woff2'),
-	url("/common/common2021/font/SpoqaHanSans-Bold.woff") format('woff');
+	src: url("../../../common/common2021/font/SpoqaHanSans-Bold.woff2") format('woff2'),
+	url("../../../common/common2021/font/SpoqaHanSans-Bold.woff") format('woff');
 }
 
 /* Lato */
 @font-face{
 	font-family: 'Lato';
 	font-weight: 200;
-	src: url("/common/common2021/font/Lato-Light.woff2") format('woff2'),
-	url("/common/common2021/font/Lato-Light.woff") format('woff');
+	src: url("../../../common/common2021/font/Lato-Light.woff2") format('woff2'),
+	url("../../../common/common2021/font/Lato-Light.woff") format('woff');
 }
 @font-face{
 	font-family: 'Lato';
 	font-weight: 400;
-	src: url("/common/common2021/font/Lato-Regular.woff2") format('woff2'),
-	url("/common/common2021/font/Lato-Regular.woff") format('woff');
+	src: url("../../../common/common2021/font/Lato-Regular.woff2") format('woff2'),
+	url("../../../common/common2021/font/Lato-Regular.woff") format('woff');
 }
 @font-face{
 	font-family: 'Lato';
 	font-weight: 600;
-	src: url("/common/common2021/font/Lato-Bold.woff2") format('woff2'),
-	url("/common/common2021/font/Lato-Bold.woff") format('woff');
+	src: url("../../../common/common2021/font/Lato-Bold.woff2") format('woff2'),
+	url("../../../common/common2021/font/Lato-Bold.woff") format('woff');
 }
 
 /* Gmarket */
