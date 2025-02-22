@@ -3,9 +3,9 @@
 ## ■ 2023년
 1. **충북도청 새얼굴찾기 브랜드 (2023brand)**  
    - [서브 레이아웃](https://fruityand.github.io/p_hanshin/2023brand/site/brand/sub.html)
-2. **TTA 아카데미**
+2. **TTA 아카데미 신규**
    - [서브 컨텐츠 템플릿](https://fruityand.github.io/p_hanshin/2023tta/site/edu/template.html)
-3. **영덕 사진DB**
+3. **영덕 사진DB 신규**
    - [메인 레이아웃](https://fruityand.github.io/p_hanshin/2023ydphoto/site/ydphoto/main.html)
 4. **남양주시 전면개편**
    - [(공통) 서브 컨텐츠 템플릿](https://fruityand.github.io/p_hanshin/2023nyj/site/public/template.html)
@@ -15,14 +15,14 @@
    - [교육포털 메인 레이아웃](https://fruityand.github.io/p_hanshin/2023oc/site/edulife/main.html)
 
 ## ■ 2024년
-1. **교원대학교**
+1. **<신규>한국교원대학교**
    - [(공통) 서브 컨텐츠 템플릿](https://fruityand.github.io/p_hanshin/2024knue/site/public/template.html)
    - [통합검색 메인 레이아웃](https://fruityand.github.io/p_hanshin/2024knue/search/search.html)
-2. **양평 미디어센터**
+2. **<신규>양평 미디어센터**
    - [메인 레이아웃](https://fruityand.github.io/p_hanshin/2024ypmedia/site/media/main.html)
-3. **동두천 미디어센터**
+3. **<신규>동두천 미디어센터**
    - [서브 레이아웃](https://fruityand.github.io/p_hanshin/2024ddcmedia/site/media/sub.html)
-4. **연천군 시티투어**
+4. **<신규>연천군 시티투어**
    - [서브 레이아웃](https://fruityand.github.io/p_hanshin/2024citytour/site/citytour/sub.html)
    - [사전예약 프로그램](https://fruityand.github.io/p_hanshin/2024citytour/site/citytour/program.html)
 5. **정이품 보은군민**
