@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../common/images/favicon.png">
+    <link rel="icon" href="../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/cyber_login.css" />
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.min.custom.1.0.2.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/sub.js"></script>
+    <script src="./js/program.min.js"></script>
+    <title>정이품보은군민 로그인 페이지</title>
+</head>
+<body id="cyberLogin" class="cyberLogin">
+    <div class="accessibility">
+        <a href="#container">본문 바로가기</a>
+    </div>  <!--//accessibility-->
+    <div id="wrapper">
+        <header id="header">
+            <div class="wrap">
+                <div class="header_top">
+                    <div class="home clearfix">
+                        <a href="/cyber/index.do" title="보은군 정이품 홈페이지" class="home_link">
+                            <span>정이품 돌아가기</span>
+                        </a>
+                    </div>    <!--//cyber_home-->
+                </div>    <!--//header_top-->
+                <div class="header_box">
+                    <h1 class="h_title">
+                        <em class="logo">군민이 행복한 도시형 농촌 보은</em>
+                        <em class="text">정이품 보은군민 회원 로그인</em>
+                    </h1>
+                    <div class="h_desc">
+                        <p class="text">정이품 보은군민에 방문해주신 여러분을 환영합니다.</p>
+                        <p class="text"><em>회원 가입 및 로그인</em>을 하시면 회원님들에게 제공되는 콘텐츠를 이용하실 수 있습니다.</p>
+                    </div>
+                </div>    <!--//header_box--></div>
+        </header>    <!--//#header-->
+        <div id="container">
+            <div class="wrap">
+                <main>
+                    <div class="cyber_program edit_page">
+                        <form action="">    <!--//★action값 꼭 채워주세요-->
+                            <fieldset>
+                                <legend>정이품 보은군민 회원정보변경(내 정보 수정) 뷰 페이지</legend>
+                                
+                                <h3>개인 기본 정보</h3>
+                                <div class="table_unit">
+                                    <em class="em_red">&ast; <span class="skip">필수</span></em> 표시는 필수 입력 항목입니다.
+                                </div>
+                                <table class="table type2 responsive">
+                                    <caption>정이품 보은군민 회원 개인 기본 정보 수정 표 - 아이디, 이메일, 휴대전화, 전화번호 순으로 안내합니다.</caption>
+                                    <colgroup>
+                                        <col style="width:20%;" />
+                                        <col style="width:80%;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">아이디(ID) <em class="em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>example00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">이메일 <em class="em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>abcdef@naver.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">휴대전화 <em class="em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>010-0000-0000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">전화번호</th>
+                                            <td>043-000-0000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>    <!--//table type2-->
+                                
+                                <h3>서비스 활용 정보</h3>
+                                <div class="table_unit">
+                                    <em class="em_red">&ast; <span class="skip">필수</span></em> 표시는 필수 입력 항목입니다.
+                                </div>
+                                <table class="table type2 responsive">
+                                    <caption>정이품 보은군민 회원가입 서비스 활용 정보 수정 표 - 이름, 생년월일, 성별, 주소, 추천인 아이디 순으로 안내합니다.</caption>
+                                    <colgroup>
+                                        <col style="width:20%;" />
+                                        <col style="width:80%;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">이름 <em class="em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>홍길동</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">생년월일 <em class="em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>1990-01-01</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">성별 <em class="em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>남성</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">주소 <em class="em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td class="post">(00000) ㅇㅇㅇㅇ ㅇㅇ시 ㅇㅇ구 ㅇㅇ동 ㅇㅇ아파트 ㅇㅇ동 ㅇㅇ호</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">추천인 아이디</th>
+                                            <td>abc123</td>
+                                        </tr>
+                                    </tbody>
+                                </table>    <!--//table type2-->
+                                
+                                <h3>부가 정보</h3>
+                                <div class="table_unit">
+                                    <em class="em_red">&ast; <span class="skip">필수</span></em> 표시는 필수 입력 항목입니다.
+                                </div>
+                                <table class="table type2 responsive">
+                                    <caption>정이품 보은군민 회원가입 부가 정보 수정 표 - 기본 프로필 사진첨부, 개성 프로필 사진첨부, 관심 카테고리, 홈페이지 가입동기 순으로 안내합니다.</caption>
+                                    <colgroup>
+                                        <col style="width:20%;" />
+                                        <col style="width:80%;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">기본 프로필 사진첨부</th>
+                                            <td>
+                                                <span class="skip">등록된 사진 없음</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">개성 프로필 사진첨부</th>
+                                            <td>
+                                                <div class="p-attach">
+                                                    <div class="p-attach__item">
+                                                        <div class="p-upload-before">
+                                                            <div class="p-img">
+                                                                <span>사용하던 프로필 이미지.jpg</span>
+                                                            </div>
+                                                        </div>    <!--//p-upload-before-->
+                                                    </div>
+                                                </div>    <!--//p-attach-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">관심 카테고리</th>
+                                            <td>맛집소개, 가맹점 소식
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">홈페이지 가입동기</th>
+                                            <td>정보 및 혜택 확인</td>
+                                        </tr>
+                                    </tbody>
+                                </table>    <!--//table type2-->
+                                
+                                <div class="temp_btn_box clearfix">
+                                    <span class="temp_btn">
+                                        <button type="button" title="" class="btn reset">취소</button>
+                                        <!--//
+                                            <a href="" class="btn reset">취소</a>
+                                            <input type="submit" title="회원가입 취소" value="취소" class="btn reset" />
+                                        -->
+                                    </span>
+                                    
+                                    <span class="temp_btn_item">
+                                        <span class="temp_btn type2">
+                                            <a href="" class="btn edit">내 정보 수정</a>
+                                            <!--//
+                                                <input type="submit" title="회원정보 변경하기" value="내 정보 수정" class="btn edit"/>
+                                                <button type="button" class="btn edit">내 정보 수정</button>
+                                            -->
+                                        </span>
+                                    </span>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>    <!--//cyber_program join_page-->
+                    <script>
+                        $(function (){
+                            $(document).ready(function() {
+                                var $proPage = $('.cyber_program'),
+                                    $resetBtn = $proPage.find('.temp_btn .btn.reset');
+                                
+                                $resetBtn.on('click', function() {
+                                    confirm('취소하시겠습니까?');
+                                });
+                            });
+                        });
+                    </script>
+                </main>
+            </div>
+        </div>    <!--//#container-->
+        <footer id="footer"></footer>    <!--//#footer-->
+    </div>
+</body>
+</html>

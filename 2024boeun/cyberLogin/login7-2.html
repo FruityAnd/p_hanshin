@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../common/images/favicon.png">
+    <link rel="icon" href="../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/cyber_login.css" />
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.min.custom.1.0.2.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/sub.js"></script>
+    <script src="./js/program.min.js"></script>
+    <title>정이품보은군민 로그인 페이지</title>
+</head>
+<body id="cyberLogin" class="cyberLogin">
+    <div class="accessibility">
+        <a href="#container">본문 바로가기</a>
+    </div>  <!--//accessibility-->
+    <div id="wrapper">
+        <header id="header">
+            <div class="wrap">
+                <div class="header_top">
+                    <div class="home clearfix">
+                        <a href="/cyber/index.do" title="보은군 정이품 홈페이지" class="home_link">
+                            <span>정이품 돌아가기</span>
+                        </a>
+                    </div>    <!--//cyber_home-->
+                </div>    <!--//header_top-->
+                <div class="header_box">
+                    <h1 class="h_title">
+                        <em class="logo">군민이 행복한 도시형 농촌 보은</em>
+                        <em class="text">정이품 보은군민 회원 로그인</em>
+                    </h1>
+                    <div class="h_desc">
+                        <p class="text">정이품 보은군민에 방문해주신 여러분을 환영합니다.</p>
+                        <p class="text"><em>회원 가입 및 로그인</em>을 하시면 회원님들에게 제공되는 콘텐츠를 이용하실 수 있습니다.</p>
+                    </div>
+                </div>    <!--//header_box--></div>
+        </header>    <!--//#header-->
+        <div id="container">
+            <div class="wrap">
+                <main>
+                    <div class="cyber_program del_page">
+                        <form action="">    <!--//★action값 꼭 채워주세요-->
+                            <fieldset>
+                                <legend>정이품 보은군민 회원탈퇴(탈퇴 완료) 페이지</legend>
+                                
+                                <div class="finish_box">
+                                    <div class="box_inner">
+                                        <div class="title_box">
+                                            <div class="title em_blue">회원탈퇴가 완료 되었습니다.</div>
+                                            <div class="title">그동안 정이품 보은군민 홈페이지 서비스를 이용해 주셔서 감사합니다.</div>
+                                        </div>    <!--//title_box-->
+                                        <div class="desc_box">
+                                            <span class="text">회원님의 개인정보는 탈퇴와 동시에 완전히 삭제처리됩니다.</span>
+                                        </div>    <!--//desc_box-->
+                                    </div>
+                                </div>    <!--//finish_box-->
+                                q
+                                <div class="temp_btn_box text_center">
+                                    <span class="temp_btn type2 long">
+                                        <a href="" class="btn">확인</a>
+                                        <!--//
+                                            <button type="button" class="btn">확인</button>
+                                            <input type="submit" title="확인" value="확인" class="btn" />
+                                        -->
+                                    </span>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>    <!--//cyber_program join_page-->
+                    <script>
+                        $(function (){
+                            $(document).ready(function() {
+                                // 1. 현재 회원가입 진행단계 표출 텍스트
+                                var $joinPage = $('.cyber_program.join_page'),
+                                    $stepBox = $joinPage.find('.step_box'),
+                                    $conItem = $stepBox.find('.step_item'),
+                                    $conItemActive = $stepBox.find('.step_item.active'),
+                                    $engText = $conItemActive.find('.text_box .text.eng').text(),
+                                    $korText = $conItemActive.find('.text_box .text.kor').text();
+                                
+                                $stepBox.find('.title_box .text.eng').text($engText);
+                                $stepBox.find('.title_box .text.kor').text($korText);
+                                
+                                // 2. 취소버튼 선택 시
+                                var  $resetBtn = $joinPage.find('.temp_btn .btn.reset');
+                                
+                                $resetBtn.on('click', function() {
+                                    confirm('취소할 경우 처음부터 다시 작성해야합니다. 취소하시겠습니까?');
+                                });
+                            });
+                        });
+                    </script>
+                </main>
+            </div>
+        </div>    <!--//#container-->
+        <footer id="footer"></footer>    <!--//#footer-->
+    </div>
+</body>
+</html>

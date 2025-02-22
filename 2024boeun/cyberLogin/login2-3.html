@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../common/images/favicon.png">
+    <link rel="icon" href="../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/cyber_login.css" />
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.min.custom.1.0.2.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/sub.js"></script>
+    <script src="./js/program.min.js"></script>
+    <title>정이품보은군민 로그인 페이지</title>
+</head>
+<body id="cyberLogin" class="cyberLogin">
+    <div class="accessibility">
+        <a href="#container">본문 바로가기</a>
+    </div>  <!--//accessibility-->
+    <div id="wrapper">
+        <header id="header">
+            <div class="wrap">
+                <div class="header_top">
+                    <div class="home clearfix">
+                        <a href="/cyber/index.do" title="보은군 정이품 홈페이지" class="home_link">
+                            <span>정이품 돌아가기</span>
+                        </a>
+                    </div>    <!--//cyber_home-->
+                </div>    <!--//header_top-->
+                <div class="header_box">
+                    <h1 class="h_title">
+                        <em class="logo">군민이 행복한 도시형 농촌 보은</em>
+                        <em class="text">정이품 보은군민 회원 로그인</em>
+                    </h1>
+                    <div class="h_desc">
+                        <p class="text">정이품 보은군민에 방문해주신 여러분을 환영합니다.</p>
+                        <p class="text"><em>회원 가입 및 로그인</em>을 하시면 회원님들에게 제공되는 콘텐츠를 이용하실 수 있습니다.</p>
+                    </div>
+                </div>    <!--//header_box--></div>
+        </header>    <!--//#header-->
+        <div id="container">
+            <div class="wrap">
+                <main>
+                    <div class="cyber_program join_page">
+                        <form action="">    <!--//★action값 꼭 채워주세요-->
+                            <fieldset>
+                                <legend>정이품 보은군민 회원가입 기본 정보 등록 페이지</legend>
+                                <div class="step_box">
+                                    <div class="box_inner clearfix">
+                                        <div class="title_box">
+                                            <span class="text eng"></span>
+                                            <span class="text kor"></span>
+                                        </div>    <!--//title_box-->
+                                        <div class="con_box">
+                                            <ul class="step_list">
+                                                <li class="step_item">
+                                                    <span class="icon_box">
+                                                        <i class="icon"></i>
+                                                    </span>
+                                                    <span class="text_box">
+                                                        <span class="text eng">STEP 1</span>
+                                                        <span class="text dot">.</span>
+                                                        <span class="text kor">약관동의</span>
+                                                    </span>
+                                                </li>    <!--//step_item-->
+                                                <li class="step_item">
+                                                    <span class="icon_box">
+                                                        <i class="icon"></i>
+                                                    </span>
+                                                    <span class="text_box">
+                                                        <span class="text eng">STEP 2</span>
+                                                        <span class="text dot">.</span>
+                                                        <span class="text kor">본인인증</span>
+                                                    </span>
+                                                </li>    <!--//step_item-->
+                                                <li class="step_item active">
+                                                    <!--// 현재 진행단계(.step_box .step_list .step_item)에 .active가 붙도록 해주세요.
+                                                            .active가 붙은 .step_item의 .text(영어 / 한글)를 읽어서 .title_box .text에 뿌립니다.
+                                                    -->
+                                                    <span class="icon_box">
+                                                        <i class="icon"></i>
+                                                    </span>
+                                                    <span class="text_box">
+                                                        <span class="text eng">STEP 3</span>
+                                                        <span class="text dot">.</span>
+                                                        <span class="text kor">개인 기본 정보 등록</span>
+                                                    </span>
+                                                </li>    <!--//step_item-->
+                                                <li class="step_item">
+                                                    <span class="icon_box">
+                                                        <i class="icon"></i>
+                                                    </span>
+                                                    <span class="text_box">
+                                                        <span class="text eng">STEP 4</span>
+                                                        <span class="text dot">.</span>
+                                                        <span class="text kor">가입완료</span>
+                                                    </span>
+                                                </li>    <!--//step_item-->
+                                            </ul>    <!--//step_list-->
+                                        </div>    <!--//con_box-->
+                                    </div>
+                                </div>    <!--//step_box-->
+                                
+                                <h3>개인 기본 정보 등록</h3>
+                                <div class="table_unit">
+                                    <em class="em_red">&ast; <span class="skip">필수</span></em> 표시는 필수 입력 항목입니다.
+                                </div>
+                                <table class="table type2 responsive">
+                                    <caption>정이품 보은군민 회원가입 개인 기본 정보 등록 표 - 아이디, 비밀번호, 비밀번호 확인, 이메일, 휴대전화, 전화번호 순으로 안내합니다.</caption>
+                                    <colgroup>
+                                        <col style="width:20%;" />
+                                        <col style="width:80%;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">아이디(ID) <em class="req em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>
+                                                <span class="check_id">
+                                                    <span class="temp_form mid">
+                                                        <input type="text" title="아이디 입력" value="" placeholder="example00" class="temp_input"/>
+                                                    </span>
+                                                    <span class="temp_btn type2 auto">
+                                                        <button type="button" class="btn">아이디 중복확인</button>
+                                                    </span>
+                                                    
+                                                    <!--// 아이디 및 비밀번호 입력 값에 따른 문구 표출
+                                                           [클레스명 분류(공통)]
+                                                           - pass: 올바르게 입력했을 시 뜨는 문구
+                                                           - fail: 잘못 입력했을 시 뜨는 문구
+                                                    -->
+                                                    <!-- [1]아이디 입력시 : .check_id 안에 .check_text > .text.pass 또는 .text.fail 마크업 표출-->
+                                                    <span class="check_text">
+                                                        <em class="text pass">사용할 수 있는 아이디입니다.</em>    <!--//pass-->
+                                                    </span>
+                                                    <span class="check_text">
+                                                        <em class="text fail">사용할 수 없는 아이디입니다.</em>    <!--//fail-->
+                                                    </span>
+                                                </span>    <!--//check_id-->
+                                                <span class="warning">ID는 영문(소문자), 숫자, 특수기호를 혼합하여 8자리 이상 가능합니다.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">비밀번호 <em class="req em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>
+                                                <span class="check_pw">
+                                                    <span class="temp_form mid">
+                                                        <input type="text" title="비밀번호 입력" value="" class="temp_input"/>
+                                                    </span>
+                                                    
+                                                    <!-- [2]비밀번호 입력시 : .check_pw 안에 .check_text > .text.pass 또는 .text.fail 마크업 표출-->
+                                                    <span class="check_text">
+                                                        <em class="text pass">사용할 수 있는 비밀번호입니다.</em>    <!--//pass-->
+                                                    </span>
+                                                    <span class="check_text">
+                                                        <em class="text fail">비밀번호 작성 규칙에 맞지 않습니다.</em>    <!--//fail-->
+                                                    </span>
+                                                </span>    <!--//check_pw-->
+                                                <span class="warning">최소 8자 이상 연속되지 않는 영문, 숫자, 특수문자로 비밀번호를 조합해 주세요.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">비밀번호 확인 <em class="req em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>
+                                                <span class="check_pw">
+                                                    <span class="temp_form mid">
+                                                        <input type="text" title="비밀번호 재입력" value="" class="temp_input"/>
+                                                    </span>
+                                                    
+                                                    <!-- [2]비밀번호 재입력시 : .check_pw 안에 .check_text > .text.fail 마크업 표출-->
+                                                    <span class="check_text">
+                                                        <em class="text fail">비밀번호가 일치하지 않습니다.</em>    <!--//fail-->
+                                                    </span>
+                                                </span>    <!--//check_pw-->
+                                                <span class="warning">확인을 위하여 비밀번호를 한 번 더 입력해 주세요.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">이메일 <em class="req em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td class="mail">
+                                                <span class="temp_form small">
+                                                    <input type="text" title="이메일 아이디 입력" value="" class="temp_input"/>
+                                                </span>
+                                                <em class="at">@</em>
+                                                <div class="domain">
+                                                    <span class="temp_form small">
+                                                        <input type="text" title="이메일 도메인 입력" value="" class="temp_input"/>
+                                                    </span>
+                                                    <div class="temp_select_box">
+                                                        <select name="" id="" title="" class="temp_select">
+                                                            <option value="">naver.com</option>
+                                                            <option value="">예시2</option>
+                                                            <option value="">예시3</option>
+                                                            <option value="">예시4</option>
+                                                        </select>
+                                                    </div>    <!--//temp_select_box-->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">휴대전화 <em class="req em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>
+                                                <span class="temp_form mid">
+                                                    <!--//maxlength = 휴대폰 숫자 11 + 하이픈 2 = 13-->
+                                                    <input type="text" title="휴대전화 번호 입력" maxlength="13" value="" class="temp_input cp"/>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">전화번호</th>
+                                            <td>
+                                                <span class="temp_form mid">
+                                                    <input type="text" title="전화번호 입력" value="" class="temp_input hp"/>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>    <!--//table type2-->
+                                
+                                <h3>서비스 활용 정보 등록</h3>
+                                <div class="table_unit">
+                                    <em class="req em_red">&ast; <span class="skip">필수</span></em> 표시는 필수 입력 항목입니다.
+                                </div>
+                                <table class="table type2 responsive">
+                                    <caption>정이품 보은군민 회원가입 서비스 활용 정보 등록 표 - 이름, 생년월일, 성별, 주소, 추천인 아이디 순으로 안내합니다.</caption>
+                                    <colgroup>
+                                        <col style="width:20%;" />
+                                        <col style="width:80%;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">이름 <em class="req em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>홍길동</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">생년월일 <em class="req em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>1990-01-01</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">성별 <em class="req em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td>
+                                                <span class="temp_form">
+                                                    <input type="radio" id="men" name="gender" class="temp_radio" />
+                                                    <label for="men">남성</label>
+                                                </span>
+                                                <span class="temp_form">
+                                                    <input type="radio" id="women" name="gender" class="temp_radio" />
+                                                    <label for="women">여성</label>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">주소 <em class="req em_red">&ast; <span class="skip">필수</span></em></th>
+                                            <td class="post">
+                                                <div class="post_code">
+                                                    <span class="temp_form small">
+                                                        <input type="text" title="우편번호 입력" value="" class="temp_input"/>
+                                                    </span>
+                                                    <span class="temp_btn type2 auto">
+                                                        <a href=""  class="btn">우편번호찾기</a>
+                                                        <!--// <button type="btn"  class="btn">우편번호찾기</button> -->
+                                                    </span>
+                                                </div>    <!--//post_code-->
+                                                <div class="temp_form mid">
+                                                    <input type="text" title="주소 입력" value="" class="temp_input"/>
+                                                </div>
+                                                <div class="temp_form mid">
+                                                    <input type="text" title="상세 주소 입력" value="" class="temp_input"/>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">추천인 아이디</th>
+                                            <td>
+                                                <span class="temp_form mid">
+                                                    <input type="text" title="추천인 아이디 입력" value="" class="temp_input"/>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>    <!--//table type2-->
+                                
+                                <h3>부가 정보 등록</h3>
+                                <div class="table_unit">
+                                    <em class="em_red">&ast; <span class="skip">필수</span></em> 표시는 필수 입력 항목입니다.
+                                </div>
+                                <table class="table type2 responsive">
+                                    <caption>정이품 보은군민 회원가입 부가 정보 등록 표 - 기본 프로필 사진첨부, 개성 프로필 사진첨부, 관심 카테고리, 홈페이지 가입동기 순으로 안내합니다.</caption>
+                                    <colgroup>
+                                        <col style="width:20%;" />
+                                        <col style="width:80%;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">기본 프로필 사진첨부</th>
+                                            <td>
+                                                <div class="p-attach">
+                                                    <div class="p-attach__item">
+                                                        <div class="p-upload">
+                                                            <div class="p-form-group">
+                                                                <div class="p-input__addon">
+                                                                    <label for="atchmnfl_1" class="p-button p-button--small primary" data-button="upload" data-parent=".p-upload" data-original="#atchmnfl_1" data-showfilename="#filename_1"><span class="skip">3번째 </span>파일찾기</label>
+                                                                </div>
+                                                                <div class="p-form-group__upload">
+                                                                    <input type="file" name="atchmnfl" id="atchmnfl_1" class="p-upload__file--hidden" multiple>
+                                                                    <span id="filename_1" class="p-input disabled"></span>
+                                                                    <button type="button" class="p-upload__clear clear">선택한 3번 첨부 제거</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>    <!--//p-upload-->
+                                                    </div>
+                                                </div>    <!--//p-attach-->
+                                                <div class="warning">프로필 사진으로 사용하실 이미지를 업로드해 주시길 바랍니다. 사진 업로드가 없는 경우 정이품 보은군민 기본 프로필 이미지를 적용합니다.</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">개성 프로필 사진첨부</th>
+                                            <td>
+                                                <div class="p-attach">
+                                                    <div class="p-attach__item">
+                                                        <div class="p-upload">
+                                                            <div class="p-form-group">
+                                                                <div class="p-input__addon">
+                                                                    <label for="atchmnfl_2" class="p-button p-button--small primary" data-button="upload" data-parent=".p-upload" data-original="#atchmnfl_2" data-showfilename="#filename_2"><span class="skip">3번째 </span>파일찾기</label>
+                                                                </div>
+                                                                <div class="p-form-group__upload">
+                                                                    <input type="file" name="atchmnfl" id="atchmnfl_2" class="p-upload__file--hidden" multiple>
+                                                                    <span id="filename_2" class="p-input disabled"></span>
+                                                                    <button type="button" class="p-upload__clear clear">선택한 3번 첨부 제거</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>    <!--//p-upload-->
+                                                    </div>
+                                                </div>    <!--//p-attach-->
+                                                <div class="warning">개성 프로필 사진 사용하실 경우 이미지를 업로드해 주시길 바랍니다. 사진 업로드가 없는 경우 정이품 보은군민 기본 프로필 이미지를 적용합니다.</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">관심 카테고리</th>
+                                            <td>
+                                                <span class="temp_form">
+                                                    <input type="checkbox" id="ctgy1" name="ctgy" class="temp_check" />
+                                                    <label for="ctgy1">맛집소개</label>
+                                                </span>
+                                                <span class="temp_form">
+                                                    <input type="checkbox" id="ctgy2" name="ctgy" class="temp_check" />
+                                                    <label for="ctgy2">관광정보</label>
+                                                </span>
+                                                <span class="temp_form">
+                                                    <input type="checkbox" id="ctgy3" name="ctgy" class="temp_check" />
+                                                    <label for="ctgy3">이벤트</label>
+                                                </span>
+                                                <span class="temp_form">
+                                                    <input type="checkbox" id="ctgy4" name="ctgy" class="temp_check" />
+                                                    <label for="ctgy4">문화행사</label>
+                                                </span>
+                                                <span class="temp_form">
+                                                    <input type="checkbox" id="ctgy5" name="ctgy" class="temp_check" />
+                                                    <label for="ctgy5">가맹점 소식</label>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">홈페이지 가입동기</th>
+                                            <td>
+                                                <div class="temp_form">
+                                                    <input type="text" title="홈페이지 가입동기 입력" value="" class="temp_input"/>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>    <!--//table type2-->
+                                
+                                <div class="temp_btn_box clearfix">
+                                    <span class="temp_btn">
+                                        <button type="button" title="" class="btn reset">취소</button>
+                                        <!--//
+                                            <a href="" class="btn reset">취소</a>
+                                            <input type="submit" title="회원가입 취소" value="취소" class="btn reset" />
+                                        -->
+                                    </span>
+                                    
+                                    <span class="temp_btn type2">
+                                        <input type="submit" title="회원가입 신청" value="가입신청" class="btn join"/>
+                                        <!--//
+                                            <a href="" class="btn join">가입신청</a>
+                                            <button type="button" class="btn join">가입신청</button>
+                                        -->
+                                    </span>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>    <!--//cyber_program join_page-->
+                    <script>
+                        $(document).ready(function () {
+                            // [1] 현재 회원가입 진행단계 텍스트 표출 - .cyber_program.join_page 공통
+                            var $proPage = $('.cyber_program'),
+                                $stepBox = $proPage.find('.step_box'),
+                                $conItemActive = $stepBox.find('.step_item.active'),
+                                $engText = $conItemActive.find('.text_box .text.eng').text(),
+                                $korText = $conItemActive.find('.text_box .text.kor').text();
+                            
+                            $stepBox.find('.title_box .text.eng').text($engText);
+                            $stepBox.find('.title_box .text.kor').text($korText);
+                            
+                            // 2. 취소버튼 선택 시
+                            var $resetBtn = $proPage.find('.temp_btn .btn.reset');
+                            $resetBtn.on('click', function() {
+                                confirm('취소할 경우 처음부터 다시 작성해야합니다. 취소하시겠습니까?');
+                            });
+                        });
+                    </script>
+                </main>
+            </div>
+        </div>    <!--//#container-->
+        <footer id="footer"></footer>    <!--//#footer-->
+    </div>
+</body>
+</html>

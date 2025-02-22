@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../common/images/favicon.png">
+    <link rel="icon" href="../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/cyber_login.css" />
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.min.custom.1.0.2.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/sub.js"></script>
+    <script src="./js/program.min.js"></script>
+    <title>정이품보은군민 로그인 페이지</title>
+</head>
+<body id="cyberLogin" class="cyberLogin">
+    <div class="accessibility">
+        <a href="#container">본문 바로가기</a>
+    </div>  <!--//accessibility-->
+    <div id="wrapper">
+        <header id="header">
+            <div class="wrap">
+                <div class="header_top">
+                    <div class="home clearfix">
+                        <a href="/cyber/index.do" title="보은군 정이품 홈페이지" class="home_link">
+                            <span>정이품 돌아가기</span>
+                        </a>
+                    </div>    <!--//cyber_home-->
+                </div>    <!--//header_top-->
+                <div class="header_box">
+                    <h1 class="h_title">
+                        <em class="logo">군민이 행복한 도시형 농촌 보은</em>
+                        <em class="text">정이품 보은군민 회원 로그인</em>
+                    </h1>
+                    <div class="h_desc">
+                        <p class="text">정이품 보은군민에 방문해주신 여러분을 환영합니다.</p>
+                        <p class="text"><em>회원 가입 및 로그인</em>을 하시면 회원님들에게 제공되는 콘텐츠를 이용하실 수 있습니다.</p>
+                    </div>
+                </div>    <!--//header_box--></div>
+        </header>    <!--//#header-->
+        <div id="container">
+            <div class="wrap">
+                <main>
+                    <div class="cyber_program login_page sns_page">
+                        <form action="">    <!--//★action값 꼭 채워주세요-->
+                            <fieldset>
+                                <legend>정이품 보은군민 SNS 로그인(계정 인증) 폼</legend>
+                                <h3 class="type2">SNS로그인을 사용하시려면 <br /><em class="s_bold">최초 1회 계정인증(ID/PW)</em>이 필요합니다.</h3>
+                                
+                                <div class="ex_login_box">
+                                    <div class="ex_box">
+                                        <div class="ex_item sns">
+                                            <i class="icon naver"></i>
+                                            <span class="item_text">네이버 로그인</span>
+                                        </div>    <!--//ex_item-->
+                                        <div class="ex_item user">
+                                            <span class="item_text id">
+                                                
+                                                <em class="title">ID : </em>
+                                                <em class="text">exa******</em>
+                                            </span>
+                                            <span class="item_text name">
+                                                <em class="title">성명(닉네임) : </em>
+                                                <em class="text">홍길동</em>
+                                            </span>
+                                        </div>    <!--//ex_item-->
+                                    </div>    <!--//ex_box-->
+                                    <div class="desc_box">
+                                        <span class="text">
+                                            위 SNS 로그인을 통해 홈페이지를 이용하시려면 <em class="em_blue">계정인증을 하셔야 정상적인 이용이 가능합니다.</em> <br />
+                                            계정인증은 <em class="em_blue">최초 1회</em>만 필요하며 이후에는 계정인증 없이 SNS 인증만으로 페이지를 이용하실 수 있습니다.
+                                        </span>
+                                    </div>
+                                </div>    <!--//ex_login_box-->
+                                
+                                <div class="login_box show_box">
+                                    <div class="login_item mem">
+                                        <div class="t_box">
+                                            <i class="icon"></i>
+                                            <div class="title">회원계정 로그인</div>
+                                        </div>    <!--//t_box-->
+                                        <div class="b_box">
+                                            <div class="form_box">
+                                                <span class="form_item">
+                                                    <span class="login_form id">
+                                                        <input type="text" title="아이디 입력" value="" placeholder="아이디" class="login_input" />
+                                                    </span>
+                                                    <span class="login_form pw">
+                                                        <input type="password" title="비밀번호 입력" value="" placeholder="비밀번호" class="login_input" />
+                                                    </span>
+                                                </span>
+                                                <span class="login_btn sky">
+                                                    <input type="submit" title="정이품 보은군민 로그인하기" value="로그인" class="btn" />
+                                                    <!--// <a href="" title="정이품 보은군민 로그인하기" class="btn">로그인</a> -->
+                                                    <!--// <button type="button" title="정이품 보은군민 로그인하기" class="btn">로그인</button> -->
+                                                </span>
+                                            </div>    <!--//login_form-->
+                                            <div class="link_box">
+                                                <ul class="link_list">
+                                                    <li class="link_item">
+                                                        <a href="" title="" rel="noopener noreferrer" class="link id">아이디 찾기</a>
+                                                    </li>
+                                                    <li class="link_item">
+                                                        <a href="" title="" rel="noopener noreferrer" class="link pw">비밀번호 찾기</a>
+                                                    </li>
+                                                    <li class="link_item">
+                                                        <a href="" title="" rel="noopener noreferrer" class="link join">회원가입</a>
+                                                    </li>
+                                                </ul>    <!--//link_list-->
+                                            </div>    <!--//login_link-->
+                                        </div>    <!--//b_box-->
+                                    </div>    <!--//login_item-->
+                                </div>    <!--//login_box-->
+
+                                <div class="temp_btn_box text_center">
+                                    <span class="temp_btn type2 long">
+                                        <button type="button" title="" class="btn reset">SNS로그인 연동 취소</button>
+                                        <!--//
+                                            <a href="" class="btn reset">SNS로그인 연동 취소</a>
+                                            <input type="submit" title="SNS로그인 연동 취소하기" value="SNS로그인 연동 취소" class="btn reset" />
+                                        -->
+                                    </span>
+                                </div>    <!--//temp_btn_box-->
+                            </fieldset>
+                        </form>
+                    </div>
+                    <script>
+                        $(function (){
+                            $(document).ready(function() {
+                                var $proPage = $('.cyber_program'),
+                                    $resetBtn = $proPage.find('.temp_btn .btn.reset');
+                                
+                                $resetBtn.on('click', function() {
+                                    alert('SNS로그인 연동을 취소하시겠습니다.\n취소 시 SNS로그인을 통해 홈페이지를 사용하실 수 없습니다.');
+                                });
+                            });
+                        });
+                    </script>
+                </main>
+            </div>
+        </div>    <!--//#container-->
+        <footer id="footer"></footer>    <!--//#footer-->
+    </div>
+</body>
+</html>

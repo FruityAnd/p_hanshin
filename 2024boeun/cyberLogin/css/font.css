@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Ttangsbudaejjigae */
+@font-face {
+    font-family:'Ttangs';
+    font-weight:600;
+    src:url("../font/Ttangsbudaejjigae-Bold.woff") format('woff');
+}
+
+/* SUITE */
+@font-face {
+    font-family:'SUIT';
+    font-weight:800;
+    src:url("../font/SUIT-ExtraBold.woff2") format('woff2'),
+    url("../font/SUIT-ExtraBold.woff") format('woff');
+}
+@font-face {
+    font-family:'SUIT';
+    font-weight:700;
+    src:url("../font/SUIT-SemiBold.woff2") format('woff2'),
+    url("../font/SUIT-SemiBold.woff") format('woff');
+}
+@font-face {
+    font-family:'SUIT';
+    font-weight:600;
+    src:url("../font/SUIT-Bold.woff2") format('woff2'),
+    url("../font/SUIT-Bold.woff") format('woff');
+}
+@font-face {
+    font-family:'SUIT';
+    font-weight:500;
+    src:url("../font/SUIT-Medium.woff2") format('woff2'),
+    url("../font/SUIT-Medium.woff") format('woff');
+}
+@font-face {
+    font-family:'SUIT';
+    font-weight:400;
+    src:url("../font/SUIT-Regular.woff2") format('woff2'),
+    url("../font/SUIT-Regular.woff") format('woff');
+}
