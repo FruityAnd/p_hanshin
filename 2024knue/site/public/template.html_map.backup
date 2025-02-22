@@ -1,0 +1,2104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="/common/images/favicon.png">
+    <link rel="icon" href="/common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/site/public/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="/site/public/css/sub.css" />
+    <script src="/common/js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="/common/js/jquery.screen.js"></script>
+    <script src="/common/js/slick.min.custom.1.8.0.12.js"></script>
+    <script src="/common/js/slick.extensions.min.js"></script>
+    <script src="/site/public/js/common.js"></script><!--//교원대 (메인,서브) 공통 스크립트-->
+    <script src="/site/public/js/jquery.waypoints.min.js"></script>
+    <script src="/site/public/js/sub.js"></script><!--//교원대 서브 공통 스크립트-->
+    <script src="/site/public/js/main.js"></script><!--//교원대 템플릿 스크립트-->
+    <script src="/common/js/program.min.js"></script><!--//한신 게시판 스크립트-->
+    <script src="/site/public/js/program.js"></script><!--//교원대 공통 프로그램 스크립트-->
+    <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=9agy97l6in"></script><!--//네이버 지도 api-->
+    <title>한국교원대 - 템플릿</title>
+</head>
+<body id="sub" class="sub ${siteInfo.siteId} pageXX">
+<!--// 메인레이아웃(id="main" class="main 사이트아이디") -->
+<!--// 서브레이아웃(id="sub" class="sub 사이트아이디 page현재메뉴키값") -->
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+</div>  <!--//accessibility-->
+<div id="wrapper">
+    <header id="header">
+        <div class="header_gnb">
+            <div class="wrap">
+                <div class="gnb_link_box">
+                    <ul class="gnb_link_list">
+                        <li class="gnb_link_item">
+                            <a href="./index.do" target="_blank" title="새창" rel="noopener noreferrer" class="gnb_link"><em>HOME</em></a>
+                        </li>
+                        <li class="gnb_link_item">
+                            <a href="/www/index.do" target="_blank" title="새창" rel="noopener noreferrer" class="gnb_link"><em>한국교원대학교</em></a>
+                        </li>
+                    </ul>
+                </div>    <!--//gnb_link_box-->
+                <div class="gnb_login">
+                    <a href="" class="login">로그인</a>
+                    <!--// 로그인 해야 하는 상태라면 텍스트 로그아웃으로 수정 -->
+                    <!--// 로그아웃 해야 하는 상태라면 텍스트 로그인으로 수정 -->
+                </div>    <!--//gnb_login-->
+            </div>    <!--//wrap-->
+        </div>    <!--//header_gnb-->
+        <div class="header_box">
+            <div class="wrap">
+                <h1 class="logo">
+                    <a href="./index.do" class="logo_link">
+                        <span class="logo_con con_img">한국교원대학교</span>
+                        <span class="logo_con con_text">템플릿</span>
+                    </a>    <!--//logo_link-->
+                </h1>    <!--//logo-->
+                <ul class="last_link_list">
+                    <li class="last_link_item">
+                        <button type="button" title="열기" class="last_link search">검색 폼</button>
+                    </li>
+                    <li class="last_link_item menu_show">
+                        <button type="button" class="menu_button">메뉴열기</button>    <!--//menu_button-->
+                    </li>
+                </ul>    <!--//last_link_list-->
+            </div>    <!--//wrap-->
+            <div class="search_form_box">
+                <form action="">    <!--// action 값 필수 개발 -->
+                    <fieldset>
+                        <legend>교원대학교 검색 영역</legend>
+                        <!--// input type hidden 값을 사용한다면 ★꼭 legend 태그 뒤에 사용★ -->
+                        <div class="form_inner">
+                            <span class="form_cell type_text">
+                                <input type="text" title="검색어 입력" placeholder="무엇을 찾고 계신가요?" />
+                            </span>
+                            <span class="form_cell type_submit">
+                                <input type="submit" title="검색하기" value="검색" />
+                            </span>
+                        </div>    <!--//form_inner-->
+                    </fieldset>
+                </form>
+            </div>    <!--//search_form_box-->
+        </div>    <!--//header_box-->
+        <div class="lnb">
+            <div class="lnb_topbox"><!--// 모바일(1000px 이하 부터)에서만 사용됨 -->
+                <span class="logo">
+                    <a href="./index.do" class="logo_link">
+                        <span class="logo_con con_img">한국교원대학교</span>
+                        <span class="logo_con con_text">사이트명<!--//${siteInfo.siteNm}--></span>
+                    </a>    <!--//logo_link-->
+                </span>    <!--//logo-->
+                <div class="lnb_gnb">
+                    <div class="gnb_link_box">
+                        <ul class="gnb_link_list">
+                            <li class="gnb_link_item">
+                                <a href="./index.do" target="_blank" title="새창" rel="noopener noreferrer" class="gnb_link"><em>HOME</em></a>
+                            </li>
+                            <li class="gnb_link_item">
+                                <a href="/www/index.do" target="_blank" title="새창" rel="noopener noreferrer" class="gnb_link"><em>한국교원대학교</em></a>
+                            </li>
+                        </ul>
+                    </div>    <!--//gnb_link_box-->
+                    <div class="gnb_login">
+                        <a href="" class="login">로그인</a>
+                        <!--// 로그인 해야 하는 상태라면 텍스트 로그아웃으로 수정 -->
+                        <!--// 로그아웃 해야 하는 상태라면 텍스트 로그인으로 수정 -->
+                    </div>    <!--//gnb_login-->
+                </div>    <!--//lnb_gnb-->
+            </div>    <!--//lnb_topbox-->
+            <nav class="menu eachdown">
+                <!--// 모바일(1000px 이하 부터)을 위해 초기에 5차 메뉴까지 개발 필요 -->
+                <!--// 와이드에서는 3차메뉴까지만 표출되게 css 잡아놓음 -->
+                <!--// 내가 어떤 메뉴를 선택하든 그 해당메뉴의 ★★★마지막차수★★★ a태그 .depth_text 클레스명에 spy 클레스 및 title="선택됨" 필수로 달아주시는 개발 부탁드립니다 -->
+                <!--// EX1) 1차메뉴명 - 2차메뉴명 - (3차메뉴명1, 3차메뉴명2)에서 2차메뉴명을 클릭했을 때 3차메뉴명들 중 첫번째인 3차메뉴명1 에 spy 클레스와 title="선택됨" 달림 -->
+                <!--// EX2) 1차메뉴명 - 2차메뉴명 - (3차메뉴명1, 3차메뉴명2) - (4차메뉴명1, 4차메뉴명2)에서 2차메뉴명을 클릭했을 때 4차메뉴명들 중 첫번째인 4차메뉴명1 에 spy 클레스와 title="선택됨" 달림 -->
+                <!--// CMS에서 새창 설정일때 a태그 .depth_text 클레스명에 target="_blank" title="새창" rel="noopener noreferrer" 필수 개발 부탁드립니다 -->
+                <h2 class="skip">메뉴</h2>    <!--//skip-->
+                <div class="depth depth1">
+                    <div class="line_deco_box">
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                    </div>    <!--//line_deco_box-->
+                    <ul class="depth_list depth1_list">
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>확인필요</em></span></a>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" target="_blank" title="새창"  rel="noopener noreferrer" class="depth_text depth2_text"><span><em>2차메뉴1 새창</em></span></a>
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth3_text"><span><em>3차메뉴 새창</em></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1 하위 선택됨</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴 하위 선택됨</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴 하위 선택됨</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" title="선택됨" class="depth_text depth5_text spy"><span><em>5차메뉴 선택됨</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                            </li>
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth4_text"><span><em>4차메뉴 새창</em></span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                </ul>
+                            </div>    <!--//depth2-->
+                        </li>
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>1차메뉴</em></span></a>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                </ul>
+                            </div>    <!--//depth2-->
+                        </li>
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>1차메뉴</em></span></a>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴3</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴3</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴3</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴3</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                </ul>
+                            </div>    <!--//depth2-->
+                        </li>
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>1차메뉴</em></span></a>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴4</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴4</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴4</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                </ul>
+                            </div>    <!--//depth2-->
+                        </li>
+                    </ul>
+                    <div class="promotion_box"><!--// 홍보관 이동 링크 , 현재로는 대표에만 사용됨 그냥 두셔도 됩니다 -->
+                        <a href="/pr/index.do" target="_blank" title="새창" rel="noopener noreferrer" class="promotion_link">40주년 홍보관</a>
+                    </div>    <!--//promotion_box-->
+                </div>    <!--//depth1-->
+            </nav>    <!--//menu eachdown-->
+            <div class="menu_hide">
+                <button type="button" class="menu_button">메뉴 닫기</button>
+            </div>    <!--//menu_hide-->
+        </div>    <!--//lnb-->
+        <div class="lnb_curtain">
+            <button type="button">메뉴 닫기</button>
+        </div>    <!--//lnb_curtain-->
+        <div class="header_last">
+            <ul class="last_link_list">
+                <li class="last_link_item">
+                    <button type="button" title="열기" class="last_link search">검색 폼</button>
+                </li>
+                <li class="last_link_item">
+                    <a href="" title="바로가기" class="last_link sitemap">사이트맵</a>
+                </li>
+            </ul>    <!--//last_link_list-->
+        </div>    <!--//header_last-->
+    </header>    <!--//#header-->
+    <div class="sub_visual">
+        <!--//필요시 사용 예정입니다-->
+    </div>    <!--//sub_visual-->
+    <div id="container">
+        <div class="wrap">
+            <main class="colgroup">
+                <article>
+                    <header class="sub_head">
+                        <div class="head_top">
+                            <div class="head_title_box">
+                                <h2 class="current_title"><em>현재 메뉴명</em></h2>
+                            </div>    <!--//head_title_box-->
+                            <div class="path_box">
+                                <div class="path_inner">
+                                    <div class="home_wrap">
+                                        <a href="./index.do" title="바로가기" class="home_link">홈</a>
+                                    </div>    <!--//home_wrap-->
+                                    <div class="tab_wrap">
+                                        <!--// .depth1 = 1차메뉴, .depth2 = 2차메뉴, .depth3 = 3차메뉴, .depth4 = 4차메뉴 -->
+                                        <!--// a.inner_link 해당 차수에 해당하는 메뉴명 뿌려주시고, a.inner_link 클릭시 사이트 이동 후 button.inner_btn 의 텍스트가 클릭한 a.inner_link의 텍스트로 변경되도록 개발 요청드립니다 -->
+                                        <!--// CMS에서 메뉴가 새창 설정일때 a.inner_link 에 target="_blank" title="새창" rel="noopener noreferrer" 필수 개발 부탁드립니다.-->
+                                        <!--//
+                                            ★ 조건 예시 설명 ★
+                                            [1차메뉴]           [2차메뉴]            [3차메뉴]            [4차메뉴]
+                                            depth1             depth2              depth3              depth4
+                                            A1-1       >       B1-1       >        C1-1-1       >      D1-1-1
+                                                       >       B1-2       >        C1-2-1²      >      D1-2-1
+                                                                                                >      D1-2-2
+                                                                                                >      D1-2-3
+                                                       >       B1-3       >        C1-3-1³
+                                                                          >        C1-3-2
+                                                       >       B1-4¹
+                                            A2-1       >       B2-1       >        C2-1
+                                            
+                                        -->
+                                        <!--// ★ class="checker"
+                                            선택된 메뉴명을 기준으로 하위메뉴 여부를 확인합니다.
+                                            선택한 메뉴명이 하위메뉴를 가지고 있을 경우, 맨마지막 차수의 하위메뉴에 .checker 클레스명이 추가됩니다.
+                                            선택한 메뉴명이 하위메뉴를 가지고있지 않을 경우, 선택된 메뉴명의 해당차수에 .checker 클레스명이 추가됩니다.
+                                        -->
+                                        <!--//
+                                            조건¹ ▶ B1-4를 클릭했을 경우
+                                            마크업 구조 : .depth1 / .depth2.checker / .depth3(삭제) / .depth4(삭제)
+                                            화면상 표출 : A1-1 / B1-4 / X / X
+                                            1) 2차메뉴 B1-4는 하위메뉴(3차, 4차)가 없고 본인이 마지막 차수의 메뉴이기 때문에 depth2에 .checker 클레스명이 붙습니다
+                                            2) 2차메뉴 B1-4는 하위메뉴(3차, 4차)가 없기때문에, 페이지가 랜더링 되었을 때 3·4차 마크업이 남아있으면 안됩니다.
+                                            .depth3[3차메뉴], .depth4[4차메뉴] 마크업 자체가 삭제되도록 개발 요청드립니다.
+                                        -->
+                                        <!--//
+                                            조건² ▶ C1-2-1를 클릭했을 경우
+                                            마크업 구조 : .depth1 / .depth2 / .depth3 / .depth4.checker
+                                            화면상 표출 : A1-1 / B1-2 / C1-2-1 / D1-2-1
+                                            1) 3차메뉴 C1-2-1는 하위메뉴(4차)를 가지고 있기때문에 4차메뉴 .depth4 에 .checker 클레스명이 붙습니다.
+                                            2) 3차메뉴 C1-2-1을 클릭시, 하위메뉴(4차) 중 첫번째인 D1-2-1 텍스트가 .inner_btn 에 들어와야 합니다
+                                        -->
+                                        <!--//
+                                            조건³ ▶ C1-3-1를 클릭했을 경우
+                                            마크업 구조 : .depth1 / .depth2 / .depth3.checker / .depth4(삭제)
+                                            화면상 표출 : A1-1 / B1-3 / C1-3-1 / X
+                                            2) 3차메뉴 C1-3-1는 하위메뉴(4차)가 없고 본인이 마지막 차수의 메뉴이기때문에 .depth3 에 .checker 클레스명이 붙습니다.
+                                            3) 3차메뉴 C1-3-1는 하위메뉴(4차)가 없으므로 .depth4[4차메뉴]의 마크업 자체가 삭제되도록 개발 요청드립니다.
+                                        -->
+                                        <div class="inner_depth depth1">
+                                            <button type="button" title="메뉴 리스트 열기" class="inner_btn"><span><em>현재 1차 메뉴명</em></span></button>    <!--//inner_btn-->
+                                            <ul class="inner_list">
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>현재 1차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 1차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 1차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 1차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="inner_link"><span><em>친구 1차 메뉴명 새창</em></span></a>
+                                                </li>
+                                            </ul>    <!--//inner_list-->
+                                        </div>    <!--//inner_depth depth1-->
+                                        <div class="inner_depth depth2">
+                                            <button type="button" title="메뉴 리스트 열기" class="inner_btn"><span><em>현재 2차 메뉴명</em></span></button>    <!--//inner_btn-->
+                                            <ul class="inner_list">
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 2차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 2차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 2차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="inner_link"><span><em>친구 2차 메뉴명 새창</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>현재 2차 메뉴명</em></span></a>
+                                                </li>
+                                            </ul>    <!--//inner_list-->
+                                        </div>    <!--//inner_depth depth2-->
+                                        <div class="inner_depth depth3">
+                                            <button type="button" title="메뉴 리스트 열기" class="inner_btn"><span><em>현재 3차 메뉴명</em></span></button>    <!--//inner_btn-->
+                                            <ul class="inner_list">
+                                                <li class="inner_item">
+                                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="inner_link"><span><em>친구 3차 메뉴명 새창</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>현재 3차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 3차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 3차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 3차 메뉴명</em></span></a>
+                                                </li>
+                                            </ul>    <!--//inner_list-->
+                                        </div>    <!--//inner_depth depth3-->
+                                        <div class="inner_depth depth4 checker">
+                                            <button type="button" title="메뉴 리스트 열기" class="inner_btn"><span><em>현재 4차 메뉴명</em></span></button>    <!--//inner_btn-->
+                                            <ul class="inner_list">
+                                                <li class="inner_item">
+                                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="inner_link"><span><em>친구 4차 메뉴명 새창</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>현재 4차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 4차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 4차 메뉴명</em></span></a>
+                                                </li>
+                                                <li class="inner_item">
+                                                    <a href="" class="inner_link"><span><em>친구 4차 메뉴명</em></span></a>
+                                                </li>
+                                            </ul>    <!--//inner_list-->
+                                        </div>    <!--//inner_depth depth4-->
+                                    </div>    <!--//tab_wrap-->
+                                    <div class="etc_wrap">
+                                        <ul class="etc_list">
+                                            <li class="etc_item">
+                                                <button type="button" title="공유 리스트 열기" class="share etc_btn">공유하기</button>
+                                                <ul class="share_list">
+                                                    <li class="share_item instagram"><a href="" title="인스타그램 공유하기" class="share_link">인스타그램</a></li>
+                                                    <li class="share_item facebook"><a href="" title="페이스북 공유하기" class="share_link">페이스북</a></li>
+                                                    <li class="share_item twitter"><a href="" title="X(트위터) 공유하기" class="share_link">X(트위터)</a></li>
+                                                    <li class="share_item youtube"><a href="" title="유튜브 공유하기" class="share_link">유튜브</a></li>
+                                                </ul>    <!--//share_list-->
+                                            </li>
+                                            <li class="etc_item">
+                                                <button type="button" title="프린트 시작" class="print etc_btn">프린트</button>
+                                            </li>
+                                        </ul>    <!--//etc_list-->
+                                    </div>    <!--//etc_wrap-->
+                                </div>    <!--//path_inner-->
+                            </div>    <!--//path_box-->
+                        </div>    <!--//head_top-->
+                        <div class="head_bottom">
+                        
+                        </div>    <!--//head_bottom-->
+                    </header>    <!--//sub_head-->
+                    <div id="contents">
+                        <div class="cts_total">
+                            <div class="tab_box type01">
+                                <button type="button" title="탭메뉴 리스트 열기" class="tab_btn"><span><em>탭메뉴1</em></span></button>
+                                <ul class="tab_list">
+                                    <li class="tab_item">
+                                        <button type="button" class="tab_link"><span><em>제목</em></span></button>
+                                    </li>
+                                    <li class="tab_item">
+                                        <button type="button" class="tab_link"><span><em>강조, warning</em></span></button>
+                                    </li>
+                                    <li class="tab_item">
+                                        <button type="button" class="tab_link"><span><em>blt, 목록</em></span></button>
+                                    </li>
+                                    <li class="tab_item">
+                                        <button type="button" class="tab_link"><span><em>링크, 버튼</em></span></button>
+                                    </li>
+                                    <li class="tab_item">
+                                        <button type="button" class="tab_link"><span><em>박스</em></span></button>
+                                    </li>
+                                    <li class="tab_item">
+                                        <button type="button" class="tab_link"><span><em>폼요소</em></span></button>
+                                    </li>
+                                    <li class="tab_item">
+                                        <button type="button" class="tab_link"><span><em>스텝박스</em></span></button>
+                                    </li>
+                                    <li class="tab_item">
+                                        <button type="button" class="tab_link"><span><em>????</em></span></button>
+                                    </li>
+                                    <li class="tab_item active">
+                                        <button type="button" title="선택됨" class="tab_link"><span><em>지도</em></span></button>
+                                    </li>
+                                    <li class="tab_item">
+                                        <button type="button" class="tab_link"><span><em>인사말</em></span></button>
+                                    </li>
+                                </ul>
+                            </div>    <!--//tab_box type01-->
+                            <div class="cts_box">
+                                <div class="cts_item">
+                                    <h3>☆&lbrack;컨텐츠&rbrack; 스크롤 애니메이션 클레스명 .waypoint</h3>
+                                    
+                                    <h3>h3 타이틀 45px, Wanted Sans Bold, #0e0e0e</h3>
+                                    <h4>h4 타이틀 30px, Wanted Sans SemiBold, #0e0e0e</h4>
+                                    <h5>h5 타이틀 26px, Wanted Sans SemiBold, #073673</h5>
+                                    <h6>h6 타이틀 24px, Wanted Sans SemiBold, #086dcd</h6>
+                                    <br />
+                                    <p>교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다. 이를 통하여 교육의 본질에 맞게 교육의 실천을 주도하거나 개선하고 사회와 국가의 교육 발전을 선도할 수 있는 탁월한 교사, 교육지도자, 교육학자, 교육공학전문가, 교육과정전문가, 교육상담전문가, 교육통계전문가, 교육행정전문가, 평생교육전문가 등을 양성한다.</p>
+                                    <p>국어교육과는 학교 현장에서 국어교육의 질을 제고할 실천가로서의 국어교사를 전문적으로 양성하기 위해서 1984년에 설립되었다. 또한 1986년에 대학원 석사 과정, 1988년에 대학원 박사 과정이 개설되었다. 인공지능 시대 등 새로운 시대의 변화에 대비하면서 학교 현장에서 국어교육의 혁신을 담당하고, 새로운 국어교육의 목표와 이상을 추구하는 국어교육 전문가가 되고자 하는 학생들을 양성하기 위해 국어교육학과 관련한 다양한 전공 과정을 갖추어 학생들이 교사로서 성장할 수 있도록 다방면으로 지원하고 있다. 국어학과 국문학뿐만 아니라 국어교육학과 관련한 다양한 강좌를 마련하여 학생들의 학문적 성장을 도모할 수 있는 우수한 교육과정을 제공하고 있으며 시대에 따른 국어교육학의 발전과 변화를 고려하여 새로운 교육과정을 지속적으로 개발하고 있다. 또한 학교 현장과의 연계성을 고려한 두 번의 교육 실습, 학술적 경험을 제공하는 학술 답사 및 학과 내의 자율적인 국어 교육 관련 분과 활동 등을 통해 학생들에게 필요한 다양한 경험을 제공하고 있다. 이에 힘입어, 학교 현장에서 뛰어난 능력을 발휘하며 국어 교육을 훌륭히 실천할 수 있는 국어 교사들이 매년 배출되고 있다. 또한 국어교육학 분야와 관련한</p>
+                                </div>
+                                <div class="cts_item">
+                                    <h3>강조, 기울임</h3>
+                                    <p>기울임 텍스트</p>
+                                    
+                                    <h3>주의사항(.warning) - blue / green</h3>
+                                    <div class="warning blue">파란색 주의사항(.blue)</div>
+                                    <span class="warning green">초록색 주의사항(.green)</span>
+                                    
+                                    <h3>주의사항 박스(.warning_box)</h3>
+                                    <div class="warning_box">
+                                        <div class="warning blue">파란색 주의사항 박스(.blue)</div>
+                                    </div>    <!--//warning_box-->
+                                    <div class="warning_box">
+                                        <div class="warning green">초록색 주의사항 박스(.green)</div>
+                                    </div>    <!--//warning_box-->
+                                    
+                                    <h3>주의사항 강조박스(.warning_box.type2)</h3>
+                                    <div class="warning_box type2">
+                                        <div class="top_box">
+                                            <div class="title">주의사항 내용이 많을 경우</div>
+                                        </div>
+                                        <div class="bottom_box">
+                                            <div class="text">교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다. <br />이를 통하여 교육의 본질에 맞게 교육의 실천을 주도하거나 개선하고 사회와 국가의 교육 발전을 선도할 수 있는 탁월한 교사, 교육지도자, 교육학자, 교육공학전문가, 교육과정전문가, 교육상담전문가, 교육통계전문가, 교육행정전문가, 평생교육전문가 등을 양성한다.</div>
+                                        </div>
+                                    </div>    <!--//warning_box type2-->
+                                    
+                                    <h3>주의사항 중요박스(.warning_box.type3)</h3>
+                                    <div class="warning_box type3">
+                                        <div class="top_box">
+                                            <div class="title">증명서 발급 수수료</div>
+                                        </div>
+                                        <div class="bottom_box">
+                                            <div class="text">위의 모든 증명서는 국립학교 제증명 수수료 규정에 따라 제증명 발급 수수료 없음.</div>
+                                        </div>
+                                    </div>    <!--//warning_box type3-->
+                                </div>
+                                <div class="cts_item">
+                                    <h3>불릿(.blt)</h3>
+                                    <h4>blt(~type3): 순서없는 목록 / blt2(~type3): 순서있는 목록 / blt3: 타이틀 목록</h4>
+                                    <div class="blt">순서없는 목록 1차</div>
+                                    <span class="blt type2">순서없는 목록 2차</span>
+                                    <div class="blt type3">순서없는 목록 3차</div>
+                                    <div class="blt2"><i class="count">1.</i>순서있는 목록(숫자1)</div>
+                                    <span class="blt2 type2"><i class="count">1</i>순서있는 목록(숫자2)</span>
+                                    <div class="blt2 type3"><i class="text">㉠<span class="skip">ㄱ</span></i>순서있는 목록(한글)</div>
+                                    <div class="blt3">
+                                        <span class="title">타이틀 : </span>
+                                        <span class="desc">목록 내용</span>
+                                    </div>
+                                    
+                                    <h3>★목록 .bu .num .num2 .kor .tl 1~3차까지 전부 호환 가능★</h3>
+                                    <h3>순서없는 목록(.bu)</h3>
+                                    <ul class="bu">
+                                        <li>순서없는 목록 1차</li>
+                                        <li>순서없는 목록 1차</li>
+                                        <li>교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다.
+                                            <ul class="bu">
+                                                <li>순서없는 목록 2차
+                                                    <ul class="bu">
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                    </ul>    <!--//bu-->
+                                                </li>
+                                                <li>순서없는 목록 2차</li>
+                                                <li>순서없는 목록 2차</li>
+                                            </ul>    <!--//bu-->
+                                        </li>
+                                    </ul>    <!--//bu-->
+                                    
+                                    <h3>순서있는 목록(.num > i.count) - 숫자</h3>
+                                    <ol class="num">
+                                        <li><i class="count">1.</i>순서있는 목록 1차</li>
+                                        <li><i class="count">2.</i>교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다.
+                                            <ul class="bu">
+                                                <li>순서없는 목록 2차</li>
+                                                <li>순서없는 목록 2차
+                                                    <ul class="bu">
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                    </ul>    <!--//bu-->
+                                                </li>
+                                                <li>순서없는 목록 2차</li>
+                                            </ul>    <!--//bu-->
+                                        </li>
+                                        <li><i class="count">3.</i>순서있는 목록 1차</li>
+                                    </ol>    <!--//num-->
+                                    
+                                    <h3>순서있는 목록(.num2 > i.count) - 숫자2</h3>
+                                    <ol class="num2">
+                                        <li><i class="count">1</i>순서있는 목록 1차</li>
+                                        <li><i class="count">2</i>교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다.
+                                            <ul class="bu">
+                                                <li>순서없는 목록 2차
+                                                    <ul class="bu">
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                    </ul>    <!--//bu-->
+                                                </li>
+                                                <li>순서없는 목록 2차</li>
+                                                <li>순서없는 목록 2차</li>
+                                            </ul>    <!--//bu-->
+                                        </li>
+                                        <li><i class="count">3</i>순서있는 목록 1차</li>
+                                    </ol>    <!--//num2-->
+                                    
+                                    <h3>순서있는 목록(.kor > i.text) - 한글</h3>
+                                    <ol class="kor">
+                                        <li><i class="text">㉠<span class="skip">ㄱ</span></i>교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다.
+                                            <ul class="bu">
+                                                <li>순서없는 목록 2차</li>
+                                                <li>순서없는 목록 2차</li>
+                                                <li>순서없는 목록 2차
+                                                    <ul class="bu">
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                    </ul>    <!--//bu-->
+                                                </li>
+                                            </ul>    <!--//bu-->
+                                        </li>
+                                        <li><i class="text">㉡<span class="skip">ㄴ</span></i>순서있는 목록 1차</li>
+                                        <li><i class="text">㉢<span class="skip">ㄷ</span></i>순서있는 목록 1차</li>
+                                    </ol>    <!--//kor-->
+                                    
+                                    <h3>타이틀 목록(.tl)</h3>
+                                    <h4>플렉스 박스</h4>
+                                    <ul class="tl">
+                                        <li>
+                                            <div class="flex_box">
+                                                <span class="title">타이틀 : </span>
+                                                <span class="desc">교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다.</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex_box">
+                                                <span class="title">타이틀 : </span>
+                                                <span class="desc">타이틀 내용 넣어주세요</span>
+                                            </div>
+                                            <ul class="bu">
+                                                <li>순서없는 목록 2차</li>
+                                                <li>순서없는 목록 2차
+                                                    <ul class="bu">
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                        <li>순서없는 목록 3차</li>
+                                                    </ul>    <!--//bu-->
+                                                </li>
+                                                <li>순서없는 목록 2차</li>
+                                            </ul>    <!--//bu-->
+                                        </li>
+                                        <li>
+                                            <div class="flex_box">
+                                                <span class="title">타이틀 : </span>
+                                                <span class="desc">타이틀 내용 넣어주세요</span>
+                                            </div>
+                                        </li>
+                                    </ul>    <!--//tl-->
+                                    
+                                    <h4>일반</h4>
+                                    <ul class="tl">
+                                        <li>
+                                            <span class="title">타이틀 : </span>
+                                            <span class="desc">교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다.</span>
+                                        </li>
+                                        <li>
+                                            <span class="title">타이틀 : </span>
+                                            <span class="desc">타이틀 내용 넣어주세요</span>
+                                            <ul class="bu">
+                                                <li>순서없는 목록 2차</li>
+                                                <li>순서없는 목록 2차</li>
+                                                <li>순서없는 목록 2차</li>
+                                            </ul>    <!--//bu-->
+                                        </li>
+                                        <li>
+                                            <span class="title">타이틀 : </span>
+                                            <span class="desc">타이틀 내용 넣어주세요</span>
+                                        </li>
+                                    </ul>    <!--//tl-->
+                                    
+                                    <h3>목록 혼합사용 예시</h3>
+                                    <ol class="num">
+                                        <li><i class="count">1.</i>순서있는 목록 1차</li>
+                                        <li><i class="count">2.</i>교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다.
+                                            <ul class="bu">
+                                                <li>순서없는 목록 2차</li>
+                                                <li>순서없는 목록 2차
+                                                    <ul class="num2">
+                                                        <li><i class="count">1</i>순서있는 목록 1차</li>
+                                                        <li><i class="count">2</i>순서있는 목록 1차</li>
+                                                        <li><i class="count">3</i>순서있는 목록 1차</li>
+                                                    </ul>    <!--//num2-->
+                                                </li>
+                                                <li>순서없는 목록 2차</li>
+                                            </ul>    <!--//bu-->
+                                        </li>
+                                        <li><i class="count">3.</i>순서있는 목록 1차</li>
+                                    </ol>    <!--//num-->
+                                    <br />
+                                    <ul class="bu">
+                                        <li>순서없는 목록 1차</li>
+                                        <li>순서없는 목록 1차</li>
+                                        <li>교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다.
+                                            <ol class="num2">
+                                                <li><i class="count">1</i>순서있는 목록 1차</li>
+                                                <li><i class="count">2</i>순서있는 목록 1차
+                                                    <ul class="kor">
+                                                        <li><i class="text">㉠</i>순서있는 목록 1차</li>
+                                                        <li><i class="text">㉡</i>순서있는 목록 1차</li>
+                                                        <li><i class="text">㉭</i>순서있는 목록 1차</li>
+                                                    </ul>    <!--//kor-->
+                                                </li>
+                                                <li><i class="count">3</i>순서있는 목록 1차</li>
+                                            </ol>    <!--//num2-->
+                                        </li>
+                                    </ul>    <!--//bu-->
+                                    <br />
+                                    <ul class="tl">
+                                        <li>
+                                            <span class="title">타이틀 : </span>
+                                            <span class="desc">교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다.</span>
+                                        </li>
+                                        <li>
+                                            <span class="title">타이틀 : </span>
+                                            <span class="desc">타이틀 내용 넣어주세요</span>
+                                            <ul class="num">
+                                                <li><i class="count">1.</i>순서있는 목록 1차</li>
+                                                <li><i class="count">2.</i>순서있는 목록 1차</li>
+                                                <li><i class="count">3.</i>순서있는 목록 1차</li>
+                                            </ul>    <!--//num2-->
+                                        </li>
+                                        <li>
+                                            <span class="title">타이틀 : </span>
+                                            <span class="desc">타이틀 내용 넣어주세요</span>
+                                        </li>
+                                    </ul>    <!--//tl-->
+                                </div>
+                                <div class="cts_item">
+                                    <h3>본문용 링크(.temp_link)</h3>
+                                    <a href="" title="바로가기" class="temp_link margin_r_10">본문용 링크스타일</a>
+                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="temp_link blank margin_r_10">본문용 새창스타일</a>
+                                    <a href="" target="_blank" title="다운로드" class="temp_link down margin_r_10">본문용 다운로드</a>
+                                    <br /><br />
+                                    <button type="button" title="바로가기" class="temp_link margin_r_10">본문용 링크스타일</button>
+                                    <button type="button" title="새창" class="temp_link blank margin_r_10">본문용 새창스타일</button>
+                                    <button type="button" title="다운로드" class="temp_link down margin_r_10">본문용 다운로드</button>
+                                    
+                                    <h3>버튼(.temp_btn~) ▶ 60px / 48px / 38px</h3>
+                                    <h4>기본 버튼(.temp_btn)</h4>
+                                    <span class="temp_btn">
+                                        <a href="" class="btn">기본버튼</a>
+                                    </span>    <!--//temp_btn-->
+                                    <span class="temp_btn">
+                                        <button type="button" class="btn">기본버튼</button>
+                                    </span>    <!--//temp_btn-->
+                                    <span class="temp_btn">
+                                        <input type="submit" value="기본버튼" class="btn"/>
+                                    </span>    <!--//temp_btn-->
+                                    <br /><br />
+                                    <span class="temp_btn medium">
+                                        <a href="" class="btn">기본버튼</a>
+                                    </span>    <!--//temp_btn-->
+                                    <span class="temp_btn medium">
+                                        <button type="button" class="btn">기본버튼</button>
+                                    </span>    <!--//temp_btn-->
+                                    <span class="temp_btn medium">
+                                        <input type="submit" value="기본버튼" class="btn"/>
+                                    </span>    <!--//temp_btn-->
+                                    <br /><br />
+                                    <span class="temp_btn small">
+                                        <a href="" class="btn">기본버튼</a>
+                                    </span>    <!--//temp_btn-->
+                                    <span class="temp_btn small">
+                                        <button type="button" class="btn">기본버튼</button>
+                                    </span>    <!--//temp_btn-->
+                                    <span class="temp_btn small">
+                                        <input type="submit" value="기본버튼" class="btn"/>
+                                    </span>    <!--//temp_btn-->
+                                    
+                                    <h4>아이콘 있는 버튼(.temp_btn.icon_type)</h4>
+                                    <h5>☆★ i.move_text는 페이지가 랜더링 됐을 시, 스크립트를 통해 들어오므로 마크업에 작성하시면 안됩니다. ★☆</h5>
+                                    <span class="temp_btn icon_type arrow">
+                                        <a href="" class="btn">바로가기</a>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type down">
+                                        <a href="" class="btn">다운로드</a>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type search">
+                                        <a href="" class="btn">검색</a>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type blank">
+                                        <a href="" class="btn">링크(새창)</a>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type share">
+                                        <a href="" class="btn">공유</a>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type print">
+                                        <a href="" class="btn">프린트</a>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type preview">
+                                        <a href="" class="btn">미리보기</a>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <br /><br />
+                                    <span class="temp_btn icon_type medium arrow">
+                                        <button type="button" class="btn">바로가기</button>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type medium down">
+                                        <button type="button" class="btn">다운로드</button>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type medium search">
+                                        <button type="button" class="btn">검색</button>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type medium blank">
+                                        <button type="button" class="btn">링크(새창)</button>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type medium share">
+                                        <button type="button" class="btn">공유</button>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type medium print">
+                                        <button type="button" class="btn">프린트</button>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type medium preview">
+                                        <button type="button" class="btn">미리보기</button>
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <br /><br />
+                                    <span class="temp_btn icon_type small arrow">
+                                        <input type="submit" value="바로가기" class="btn" />
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type small down">
+                                        <input type="submit" value="다운로드" class="btn" />
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type small search">
+                                        <input type="submit" value="검색" class="btn" />
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type small blank">
+                                        <input type="submit" value="링크(새창)" class="btn" />
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type small share">
+                                        <input type="submit" value="공유" class="btn" />
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type small print">
+                                        <input type="submit" value="프린트" class="btn" />
+                                    </span>    <!--//temp_btn icon_type-->
+                                    <span class="temp_btn icon_type small preview">
+                                        <input type="submit" value="미리보기" class="btn" />
+                                    </span>    <!--//temp_btn icon_type-->
+                                    
+                                    <h4>파일 다운로드 버튼(.temp_btn.file_type)</h4>
+                                    <span class="temp_btn file_type file1">
+                                        <a href="" target="_blank" title="이미지 다운로드" class="btn">이미지 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <span class="temp_btn file_type file2">
+                                        <a href="" target="_blank" title="HWP 다운로드" class="btn">HWP 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <span class="temp_btn file_type file3">
+                                        <a href="" target="_blank" title="XLS 다운로드" class="btn">XLS 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <span class="temp_btn file_type file4">
+                                        <a href="" target="_blank" title="PDF 다운로드" class="btn">PDF 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <br /><br />
+                                    <span class="temp_btn file_type medium file5">
+                                        <a href="" target="_blank" title="문서 다운로드" class="btn">문서 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <span class="temp_btn file_type medium file6">
+                                        <a href="" target="_blank" title="MS-W 다운로드" class="btn">MS-W 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <span class="temp_btn file_type medium file7">
+                                        <a href="" target="_blank" title="PPT 다운로드" class="btn">PPT 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <span class="temp_btn file_type medium file8">
+                                        <a href="" target="_blank" title="ZIP 다운로드" class="btn">ZIP 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <br /><br />
+                                    <span class="temp_btn file_type small file9">
+                                        <a href="" target="_blank" title="VIDEO 다운로드" class="btn">VIDEO 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <span class="temp_btn file_type small file10">
+                                        <a href="" target="_blank" title="AI 다운로드" class="btn">AI 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    <span class="temp_btn file_type small file11">
+                                        <a href="" target="_blank" title="PSD 다운로드" class="btn">PSD 다운로드</a>
+                                    </span>    <!--//temp_btn file_type-->
+                                    
+                                    <h3>버튼2(.temp_btn.hover~)  ▶ 60px / 48px / 38px</h3>
+                                    <h4>기본 버튼(.temp_btn.hover)</h4>
+                                    <span class="temp_btn hover">
+                                        <a href="" class="btn">기본버튼</a>
+                                    </span>    <!--//temp_btn hover-->
+                                    <span class="temp_btn hover">
+                                        <button type="button" class="btn">기본버튼</button>
+                                    </span>    <!--//temp_btn hover-->
+                                    <span class="temp_btn hover">
+                                        <input type="submit" value="기본버튼" class="btn"/>
+                                    </span>    <!--//temp_btn hover-->
+                                    <br /><br />
+                                    <span class="temp_btn hover medium">
+                                        <a href="" class="btn">기본버튼</a>
+                                    </span>    <!--//temp_btn hover-->
+                                    <span class="temp_btn hover medium">
+                                        <button type="button" class="btn">기본버튼</button>
+                                    </span>    <!--//temp_btn hover-->
+                                    <span class="temp_btn hover medium">
+                                        <input type="submit" value="기본버튼" class="btn"/>
+                                    </span>    <!--//temp_btn hover-->
+                                    <br /><br />
+                                    <span class="temp_btn hover small">
+                                        <a href="" class="btn">기본버튼</a>
+                                    </span>    <!--//temp_btn hover-->
+                                    <span class="temp_btn hover small">
+                                        <button type="button" class="btn">기본버튼</button>
+                                    </span>    <!--//temp_btn hover-->
+                                    <span class="temp_btn hover small">
+                                        <input type="submit" value="기본버튼" class="btn"/>
+                                    </span>    <!--//temp_btn hover-->
+                                    
+                                    <h4>아이콘 있는 버튼(.temp_btn.hover.icon_type)</h4>
+                                    <span class="temp_btn hover icon_type arrow">
+                                        <a href="" class="btn">바로가기</a>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type down">
+                                        <a href="" class="btn">다운로드</a>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type search">
+                                        <a href="" class="btn">검색</a>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type blank">
+                                        <a href="" class="btn">링크(새창)</a>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type share">
+                                        <a href="" class="btn">공유</a>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type print">
+                                        <a href="" class="btn">프린트</a>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type preview">
+                                        <a href="" class="btn">미리보기</a>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <br /><br />
+                                    <span class="temp_btn hover icon_type medium arrow">
+                                        <button type="button" class="btn">바로가기</button>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type medium down">
+                                        <button type="button" class="btn">다운로드</button>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type medium search">
+                                        <button type="button" class="btn">검색</button>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type medium blank">
+                                        <button type="button" class="btn">링크(새창)</button>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type medium share">
+                                        <button type="button" class="btn">공유</button>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type medium print">
+                                        <button type="button" class="btn">프린트</button>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type medium preview">
+                                        <button type="button" class="btn">미리보기</button>
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <br /><br />
+                                    <span class="temp_btn hover icon_type small arrow">
+                                        <input type="submit" value="바로가기" class="btn" />
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type small down">
+                                        <input type="submit" value="다운로드" class="btn" />
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type small search">
+                                        <input type="submit" value="검색" class="btn" />
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type small blank">
+                                        <input type="submit" value="링크(새창)" class="btn" />
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type small share">
+                                        <input type="submit" value="공유" class="btn" />
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type small print">
+                                        <input type="submit" value="프린트" class="btn" />
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    <span class="temp_btn hover icon_type small preview">
+                                        <input type="submit" value="미리보기" class="btn" />
+                                    </span>    <!--//temp_btn hover icon_type-->
+                                    
+                                    <h4>파일 다운로드 버튼(.temp_btn.hover.file_type)</h4>
+                                    <span class="temp_btn hover file_type file1">
+                                        <a href="" target="_blank" title="이미지 다운로드" class="btn">이미지 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <span class="temp_btn hover file_type file2">
+                                        <a href="" target="_blank" title="HWP 다운로드" class="btn">HWP 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <span class="temp_btn hover file_type file3">
+                                        <a href="" target="_blank" title="XLS 다운로드" class="btn">XLS 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <span class="temp_btn hover file_type file4">
+                                        <a href="" target="_blank" title="PDF 다운로드" class="btn">PDF 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <br /><br />
+                                    <span class="temp_btn hover file_type medium file5">
+                                        <a href="" target="_blank" title="문서 다운로드" class="btn">문서 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <span class="temp_btn hover file_type medium file6">
+                                        <a href="" target="_blank" title="MS-W 다운로드" class="btn">MS-W 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <span class="temp_btn hover file_type medium file7">
+                                        <a href="" target="_blank" title="PPT 다운로드" class="btn">PPT 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <span class="temp_btn hover file_type medium file8">
+                                        <a href="" target="_blank" title="ZIP 다운로드" class="btn">ZIP 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <br /><br />
+                                    <span class="temp_btn hover file_type small file9">
+                                        <a href="" target="_blank" title="VIDEO 다운로드" class="btn">VIDEO 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <span class="temp_btn hover file_type small file10">
+                                        <a href="" target="_blank" title="AI 다운로드" class="btn">AI 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                    <span class="temp_btn hover file_type small file11">
+                                        <a href="" target="_blank" title="PSD 다운로드" class="btn">PSD 다운로드</a>
+                                    </span>    <!--//temp_btn hover file_type-->
+                                </div>
+                                <div class="cts_item">
+                                    <h3>박스(.temp_box)</h3>
+                                    <h3>설명 박스(.temp_box.text_type)</h3>
+                                    <div class="temp_box text_type">
+                                        <div class="title_box">
+                                            <span class="title">신청 가능 일시 및 인원</span>
+                                        </div>
+                                        <div class="desc_box">
+                                            <ul class="tl">
+                                                <li>
+                                                    <div class="flex_box">
+                                                        <span class="desc">방문 희망일 2주 전까지 신청 가능합니다.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex_box">
+                                                        <span class="title">신청대상 : </span>
+                                                        <span class="desc">중·고등학교, 청소년 단체 및 교육기관</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex_box">
+                                                        <span class="title">운영시간 : </span>
+                                                        <span class="desc">화~금(월요일,공휴일 제외), 매회 약 1~2시간</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex_box">
+                                                        <span class="title">신청인원 : </span>
+                                                        <span class="desc">매회 최소 20명 이상, 최대 100명 이하</span>
+                                                    </div>
+                                                </li>
+                                            </ul>    <!--//tl-->
+                                        </div>
+                                    </div>    <!--//temp_box text_type-->
+                                    
+                                    <h3>로고 박스(.temp_box.logo_type)</h3>
+                                    <div class="temp_box logo_type">
+                                        <div class="box_inner">
+                                            <div class="title_box">
+                                                <span class="text">국내 유일의 종합 교원 양성 대학교</span>
+                                            </div>
+                                            <div class="desc_box">
+                                                <span class="text">한국교원대학교는 ‘미래교육을 선도하는 국내 유일의 종합교원양성대학교’로 유·초·중등 교사를 통합 양성하는 교원양성 기능과 더불어 현직 교원을 교육하는 교원연수 기능, 교육 이론과 교육 현장의 문제를 집중 탐구하는 교육연구의 3대 기능을 종합적으로 수행하고 있는 ‘아주 특별한 대학교’ 입니다.</span>
+                                            </div>
+                                        </div>
+                                    </div>    <!--//temp_box logo_type-->
+                                    <br /><br />
+                                    <div class="temp_box logo_type2">
+                                        <div class="box_inner">
+                                            <div class="title_box">
+                                                <span class="text">국내 유일의 종합 교원 양성 대학교</span>
+                                            </div>
+                                            <div class="desc_box">
+                                                <span class="text">한국교원대학교는 ‘미래교육을 선도하는 국내 유일의 종합교원양성대학교’로 유·초·중등 교사를 통합 양성하는 교원양성 기능과 더불어 현직 교원을 교육하는 교원연수 기능, 교육 이론과 교육 현장의 문제를 집중 탐구하는 교육연구의 3대 기능을 종합적으로 수행하고 있는 ‘아주 특별한 대학교’ 입니다.</span>
+                                            </div>
+                                        </div>
+                                    </div>    <!--//temp_box logo_type2-->
+                                    
+                                    <h3>주요사항안내 박스(.temp_box.news_type)</h3>
+                                    <div class="temp_box news_type">
+                                        <div class="box_inner">
+                                            <div class="news_item">
+                                                <div class="left_box">
+                                                    <div class="title kor">수강신청</div>
+                                                </div>
+                                                <div class="right_box">
+                                                    <div class="desc_box">
+                                                        <div class="text">우리 학교의 수강신청 및 변경은 직전학기 방학 중에 인터넷 상에서 온라인으로 실시되고 있습니다. 기간 내 인터넷이 설치된 곳이면 어디에서든지 우리 학교 학사정보시스템(was.knue.ac.kr)에 접속하여 수강신청할 수 있습니다.</div>
+                                                    </div>
+                                                </div>
+                                            </div>    <!--//news_item-->
+                                            <div class="news_item">
+                                                <div class="left_box">
+                                                    <div class="title kor">학위논문</div>
+                                                </div>
+                                                <div class="right_box">
+                                                    <div class="desc_box">
+                                                        <span class="text">우리 학과에서는 졸업 자격으로 졸업 시험을 부과하고 있습니다. 졸업시험 일정에 따라 졸업시험 응시원서를 제출하고 1차 졸업시험에 응시합니다. 과목별 합격제로 운영하고 있으며, 총 5과목(교과교육, 국어학, 고전문학, 현대문학, 기초한문)에 응시하여, 각 과목 100점 만점에 60점 이상을 받으면 합격입니다. 불합격한 과목이 있을 경우에 한하여 2차, 3차 응시자격이 부여됩니다.</span>
+                                                    </div>
+                                                </div>
+                                            </div>    <!--//news_item-->
+                                            <div class="news_item">
+                                                <div class="left_box">
+                                                    <div class="title kor">휴&middot;복학 관련</div>
+                                                </div>
+                                                <div class="right_box">
+                                                    <div class="desc_box">
+                                                        <span class="text">군 입대 및 개인 사정으로 휴학을 할 때에는 신학사정보시스템(<a href="https://hi1.knue.ac.kr/" target="_blank" title="새창" rel="noopener noreferrer" class="temp_link blank">hi1.knue.ac.kr</a>)에 로그인하여 인터넷으로 신청을 합니다. 종이 문서절차는 거칠 필요가 없으며, 인터넷이 설치된 곳이면 어디에서든지 신청할 수 있습니다. 복학신청의 경우도 동일합니다.</span>
+                                                    </div>
+                                                </div>
+                                            </div>    <!--//news_item-->
+                                            <div class="news_item">
+                                                <div class="left_box">
+                                                    <div class="title kor">부&middot;복수전공 <br />관련</div>
+                                                </div>
+                                                <div class="right_box">
+                                                    <div class="desc_box">
+                                                        <span class="text">우리 학교에서는 각 학과의 입학정원 한도 내에서 모든 학과로의 복수전공이 가능합니다. 해당 학과의 승인을 받은 후 해당 학과의 수강 지도에 따라 복수전공에 필요한 학점을 이수하고 졸업논문 및 졸업시험 등 졸업요건을 갖추면, 해당 학과의 교원자격증(부전공은 주전공 학과의 교원자격증에 표시)을 추가하여 발급받습니다. 단, 초등교육과는 복수전공자의 비율을 별도로 정하고 있습니다.</span>
+                                                    </div>
+                                                </div>
+                                            </div>    <!--//news_item-->
+                                        </div>    <!--//box_inner-->
+                                    </div>    <!--//temp_box news_type-->
+                                    <h4>제목이 긴 버전(.temp_box.news_type.long)</h4>
+                                    <div class="temp_box news_type long">
+                                        <div class="box_inner">
+                                            <div class="news_item">
+                                                <div class="left_box">
+                                                    <div class="title kor">교육행정 전공</div>
+                                                    <div class="title eng">Educational Administration</div>
+                                                </div>
+                                                <div class="right_box">
+                                                    <div class="desc_box">
+                                                        <span class="text">교육과 학교의 발전을 실현하는 데 필요한 바른 식견과 실행 능력을 함양함으로써 교육행정 분야의 유능한 실천가와 연구자로 성장하도록 한다. 이를 위해 교육과 학교에 관한 기본적 인식과 판단의 문제에서부터 좋은 교육 혹은 학교를 구현하는 데 필요한 구상과 실행의 문제에 이르기까지 다양한 주제들이 탐구된다. 본 전공의 운영은 교육 목적의 달성에 필요한 제도, 조직, 문화 등 제반 요소의 구비와 그 운영 방식을 성공적으로 발상하고, 시행하고, 지원할 수 있는 유능하고 창의적인 전문가를 양성하는 데 초점을 맞춰 이루어진다.</span>
+                                                    </div>
+                                                    <div class="info_box clearfix">
+                                                        <div class="info_title">
+                                                            <span class="title">문의처</span>
+                                                        </div>
+                                                        <div class="info_desc">
+                                                            <span class="text tel">교육행정 전공.</span>
+                                                            <span class="text">043-230-3410</span>
+                                                        </div>
+                                                    </div>    <!--//info_box-->
+                                                </div>
+                                            </div>    <!--//news_item-->
+                                            <div class="news_item">
+                                                <div class="left_box">
+                                                    <div class="title kor">교육철학 및 교육사 전공</div>
+                                                    <div class="title eng">Philosophy &amp; History of Education</div>
+                                                </div>
+                                                <div class="right_box">
+                                                    <div class="desc_box">
+                                                        <span class="text">교육의 현상과 의미를 탐구하고 이해하는 데 공헌할 수 있는 유능한 연구자와 전문인을 육성한다. 이를 위하여 영·미 교육철학과 동양교육철학 및 타 영역의 연구를 폭넓게 소개하고, 다양한 연구방법을 숙달케하여 교육현상의 심층적 연구를 할 수 있게 하며, 교육의 의미를 분석할 수 있는 능력을 갖춘 교육 지도자를 기른다.</span>
+                                                    </div>
+                                                    <div class="info_box clearfix">
+                                                        <div class="info_title">
+                                                            <span class="title">문의처</span>
+                                                        </div>
+                                                        <div class="info_desc">
+                                                            <span class="text tel">교육철학 및 교육사 전공.</span>
+                                                            <span class="text">043-230-3410</span>
+                                                        </div>
+                                                    </div>    <!--//info_box-->
+                                                </div>
+                                            </div>    <!--//news_item-->
+                                            <div class="news_item">
+                                                <div class="left_box">
+                                                    <div class="title kor">초등컴퓨터교육 <br />컴퓨터교육 정보통신 전공</div>
+                                                    <div class="title eng">Sociology of Education &amp; Lifelong <br />Education</div>
+                                                </div>
+                                                <div class="right_box">
+                                                    <div class="desc_box">
+                                                        <span class="text">교육의 현상과 의미를 탐구하고 이해하는 데 공헌할 수 있는 유능한 연구자와 전문인을 육성한다. 이를 위하여 영·미 교육철학과 동양교육철학 및 타 영역의 연구를 폭넓게 소개하고, 다양한 연구방법을 숙달케하여 교육현상의 심층적 연구를 할 수 있게 하며, 교육의 의미를 분석할 수 있는 능력을 갖춘 교육 지도자를 기른다.</span>
+                                                    </div>
+                                                    <div class="info_box clearfix">
+                                                        <div class="info_title">
+                                                            <span class="title">문의처</span>
+                                                        </div>
+                                                        <div class="info_desc">
+                                                            <span class="text tel">초등컴퓨터교육&middot;컴퓨터교육&middot;정보통신 전공.</span>
+                                                            <span class="text">043-230-3410</span>
+                                                        </div>
+                                                    </div>    <!--//info_box-->
+                                                </div>
+                                            </div>    <!--//news_item-->
+                                        </div>    <!--//box_inner-->
+                                    </div>    <!--//temp_box news_type long-->
+                                    
+                                    <h3>아이콘 박스(.temp_box.hz_type) - 가로(HoriZontal)</h3>
+                                    <div class="temp_box hz_type">
+                                        <div class="hz_item">
+                                            <div class="title_box">
+                                                <i class="icon type1"></i>
+                                                <div class="title">인재상</div>
+                                            </div>
+                                            <div class="desc_box">
+                                                <div class="text">교육의 미래 변화를 선도하는 교육 리더</div>
+                                            </div>
+                                        </div>    <!--//hz_item-->
+                                        <div class="hz_item">
+                                            <div class="title_box">
+                                                <i class="icon type2"></i>
+                                                <div class="title">교육목표</div>
+                                            </div>
+                                            <div class="desc_box">
+                                                <div class="text">한국적 상황을 비롯한 세계적 교육 현황에 대한 이해를 바탕으로 다양한 교육 문제의 원인과 해법을 설명하고 발전방향을 설계할 수 있는 이론적 토대를 갖출 수 있도록 한다.</div>
+                                            </div>
+                                        </div>    <!--//hz_item-->
+                                        <div class="hz_item long">
+                                            <div class="title_box">
+                                                <i class="icon type3"></i>
+                                                <div class="title">내용이 긴 경우엔 개행 및 아이콘 센터 정렬</div>
+                                            </div>
+                                            <div class="desc_box">
+                                                <div class="text">교육학과는 미래 교육리더 양성을 위해 설립되었으며, 교육학의 기초이론들을 체계적으로 학습함으로써 교육의 본질과 현상을 통찰할 수 있는 교육학적 안목을 기르고, 교육의 연구와 실천에 요구되는 전문적 능력 특히 교육공학, 교육과정, 교육상담, 교육평가, 교육행정, 평생교육 분야의 전문적 능력을 함양하여 교육인재로 성장할 수 있도록 함을 목표로 한다. <br />이를 통하여 교육의 본질에 맞게 교육의 실천을 주도하거나 개선하고 사회와 국가의 교육 발전을 선도할 수 있는 탁월한 교사, 교육지도자, 교육학자, 교육공학전문가, 교육과정전문가, 교육상담전문가, 교육통계전문가, 교육행정전문가, 평생교육전문가 등을 양성한다.</div>
+                                            </div>
+                                        </div>    <!--//hz_item-->
+                                    </div>    <!--//temp_box hz_type-->
+                                    
+                                    <h3>아이콘 박스(.temp_box.vt_type) - 세로(VerTical)</h3>
+                                    <h4>자동높이 스크립트 적용</h4>
+                                    <div class="temp_box vt_type">
+                                        <div class="vt_item icon1">
+                                            <div class="item_inner">
+                                                <div class="title_box">
+                                                    <span class="title">Sub Title</span>
+                                                </div>
+                                                <div class="desc_box">
+                                                    <span class="text">텍스트 들어올 수 있잖아</span>
+                                                    <ul class="bu">
+                                                        <li>순서가 없는 목록입니다.</li>
+                                                        <li>순서가 없는 목록입니다.</li>
+                                                    </ul>    <!--//bu-->
+                                                </div>
+                                            </div>
+                                        </div>    <!--//vt_item-->
+                                        <div class="vt_item icon2">
+                                            <div class="item_inner">
+                                                <div class="title_box">
+                                                    <span class="title">Sub Title</span>
+                                                </div>
+                                                <div class="desc_box">
+                                                    <span class="text">텍스트 들어올 수 있잖아</span>
+                                                    <ul class="tl">
+                                                        <li>
+                                                            <span class="title">타이틀 : </span>
+                                                            <span class="desc">타이틀 내용 넣어주세요</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="title">타이틀 : </span>
+                                                            <span class="desc">타이틀 내용 넣어주세요</span>
+                                                        </li>
+                                                    </ul>    <!--//tl-->
+                                                </div>
+                                            </div>
+                                        </div>    <!--//vt_item-->
+                                        <div class="vt_item icon3">
+                                            <div class="item_inner">
+                                                <div class="title_box">
+                                                    <span class="title">Sub Title</span>
+                                                </div>
+                                                <div class="desc_box">
+                                                    <span class="text">텍스트 들어올 수 있잖아</span>
+                                                    <ul class="kor">
+                                                        <li><i class="text">㉠<span class="skip">ㄱ</span></i>순서있는 목록</li>
+                                                        <li><i class="text">㉡<span class="skip">ㄴ</span></i>순서있는 목록</li>
+                                                        <li><i class="text">㉢<span class="skip">ㄷ</span></i>순서있는 목록</li>
+                                                    </ul>    <!--//kor-->
+                                                </div>
+                                            </div>
+                                        </div>    <!--//vt_item-->
+                                        <div class="vt_item icon4">
+                                            <div class="item_inner">
+                                                <div class="title_box">
+                                                    <span class="title">Sub Title</span>
+                                                </div>
+                                                <div class="desc_box">
+                                                    <span class="text">텍스트 들어올 수 있잖아</span>
+                                                    <ol class="num2">
+                                                        <li><i class="count">1</i>순서있는 목록</li>
+                                                        <li><i class="count">2</i>순서있는 목록</li>
+                                                        <li><i class="count">3</i>순서있는 목록</li>
+                                                    </ol>    <!--//num2-->
+                                                </div>
+                                            </div>
+                                        </div>    <!--//vt_item-->
+                                    </div>    <!--//temp_box vt_type-->
+                                    
+                                    <h3>기능 박스(.temp_box.skill_type)</h3>
+                                    <h4>자동높이 스크립트 적용 ▶ 문제있어서 추후 수정예정(리스트 인덱스 별 높이, 텝메뉴 안에서 사이즈조절 안댐)</h4>
+                                    <div class="temp_box skill_type">
+                                        <div class="skill_item">
+                                            <div class="title_box">
+                                                <span class="title">교원양성 기능</span>
+                                            </div>
+                                            <div class="desc_box">
+                                                <div class="desc_inner">
+                                                    <ul class="bu">
+                                                        <li>유치원, 초등, 중등 교사 통합 양성</li>
+                                                        <li>교원 임영고사 합격률 전국 최고</li>
+                                                    </ul>    <!--//bu-->
+                                                </div>
+                                            </div>
+                                        </div>    <!--//skill_item-->
+                                        <div class="skill_item">
+                                            <div class="title_box">
+                                                <span class="title">교원연수 기능</span>
+                                            </div>
+                                            <div class="desc_box">
+                                                <div class="desc_inner">
+                                                    <ul class="bu">
+                                                        <li>현직 교원의 전문성 신장 교육</li>
+                                                        <li>현장 교원 재교육 및 자기계발 교육</li>
+                                                    </ul>    <!--//bu-->
+                                                </div>
+                                            </div>
+                                        </div>    <!--//skill_item-->
+                                        <div class="skill_item">
+                                            <div class="title_box">
+                                                <span class="title">교육연구 기능</span>
+                                            </div>
+                                            <div class="desc_box">
+                                                <div class="desc_inner">
+                                                    <ul class="bu">
+                                                        <li>정부, 대학, 학교 현장간 협력을 통한 실천 중심의 교육 연구 대학</li>
+                                                        <li>교육이론과 현장문제 집중탐구, 학교 현장 투입</li>
+                                                    </ul>    <!--//bu-->
+                                                </div>
+                                            </div>
+                                        </div>    <!--//skill_item-->
+                                    </div>    <!--//temp_box skill_type-->
+                                </div>
+                                <div class="cts_item">
+                                    <h3>폼요소 사용 예시</h3>
+                                    
+                                    <h3>폼 전용 주의사항(.form_warning)</h3>
+                                    <span class="form_warning">form 주의사항</span>
+                                    <div class="form_warning">form 주의사항</div>
+                                    
+                                    <h3>폼 전용 버튼(.form_btn)</h3>
+                                    <h4>일반버튼</h4>
+                                    <span class="form_btn">
+                                        <a href="" title="바로가기" class="btn">주소검색</a>
+                                    </span>    <!--//form_btn-->
+                                    <span class="form_btn">
+                                        <button type="button" title="" class="btn">주소검색</button>
+                                    </span>    <!--//form_btn-->
+                                    <span class="form_btn">
+                                        <input type="submit" value="주소검색" title="" class="btn" />
+                                    </span>    <!--//form_btn-->
+                                    <br /><br />
+                                    <span class="form_btn small">
+                                        <a href="" title="바로가기" class="btn">주소검색</a>
+                                    </span>    <!--//form_btn small-->
+                                    <span class="form_btn small">
+                                        <button type="button" title="" class="btn">주소검색</button>
+                                    </span>    <!--//form_btn small-->
+                                    <span class="form_btn small">
+                                        <input type="submit" value="주소검색" title="" class="btn" />
+                                    </span>    <!--//form_btn small-->
+                                    
+                                    <h4>아이콘만 있는 버튼 - input 사용 불가</h4>
+                                    <span class="form_btn search2">
+                                        <a href="" title="바로가기" class="btn">검색</a>
+                                        <i class="icon"></i>
+                                    </span>    <!--//form_btn search2-->
+                                    <span class="form_btn search2">
+                                        <button type="button" title="" class="btn">검색</button>
+                                        <i class="icon"></i>
+                                    </span>    <!--//form_btn search2-->
+                                    <span class="form_btn search2 small">
+                                        <a href="" title="바로가기" class="btn">검색</a>
+                                        <i class="icon"></i>
+                                    </span>    <!--//form_btn search2 small-->
+                                    <span class="form_btn search2 small">
+                                        <button type="button" title="" class="btn">검색</button>
+                                        <i class="icon"></i>
+                                    </span>    <!--//form_btn search2 small-->
+                                    
+                                    <h3>인풋 박스(.temp_form > .temp_input)</h3>
+                                    <span class="temp_form">
+                                        <input type="text" title="" value="교원대학교" class="temp_input" />
+                                    </span>    <!--//temp_form-->
+                                    <span class="temp_form">
+                                        <input type="email" title="" placeholder="잘못된 입력형식(입력시 보임)" class="temp_input" />
+                                    </span>    <!--//temp_form-->
+                                    <span class="temp_form">
+                                        <input type="text" title="" class="temp_input" disabled />
+                                    </span>    <!--//temp_form-->
+                                    <br /><br />
+                                    <span class="temp_form small">
+                                        <input type="text" title="" value="교원대학교" class="temp_input" />
+                                    </span>    <!--//temp_form small-->
+                                    <span class="temp_form small">
+                                        <input type="email" title="" placeholder="잘못된 입력형식(입력시 보임)" class="temp_input" />
+                                    </span>    <!--//temp_form small-->
+                                    <span class="temp_form small">
+                                        <input type="text" title="" class="temp_input" disabled />
+                                    </span>    <!--//temp_form-->
+                                    
+                                    <h3>셀렉트 박스(.temp_select_box > .temp_select)</h3>
+                                    <div class="temp_select_box">
+                                        <select name="" id="" title="" class="temp_select">
+                                            <option value="">셀렉트1</option>
+                                            <option value="">셀렉트2</option>
+                                            <option value="">셀렉트3</option>
+                                            <option value="">셀렉트4</option>
+                                        </select>
+                                    </div>    <!--//temp_select_box-->
+                                    <div class="temp_select_box small">
+                                        <select name="" id="" title="" class="temp_select">
+                                            <option value="">셀렉트1</option>
+                                            <option value="">셀렉트2</option>
+                                            <option value="">셀렉트3</option>
+                                            <option value="">셀렉트4</option>
+                                        </select>
+                                    </div>    <!--//temp_select_box small-->
+                                    
+                                    <h3>체크박스(.temp_form > .temp_check) - 다중선택O</h3>
+                                    <span class="temp_form">
+                                        <input type="checkbox" id="check1" class="temp_check" />
+                                        <label for="check1">체크박스2</label>
+                                    </span>    <!--//temp_form-->
+                                    <span class="temp_form">
+                                        <input type="checkbox" id="check2" class="temp_check" />
+                                        <label for="check2">체크박스3</label>
+                                    </span>    <!--//temp_form-->
+                                    <span class="temp_form">
+                                        <input type="checkbox" id="check3" class="temp_check" />
+                                        <label for="check3">체크박스3</label>
+                                    </span>    <!--//temp_form-->
+                                    
+                                    <h3>라디오 버튼(.temp_form > .temp_radio) - 다중선택X, 단일선택</h3>
+                                    <span class="temp_form">
+                                        <input type="radio" id="radio1" name="radio" class="temp_radio" />
+                                        <label for="radio1">라디오1</label>
+                                    </span>    <!--//temp_form-->
+                                    <span class="temp_form">
+                                        <input type="radio" id="radio2" name="radio" class="temp_radio" />
+                                        <label for="radio2">라디오2</label>
+                                    </span>    <!--//temp_form-->
+                                    <span class="temp_form">
+                                        <input type="radio" id="radio3" name="radio" class="temp_radio" />
+                                        <label for="radio3">라디오3</label>
+                                    </span>    <!--//temp_form-->
+                                    
+                                    <h3>스위치 버튼(.temp_form > .temp_switch)</h3>
+                                    <span class="temp_form">
+                                        <input type="checkbox" id="switch1" class="temp_switch" />
+                                        <label for="switch1">표시</label>
+                                    </span>    <!--//temp_form-->
+                                    <span class="temp_form">
+                                        <input type="checkbox" id="switch2" class="temp_switch" />
+                                        <label for="switch2">표시안함</label>
+                                    </span>    <!--//temp_form-->
+                                    <span class="temp_form">
+                                        <input type="checkbox" id="switch3" class="temp_switch" checked />
+                                        <label for="switch3">활성화</label>
+                                    </span>    <!--//temp_form-->
+                                    
+                                    <h3>주소검색창</h3>
+                                    <span class="temp_form">
+                                        <input type="text" title="" value="" class="temp_input" />
+                                    </span>    <!--//temp_form-->
+                                    <span class="form_btn">
+                                        <a href="" title="바로가기" class="btn">주소검색</a>
+                                    </span>    <!--//form_btn-->
+                                    
+                                    <h3>검색박스1(.temp_form_box)</h3>
+                                    <div class="temp_form_box">
+                                        <div class="temp_select_box">
+                                            <select name="" id="" title="" class="temp_select">
+                                                <option value="">전체</option>
+                                                <option value="">조건1</option>
+                                                <option value="">조건2</option>
+                                                <option value="">조건3</option>
+                                            </select>
+                                        </div>    <!--//temp_select_box-->
+                                        <span class="temp_form">
+                                            <input type="text" title="" value="" class="temp_input" />
+                                        </span>    <!--//temp_form-->
+                                        <span class="form_btn search">
+                                            <a href="" title="바로가기" class="btn">검색</a>
+                                        </span>    <!--//form_btn search-->
+                                    </div>    <!--//temp_form_box-->
+                                    
+                                    <h3>검색박스2(.temp_search_box > .temp_form_box)</h3>
+                                    <div class="temp_search_box">
+                                        <form action="">
+                                            <fieldset>
+                                                <legend>ㅇㅇㅇ 검색 폼</legend>
+                                                <div class="temp_form_box">
+                                                    <div class="temp_select_box">
+                                                        <select name="" id="" title="" class="temp_select">
+                                                            <option value="">전체</option>
+                                                            <option value="">조건1</option>
+                                                            <option value="">조건2</option>
+                                                            <option value="">조건3</option>
+                                                        </select>
+                                                    </div>    <!--//temp_select_box-->
+                                                    <span class="temp_form">
+                                                        <input type="text" title="" placeholder="검색어를 입력하세요." class="temp_input" />
+                                                    </span>    <!--//temp_form-->
+                                                    <span class="form_btn search2">
+                                                        <a href="" title="바로가기" class="btn">검색</a>
+                                                        <i class="icon"></i>
+                                                    </span>    <!--//form_btn search2-->
+                                                </div>    <!--//temp_form_box-->
+                                            </fieldset>
+                                        </form>
+                                    </div>    <!--//temp_search_box-->
+                                    
+                                    <h3>캘린더</h3>
+                                </div>
+                                <div class="cts_item"></div>
+                                <div class="cts_item"></div>
+                                <div class="cts_item"></div>
+                                <div class="cts_item active">
+                                    <h3>네이버 지도 API</h3>
+                                    <div id="map" style="width:100%;height:400px;"></div>
+                                    <script>
+                                        var mapOptions = {
+                                            center: new naver.maps.LatLng(37.3595704, 127.105399),
+                                            zoom: 10
+                                        }
+
+                                        var map = new naver.maps.Map('map', {
+                                            center: new naver.maps.LatLng(37.3595704, 127.105399),
+                                            zoom: 15
+                                        });
+
+                                        var marker = new naver.maps.Marker({
+                                            position: new naver.maps.LatLng(37.3595704, 127.105399),
+                                            map: map
+                                        })
+                                        
+                                    </script>
+                                </div>
+                                <div class="cts_item">
+                                    <h3>원장 인사말(.greeting_top_box)</h3>
+                                    <div class="greeting_top_box">
+                                        <p class="greeting_top_text">세계화 지방화시대 교육 인적자원 개발 혁신을 선도하는 국내 최고 권위, 비전과 혁신을 추구하는 국제 수준의 <span>교육정책부문 교육연구기관</span></p>
+                                        <img class="greeting_top_img" src="/site/public/images/template/greeting_top_img01.jpg" alt="한국교원대학교 교육대학원장 이영준 이미지">
+                                    </div>
+                                    <div class="greeting_text_box">
+                                        우리 한국교원대학교 교육정책전문대학원은 교육·인적자원정책과 교육시설 정책의 기획과 집행 및 평가의 전문성 계발과 정책 지도력을 함양하여 한국의 교육정책 수립 및 실행을 주도할 인재 양성을 목표로 합니다. 교육정책전문대학원의 특성상 주로 현직에서 교육행정직 또는 교육전문직 경험을 배경으로 하는 석·박사 통합과정으로 운영되며, 교수 및 동료들과 함께 한국 교육정책의 입안과 실천에 관한 학문적 성찰과 실천적 전문성 함양을 추구하고 있습니다.<br>
+                                        <br>
+                                        이를 위하여 본 대학원에서는 4차 산업혁명과 급속하게 변화하는 교육 수요 변화에 따른 ‘교육정책’, ‘인적자원정책’, ‘교육시설환경정책’ 등의 전공분야에서의 학문적 수월성과 ‘교육혁신’ 전공을 통하여 한국 교육의 미래를 이끌어 나갈 인재 양성을 위한 교육정책이론과 실천적 능력을 겸비한 교육정책전문가 성장할 기회를 제공하고 있습니다.<br>
+                                        <br>
+                                        전국의 교육정책 전문가를 대상으로 하기에 본 대학원은 정책입안자들이 세계적인 안목을 갖도록 지원하는 프로그램과 탁월한 교수진과의 심도 있는 연구 경험, 동료 전문가들과의 지적인 교류, 학교 운영자 및 교육자로서 전국적인 교육전문가 네트워크 구축의 기회를 제공할 수 있도록 힘쓰고 있습니다.<br>
+                                        <br>
+                                        정보통신 기술의 급속한 발전과 학교교육에 대한 사회적 요구의 변화는 기존의 교육방법의 혁신과 새로운 교육과정의 개발 및 교육자들의 변화를 요구하고 있습니다. 그런 점에서 교육과 관련된 정책의 중요성은 더욱 커지고 있습니다. 본 대학원은 이 같은 변화를 주도할 교육정책의 학문적 탐구와 효율적인 실행을 위한 연구의 장을 제공하기 위하여 노력하겠습니다.<br>
+                                        <br>
+                                        우리 한국교원대학교 교육정책전문대학원을 방문하여 주심에 감사드립니다.
+                                        <p class="greeting_sign">
+                                            한국교원대학교 교육대학원장
+                                            <span>이영준</span>
+                                        </p>
+                                    </div>    <!--//greeting_top_box-->
+                                </div>
+                            </div>    <!--//cts_box-->
+                        </div>    <!--//cts_total-->
+                    </div>    <!--//#contents-->
+                </article>
+            </main>    <!--//colgroup-->
+        </div>    <!--//wrap-->
+    </div>    <!--//#container-->
+    <div class="fixed_box">
+        <div class="fixed_inner">
+            <div class="fixed_open">
+                <button type="button" title="리스트 열기" class="open_btn"><span><em>퀵메뉴, 유저서비스</em></span></button>    <!--//open_btn-->
+            </div>    <!--//fixed_open-->
+            <div class="fixed_list">
+                <div class="fixed_item quick">
+                    <button type="button" title="퀵메뉴 열기" class="fix_btn">
+                        <span class="btn_wrap"><em>Quick <br />Menu</em></span>    <!--//btn_wrap-->
+                        <span class="hover_wrap">
+                            <em>Quick Menu</em>
+                        </span>    <!--//hover_wrap-->
+                    </button>    <!--//fix_btn-->
+                </div>    <!--//fixed_item quick-->
+                <div class="fixed_item user">
+                    <button type="button" title="유저서비스 열기" class="fix_btn">
+                        <span class="btn_wrap"><em>User <br />Service</em></span>    <!--//btn_wrap-->
+                        <span class="hover_wrap">
+                            <em>User Service</em>
+                        </span>    <!--//hover_wrap-->
+                    </button>    <!--//fix_btn-->
+                </div>    <!--//fixed_item user-->
+            </div>    <!--//fixed_list-->
+        </div>    <!--//fixed_inner-->
+        <div class="fixed_go">
+            <button type="button" class="go_btn"><span><em>TOP</em></span></button>    <!--//go_btn-->
+        </div>    <!--//fixed_go-->
+    </div>    <!--//fixed_box-->
+    <!--// footer 타입 총 3가지(.type1 , .type2 , .type3) 각각 ftl 따로 분리 필요 , 사이트별로 다른 푸터 적용할 수 있게 include 화 필요 -->
+    <footer id="footer" class="type01">
+        <div class="footer_wrap">
+            <div class="footer_link">
+                <ul class="link_list">
+                    <li class="link_item privacy"><a href="">개인정보처리방침</a></li>
+                    <li class="link_item"><a href="">이메일무단수집거부</a></li>
+                    <!--//<li class="link_item"><a href="">학교정보공개</a></li>-->
+                    <!--//<li class="link_item"><a href="">대학정보공시</a></li>-->
+                </ul>
+            </div>    <!--//footer_quick-->
+            <div class="footer_logo_box">
+                <a href="./index.do" class="logo_link">
+                    <span class="logo_con con_img">Knue Teacher of Teachers</span>
+                    <span class="logo_con con_text">사이트명</span>
+                </a>
+            </div>    <!--//footer_logo_box-->
+            <div class="footer_info">
+                <address>(28173)충북 청주시 흥덕구 강내면 태성탑연로 250</address>
+                <ul class="info_list">
+                    <li class="info_item tel">
+                        <em class="info_title">TEL</em>
+                        <em class="info_desc">043-XXX-XXXX</em>
+                    </li>
+                    <li class="info_item fax">
+                        <em class="info_title">FAX</em>
+                        <em class="info_desc">043-XXX-XXXX</em>
+                    </li>
+                    <li class="info_item email">    <!--//이메일 등록 되었을 때만 사용-->
+                        <em class="info_title">E-MAIL</em>
+                        <em class="info_desc">XXX@knue.ac.kr</em>
+                    </li>
+                </ul>    <!--//info_list-->
+            </div>    <!--//footer_info-->
+            <div class="footer_select">
+                <div class="select_box">
+                    <div class="select_list">
+                        <div class="select_item">
+                            <button type="button" title="관련 리스트 열기" class="select_btn"><span><em>관련링크</em></span></button>    <!--//select_btn-->
+                            <ul class="select_link_list" tabindex="0">
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크1</a></li>    <!--//select_link_item-->
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크2</a></li>    <!--//select_link_item-->
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크3</a></li>    <!--//select_link_item-->
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크4</a></li>    <!--//select_link_item-->
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크5</a></li>    <!--//select_link_item-->
+                            </ul>    <!--//select_link_list-->
+                        </div>    <!--//select_item-->
+                    </div>    <!--//select_list-->
+                    <em class="select_logo">한국교원대학교 Korea National University of Education</em>
+                </div>    <!--//select_box-->
+            </div>    <!--//footer_select-->
+            <p class="copyright">Copyright ⓒ KOREA NATIONAL UNIVERSITY <br />OF EDUCATION. All rights reserved.</p>    <!--//copyright-->
+            <div class="footer_go">
+                <button type="button" class="go_btn"><span><em>TOP</em></span></button>    <!--//go_btn-->
+            </div>    <!--//footer_go-->
+        </div>    <!--//footer_wrap-->
+        <div class="bg_deco">Knue</div>    <!--//bg_deco-->
+    </footer>    <!--//#footer-->
+</div>    <!--//wrapper-->
+</body>
+</html>

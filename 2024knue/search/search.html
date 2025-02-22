@@ -1,0 +1,1113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../common/images/favicon.png">
+    <link rel="icon" href="../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/search.css" />
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.js"></script>
+    <script src="./common/js/program.min.js"></script>
+    <script src="./js/search.js"></script>
+    <title>한국교원대 - 통합검색</title>
+</head>
+<body id="main" class="search">
+<div class="accessibility">
+    <a href="#container">본문 바로가기</a>
+</div>  <!--//accessibility-->
+<div id="wrapper">
+    <header id="header">
+        <div class="header_wrap">
+            <div class="header_box">
+                <h1 class="logo">
+                    <a href="/www/index.do" title="한국교원대학교 대표 홈페이지 바로가기" class="logo_link">
+                        <i class="logo_img_text">한국교원대학교 Korea National University of Education</i>
+                    </a>    <!--//logo_link-->
+                </h1>    <!--//logo-->
+                <div class="search_form_box">
+                    <form action="">    <!--//action 값 꼭 채워주세요-->
+                        <fieldset>
+                            <legend>통합검색 폼 - 전체검색 영역</legend>
+                            <div class="search_box">
+                                <div class="search_form">
+                                    <input type="text" title="검색어 입력" placeholder="검색어를 입력해주세요." class="search_input" />
+                                    <!--// 연관검색어 & 검색어 자동완성(.search_auto_wrap)-->
+                                    <div class="search_auto_wrap">
+                                        <!--// (0)기본값(display:none;) ▶ .search_auto_wrap 박스 보이지않음
+                                               (1)보이는 조건 ▶ .search_input에 텍스트 입력 시 .search_auto_wrap 박스가 보이도록 해주세요.
+                                               (2)안보이는 조건 ▶ .search_input에 텍스트 입력하지 않은 경우, 텍스트를 입력했다가 전부 지웠을 경우 박스가 보이지않도록 해주세요.-->
+                                        <ul class="auto_list">
+                                            <li class="auto_item">
+                                                <a href="#n" class="auto_anchor"><em>학</em>회</a>
+                                            </li>
+                                            <li class="auto_item">
+                                                <a href="#n" class="auto_anchor"><em>학</em>과</a>
+                                            </li>
+                                            <li class="auto_item">
+                                                <!--//검색어가 없는 경우 ▶ 태그를 a -> div 태그로 변경하고, '해당 단어로 시작하는 검색어가 없습니다.' 텍스트가 표출되도록 해주세요 -->
+                                                <div class="auto_anchor">해당 단어로 시작하는 검색어가 없습니다.</div>
+                                            </li>
+                                        </ul>
+                                    </div>    <!--//search_auto_wrap-->
+                                </div>    <!--//search_form-->
+                                <span class="search_btn">
+                                    <button type="submit" title="검색" class="btn">검색</button>
+                                </span>    <!--//search_btn-->
+                            </div>    <!--//search_box-->
+                            <div class="detail_box">
+                                <span class="detail_btn">
+                                    <button type="button" title="상세검색창 열기" class="btn">상세검색</button>
+                                </span>    <!--//detail_btn-->
+                            </div>    <!--//detail_box-->
+                            <div class="return_box">
+                                <span class="temp_form">
+                                    <input type="checkbox" id="ex9" class="temp_check" />
+                                    <label for="ex9">결과내 재검색</label>
+                                </span>    <!--//temp_form-->
+                            </div>    <!--//return_box-->
+                        </fieldset>
+                    </form>
+                </div>    <!--//search_form_box-->
+            </div>    <!--//header_box-->
+        </div>    <!--//header_wrap-->
+        <div class="detail_wrap">
+            <form action= "">    <!--//action값 꼭 채워주세요!-->
+                <fieldset>
+                    <legend>통합검색 폼 - 상세검색 영역</legend>
+                    <ul class="detail_list">
+                        <li class="detail_item">
+                            <div class="detail_title">검색기간</div>
+                            <div class="detail_con">
+                                <span class="temp_form">
+                                    <input type="checkbox" id="ex1" class="temp_check" />
+                                    <label for="ex1">전체기간</label>
+                                </span>    <!--//temp_form-->
+                                <div class="temp_date_box type2">
+                                    <!--//버튼을 클릭 시 위의 기간 입력 input 에 당일 기준으로 기간이 입력 되게 해주세요-->
+                                    <!--//버튼 클릭 시 검색 기간 종료 날짜 input 에 당일 날짜 입력-->
+                                    <div class="p-date-group">
+                                        <div class="p-form-group p-date" data-date="datepicker">
+                                            <input type="text" title="시작일 선택 및 입력" class="p-input" placeholder="시작일 선택" />
+                                            <div class="p-input__split">
+                                                <button type="button" class="p-input__item  p-date__icon">달력 열기</button>
+                                            </div>
+                                        </div>    <!--//p-form-group p-date-->
+                                        <span class="p-form__split">~</span>
+                                        <div class="p-form-group p-date" data-date="datepicker">
+                                            <input type="text" title="종료일 선택 및 입력" class="p-input" placeholder="종료일 선택" />
+                                            <div class="p-input__split">
+                                                <button type="button" class="p-input__item  p-date__icon">달력 열기</button>
+                                            </div>
+                                        </div>    <!--//p-form-group p-date-->
+                                    </div>    <!--//p-date-group-->
+                                </div>    <!--//temp_date_box type2 small-->
+                                <div class="time_btn_box">
+                                    <!--///1주(.time_btn.week > .btn) ▶ 버튼 클릭 시, 검색기간 시작날짜 input에 당일 기준 1주일 전 날짜 입력-->
+                                    <div class="time_btn week">
+                                        <button type="button" class="btn">1주</button>
+                                    </div>
+                                    <!--//1개월(.time_btn.month > .btn) ▶ 버튼 클릭 시, 검색기간 시작날짜 input에 당일 기준 1개월 전 날짜 입력-->
+                                    <div class="time_btn month">
+                                        <button type="button" class="btn">1개월</button>
+                                    </div>
+                                    <!--//1년(.time_btn.month > .btn) ▶  버튼 클릭 시, 검색기간 시작날짜 input에 당일 기준 1년 전 날짜 입력-->
+                                    <div class="time_btn year">
+                                        <button type="button" class="btn">1년</button>
+                                    </div>
+                                </div>    <!--//term_button_wrap-->
+                            </div>    <!--//detail_con-->
+                        </li>    <!--//detail_item-->
+                        <li class="detail_item">
+                            <div class="detail_title">검색방법</div>
+                            <div class="detail_con">
+                                <span class="temp_form">
+                                    <input type="checkbox" id="ex2" class="temp_check" />
+                                    <label for="ex2">하나라도 포함된 결과(OR)</label>
+                                </span>    <!--//temp_form-->
+                                <div class="out_box">
+                                    <span class="temp_form">
+                                        <input type="checkbox" id="ex3" class="temp_check" />
+                                        <label for="ex3">제외하는 단어</label>
+                                    </span>    <!--//temp_form-->
+                                    <span class="temp_form">
+                                        <input type="text" title="제외하는 단어 입력" class="temp_input" />
+                                    </span>    <!--//temp_form-->
+                                </div>    <!--//out_box-->
+                            </div>    <!--//detail_con-->
+                        </li>    <!--//detail_item-->
+                        <li class="detail_item">
+                            <div class="detail_title">검색범위</div>
+                            <div class="detail_con">
+                                <span class="temp_form">
+                                    <input type="checkbox" id="ex4" class="temp_check" />
+                                    <label for="ex4">전체</label>
+                                </span>    <!--//temp_form-->
+                                <span class="temp_form">
+                                    <input type="checkbox" id="ex5" class="temp_check" />
+                                    <label for="ex5">제목</label>
+                                </span>    <!--//temp_form-->
+                                <span class="temp_form">
+                                    <input type="checkbox" id="ex6" class="temp_check" />
+                                    <label for="ex6">내용</label>
+                                </span>    <!--//temp_form-->
+                                <span class="temp_form">
+                                    <input type="checkbox" id="ex7" class="temp_check" />
+                                    <label for="ex7">파일명</label>
+                                </span>    <!--//temp_form-->
+                                <span class="temp_form">
+                                    <input type="checkbox" id="ex8" class="temp_check" />
+                                    <label for="ex8">파일내용</label>
+                                </span>    <!--//temp_form-->
+                            </div>    <!--//detail_con-->
+                        </li>    <!--//detail_item-->
+                    </ul>
+                    <div class="detail_result_box">
+                        <!--// 상세검색창 - 버튼 (해당 동작은 상세검색창이 열렸을때만 작동하게 해주세요!)
+                        ▶ 조회 (.detail_wrap .detail_result_box .temp_btn.search button.btn)
+                            (1) 상세검색창에 추가된 조건을 토대로 검색
+                            (2) 버튼 클릭 시, 상세검색창 화면 닫힘
+                                - .detail_wrap에 .active 클레스명 제거
+                                - .header_wrap .datail_box .detail_btn에 .open 클레스명 제거
+                        ▶ 조건 초기화 (.detail_wrap .detail_result_box .temp_btn.reset button.btn)
+                            (1) 상세검색창에 사용자가 체크 및 선택한 사항들 초기화
+                            (2) 버튼 클릭시 상세검색창 닫히지 않음(그대로 열린상태)
+                        -->
+                        <span class="temp_btn icon_type medium search">
+                            <button type="button" class="btn">조회</button>
+                        </span>    <!--//temp_btn icon_type-->
+                        <span class="temp_btn hover icon_type medium reset">
+                            <button type="reset" class="btn">조건 초기화</button>
+                        </span>    <!--//temp_btn icon_type-->
+                    </div>
+                </fieldset>
+            </form>
+        </div>    <!--//detail_wrap-->
+        <div class="menu_wrap">
+            <nav class="menu_box">
+                <h2 class="skip">검색메뉴</h2>
+                <div class="depth">
+                    <ul class="depth_list">
+                        <!--//.depth_text 을 누르면 다른 .depth_text 에는 title="선택됨" class="active" 삭제해주시고-->
+                        <!--//해당 메뉴의 .depth_text 에만 title="선택됨" class="active" 붙여주세요-->
+                        <li class="depth_item"><a href="" title="선택됨" class="depth_text active"><span>통합검색</span></a></li>    <!--//depth_item-->
+                        <li class="depth_item"><a href="" class="depth_text"><span>메뉴</span></a></li>    <!--//depth_item-->
+                        <li class="depth_item"><a href="" class="depth_text"><span>교직원</span></a></li>    <!--//depth_item-->
+                        <li class="depth_item"><a href="" class="depth_text"><span>웹페이지</span></a></li>    <!--//depth_item-->
+                        <li class="depth_item"><a href="" class="depth_text"><span>청람동정</span></a></li>    <!--//depth_item-->
+                        <li class="depth_item"><a href="" class="depth_text"><span>게시물</span></a></li>    <!--//depth_item-->
+                        <li class="depth_item"><a href="" class="depth_text"><span>학칙 및 규정</span></a></li>    <!--//depth_item-->
+                        <li class="depth_item"><a href="" class="depth_text"><span>사진</span></a></li>    <!--//depth_item-->
+                    </ul>    <!--//depth_list-->
+                </div>    <!--//depth-->
+            </nav>    <!--//menu_box-->
+        </div>    <!--//menu_wrap-->
+    </header>    <!--//#header-->
+    <div id="container">
+        <div class="wrap">
+            <main class="colgroup">
+                <!--//★단어 검색
+                        (1)검색 된 단어는 <span class="mark"></span> 마크업으로 감싸지도록 개발 부탁드립니다.
+                        (2)검색 시, "한 단어" 단위로 검색합니다. ("한 글자" 단위로 검색X)
+                -->
+                <header class="sub_head">
+                    <h2 class="plus_title">검색어 <em class="mark">“교원대”</em>에 대한 통합검색 결과는 <em class="t_num">총 1,150건</em>입니다.</h2>
+                </header>    <!--//sub_head-->
+                <div id="contents">
+                    <!--//검색결과 없음(.no_result)-->
+                    <section class="result_wrap no_result">
+                        <div class="result_box">
+                            <div class="temp_box logo_type">
+                                <div class="box_inner">
+                                    <div class="title_box">
+                                        <h3 class="text">“교육대학교”에 대한 검색 결과가 없습니다.</h3>
+                                    </div>
+                                    <div class="desc_box">
+                                        <ul class="bu">
+                                            <li>단어의 철자가 정확한지 확인해 보세요.</li>
+                                            <li>한글을 영어로 혹은 영어를 한글로 입력했는지 확인해 보세요.</li>
+                                            <li>검색어의 단어 수를 줄이거나, 보다 일반적인 검색어로 다시 검색해 보세요.</li>
+                                            <li>두 단어 이상의 검색어인 경우, 띄어쓰기를 확인해 보세요.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>    <!--//temp_box logo_type-->
+                        </div>    <!--//result_box-->
+                    </section>
+                    
+                    <!--//메뉴(.all_menu)-->
+                    <section class="result_wrap all_menu">
+                        <div class="title_box">
+                            <h3 class="result_title">메뉴</h3>
+                            <span class="sub_title">(총 <em class="t_num">70</em>건)</span>
+                        </div>    <!--//title_box-->
+                        <div class="result_box">
+                            <ul class="menu_list">
+                                <li class="menu_item">
+                                    <a href="" title="메뉴 바로가기" class="menu_link">한국<span class="mark">교원대</span>학교 &gt; 대학소개 &gt; 학교상징 &gt; 교자</a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" title="메뉴 바로가기" class="menu_link">한국<span class="mark">교원대</span>학교 &gt; 대학소개 &gt; 학교상징 &gt; 교기</a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" title="메뉴 바로가기" class="menu_link">한국<span class="mark">교원대</span>학교 &gt; 대학소개 &gt; 학교상징 &gt; 교가</a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" title="메뉴 바로가기" class="menu_link">한국<span class="mark">교원대</span>학교 &gt; 대학소개 &gt; 현황 및 규정 &gt; 학교현황</a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" title="메뉴 바로가기" class="menu_link">한국<span class="mark">교원대</span>학교 &gt; 대학소개 &gt; 현황 및 규정 &gt; 학교통계연보</a>
+                                </li>    <!--//menu_item-->
+                            </ul>
+                        </div>    <!--//result_box-->
+                        <span class="more_btn">
+                            <button type="button" class="btn">더보기</button>
+                        </span>    <!--//more_btn-->
+                        <!--//페이지네이션(.p-pagination)-->
+                        <div class="p-pagination">
+                            <div class="p-page">
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                    <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                    <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                </span>
+                                <span class="p-page__link-group">
+                                    <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                    <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                    <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                    <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                    <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                    <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                    <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                    <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                    <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                    <a href="" title="10페이지 이동" class="p-page__link">10</a>
+                                </span>
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                    <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                    <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--//교직원(.staff)-->
+                    <section class="result_wrap staff">
+                        <div class="title_box">
+                            <h3 class="result_title">교직원</h3>
+                            <span class="sub_title">(총 <em class="t_num">1</em>건)</span>
+                        </div>    <!--//title_box-->
+                        <div class="result_box">
+                            <table class="table responsive">
+                                <!--//[접근성 준수] 테이블 caption
+                                        -  해당 테이블의 caption에 thead 안의 th 속 텍스트들이 들어올 수 있도록 개발 부탁드립니다.
+                                        - ex) <caption>'메뉴이름 정보' 표- 구분, 소속, 성명, 연락처, 담당업무, 등등...</caption>
+                                -->
+                                <caption>교직원 검색 결과 표 - 구분, 소속, 성명, 연락처, 담당업무 순으로 안내합니다.</caption>
+                                <colgroup>
+                                    <col style="width:12%;"/>
+                                    <col style="width:20%;"/>
+                                    <col style="width:12%;"/>
+                                    <col style="width:20%;"/>
+                                    <col style="width:36%;"/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">소속</th>
+                                        <th scope="col">성명</th>
+                                        <th scope="col">연락처</th>
+                                        <th scope="col">담당업무</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>직원</td>
+                                        <td>기획평가과</td>
+                                        <td>고혜원</td>
+                                        <td>043-230-3054</td>
+                                        <td class="text_left">
+                                            대학 평가(교원 양성기관 역량진단, 학과평가 등),
+                                            대학 성과관리(IR) 운영, 교육수요자 만족도조사, 정보공개
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>교수</td>
+                                        <td>영어교육과</td>
+                                        <td>멧데이먼</td>
+                                        <td>043-000-0000</td>
+                                        <td class="text_left">ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</td>
+                                    </tr>
+                                </tbody>
+                            </table>    <!--//table responsive-->
+                        </div>    <!--//result_box-->
+                        <span class="more_btn">
+                            <button type="button" class="btn">더보기</button>
+                        </span>    <!--//more_btn-->
+                        <!--//페이지네이션(.p-pagination)-->
+                        <div class="p-pagination">
+                            <div class="p-page">
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                    <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                    <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                </span>
+                                <span class="p-page__link-group">
+                                    <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                    <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                    <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                    <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                    <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                    <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                    <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                    <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                    <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                    <a href="" title="10페이지 이동" class="p-page__link">10</a>
+                                </span>
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                    <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                    <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--//웹페이지(.webs)-->
+                    <section class="result_wrap webs">
+                        <div class="title_box">
+                            <h3 class="result_title">웹페이지</h3>
+                            <span class="sub_title">(총 <em class="t_num">4</em>건)</span>
+                        </div>    <!--//title_box-->
+                        <div class="result_box">
+                            <ul class="post_list">
+                                <li class="post_item">
+                                    <div class="post_title">
+                                        <a href="" title="게시물 바로가기" class="post_link">한국<span class="mark">교원대</span>학교 사도교육원 사도교육원비 안내</a>
+                                    </div>
+                                    <div class="post_desc">
+                                        <div class="post_text">개요 희망입사생을 대상으로 사도교육원비를 관리비와 식비로 구분하여 학기단위로 징수함. 사도교육원비 분류 관리비 : 사도교육원 관리 운영에 필요한 예산을 편성하여 입사생들에게 침구류 세탁, 취사원, 청소원, 경비원 등의 직원 및 가나다라마바사 아자차카타파하 가나다라마바사 아자차카타파하 가나다라마바사 아자차카타파하 가나다라마바사 아자차카타파하</div>
+                                        <div class="post_info">
+                                            <span class="root">1차메뉴 &gt; 2차메뉴 &gt; 3차메뉴</span>
+                                        </div>
+                                    </div>
+                                </li>    <!--//post_item-->
+                                <li class="post_item">
+                                    <div class="post_title">
+                                        <a href="" title="게시물 바로가기" class="post_link">한국<span class="mark">교원대</span>학교 산학협력단</a>
+                                    </div>
+                                    <div class="post_desc">
+                                        <div class="post_text">"New 산학협력단" 교육연구중심대학다운 산학협력 롤모델 정립. 한국의 미래, 교육연구로 열겠습니다.</div>
+                                        <div class="post_info">
+                                            <span class="root">1차메뉴 &gt; 2차메뉴 &gt; 3차메뉴</span>
+                                        </div>
+                                    </div>
+                                </li>    <!--//post_item-->
+                                <li class="post_item">
+                                    <div class="post_title">
+                                        <a href="" title="게시물 바로가기" class="post_link">한국<span class="mark">교원대</span>학교 교육연구원</a>
+                                    </div>
+                                    <div class="post_desc">
+                                        <div class="post_text">한국<span class="mark">교원대</span>학교 교육연구원 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다. 한국<span class="mark">교원대</span>학교 교육연구원 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다 관련 텍스트입니다.</div>
+                                        <div class="post_info">
+                                            <span class="root">대표 &gt; 대학/대학원 &gt; 교육대학원</span>
+                                        </div>
+                                    </div>
+                                </li>    <!--//post_item-->
+                            </ul>
+                        </div>    <!--//result_box-->
+                        <span class="more_btn">
+                            <button type="button" class="btn">더보기</button>
+                        </span>    <!--//more_btn-->
+                        <!--//페이지네이션(.p-pagination)-->
+                        <div class="p-pagination">
+                            <div class="p-page">
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                    <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                    <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                </span>
+                                <span class="p-page__link-group">
+                                    <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                    <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                    <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                    <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                    <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                    <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                    <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                    <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                    <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                    <a href="" title="10페이지 이동" class="p-page__link">10</a>
+                                </span>
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                    <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                    <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--//청람동정(.cheong)-->
+                    <section class="result_wrap cheong">
+                        <div class="title_box">
+                            <h3 class="result_title">청람동정</h3>
+                            <span class="sub_title">(총 <em class="t_num">1,000</em>건)</span>
+                        </div>    <!--//title_box-->
+                        <div class="result_box">
+                            <ul class="post_list">
+                                <li class="post_item">
+                                    <div class="post_title">
+                                        <a href="" title="게시물 바로가기" class="post_link">한국<span class="mark">교원대</span> 신임 총장 주요 보직 인선 단행</a>
+                                    </div>
+                                    <div class="post_desc">
+                                        <div class="post_text">한국<span class="mark">교원대</span>학교 제12대 신임 총장인 차우규 총장은 취임 첫날인 4월 22일 부총장을 비롯한 주요 보직 인선을 단행했다.</div>
+                                        <div class="post_info">
+                                            <span class="root">대표 &gt; 대학소개 &gt; 청람동정</span>
+                                            <span class="time">
+                                                <span class="skip">게시물 작성일자</span>
+                                                <span class="text year">2024</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text month">04</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text date">24</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>    <!--//post_item-->
+                                <li class="post_item">
+                                    <div class="post_title">
+                                        <a href="" title="게시물 바로가기" class="post_link">초등교육과 학생회, 색동 어린이날 큰잔치 개최</a>
+                                    </div>
+                                    <div class="post_desc">
+                                        <div class="post_text">한국<span class="mark">교원대</span>학교(총장 차우규) 초등교육과 학생회는 5월 5일 교정에서 &lt;아름답게 자란&gt;이라는 의미의 주제 ‘아란’으로 색동 어린이날 큰잔치 행사를 개최한다. 이날 행사는 교내 치어리더 동아리의 축하공연을 시작으로 ▲‘물총놀이’와 ‘에어로켓 만들기’ 등의 놀이마당과 ▲‘오로라에이드 만들기’, ‘아이싱 쿠키 만들기’</div>
+                                        <div class="post_info">
+                                            <span class="root">대표 &gt; 대학소개 &gt; 청람동정</span>
+                                            <span class="time">
+                                                <span class="skip">게시물 작성일자</span>
+                                                <span class="text year">2000</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text month">00</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text date">20</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>    <!--//post_item-->
+                                <li class="post_item">
+                                    <div class="post_title">
+                                        <a href="" title="게시물 바로가기" class="post_link">한국<span class="mark">교원대</span> 제12대 총장 차우규 교수 임명</a>
+                                    </div>
+                                    <div class="post_desc">
+                                        <div class="post_text">한국<span class="mark">교원대</span>학교 초등교육과 차우규(61) 교수가 4월 22일 한국<span class="mark">교원대</span>학교 제12대 총장으로 임명됐다. 서울대학교 국민윤리교육과를 졸업한 차우규 총장은 서울대학교에서 도덕과교육 석사, 박사 학위를 받았으며, 2005년부터 한국<span class="mark">교원대</span>학교 교수로 재직하는 동안 국가교육위원회 국가교육과정 전문위원, 보건복지부 국가교육위원회 국가교육과정 전문위원, 보건복지부 국가교육위원회 국가교육과정 전문위원, 보건복지부</div>
+                                        <div class="post_info">
+                                            <span class="root">대표 &gt; 대학소개 &gt; 청람동정</span>
+                                            <span class="time">
+                                                <span class="skip">게시물 작성일자</span>
+                                                <span class="text year">2000</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text month">00</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text date">00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>    <!--//post_item-->
+                            </ul>
+                        </div>    <!--//result_box-->
+                        <span class="more_btn">
+                            <button type="button" class="btn">더보기</button>
+                        </span>    <!--//more_btn-->
+                        <!--//페이지네이션(.p-pagination)-->
+                        <div class="p-pagination">
+                            <div class="p-page">
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                    <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                    <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                </span>
+                                <span class="p-page__link-group">
+                                    <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                    <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                    <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                    <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                    <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                    <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                    <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                    <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                    <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                    <a href="" title="10페이지 이동" class="p-page__link">10</a>
+                                </span>
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                    <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                    <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--//게시판(.board)-->
+                    <section class="result_wrap board">
+                        <div class="title_box">
+                            <h3 class="result_title">게시판</h3>
+                            <span class="sub_title">(총 <em class="t_num">2,451</em>건)</span>
+                        </div>    <!--//title_box-->
+                        <div class="result_box">
+                            <ul class="post_list type2">
+                                <li class="post_item">
+                                    <div class="post_title">
+                                        <a href="" title="게시물 바로가기" class="post_link">
+                                            <span class="category">&lbrack;공지사항&rbrack;</span> 교원양성대학 온라인 공동 입시설명회(2025학년도) 안내
+                                        </a>
+                                    </div>
+                                    <div class="post_desc">
+                                        <div class="post_text">초등교원 양성대학 공동 입시설명회를 아래와 같이 온라인으로 개최하오니  초등교직에 관심있는 학생 및 학부모님들의 많은 참여 부탁드리겠습니다. ▣ 참여대학 및 행사일정 ▣ 방법: 온라인 실시간 방송(ZOOM, 웨비나) ▣ 참가신청: https://naver.me/FgS7XPff ▣ 신청기한: 2024. 5. 7.(화)까지</div>
+                                        <div class="post_info">
+                                            <span class="root">입학안내 &gt; 공지사항</span>
+                                            <span class="time">
+                                                <span class="skip">게시물 작성일자</span>
+                                                <span class="text year">2024</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text month">04</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text date">19</span>
+                                            </span>
+                                        </div>
+                                        <div class="post_file">
+                                            <div class="temp_box prev_type">
+                                                <div class="box_item">
+                                                    <div class="title_box">
+                                                        <span class="title">2025학년도 교원양성대학 온라인 공동 입시설명회 안내.hwp</span>
+                                                    </div>
+                                                    <div class="button_box">
+                                                        <span class="temp_btn icon_type small preview">
+                                                            <a href="" title="파일 미리보기" class="btn">미리보기</a>
+                                                        </span>
+                                                        <span class="temp_btn icon_type small down hover">
+                                                            <a href="" title="파일 다운로드" class="btn">다운로드</a>
+                                                        </span>
+                                                    </div>
+                                                </div>    <!--//box_item-->
+                                            </div>    <!--//temp_box prev_type-->
+                                        </div>
+                                    </div>
+                                </li>    <!--//post_item-->
+                                <li class="post_item">
+                                    <div class="post_title">
+                                        <a href="" title="게시물 바로가기" class="post_link">
+                                            <span class="category">&lbrack;대학소식&rbrack;</span>「한국<span class="mark">교원대</span>학교 연구년교수 규정」일부개정 규정(안) 행정예고
+                                        </a>
+                                    </div>
+                                    <div class="post_desc">
+                                        <div class="post_text">초등교원 양성대학 공동 입시설명회를 아래와 같이 온라인으로 개최하오니 초등교직에 관심있는 학생 및 학부모님들의 많은 참여 부탁드리겠습니다. ▣ 참여대학 및 행사일정 ▣ 방법: 온라인 실시간 방송(ZOOM, 웨비나) ▣ 참가신청: https://naver.me/FgS7XPff ▣ 신청기한: 2024. 5. 7.(화)까지</div>
+                                        <div class="post_info">
+                                            <span class="root">입학안내 &gt; 공지사항</span>
+                                            <span class="time">
+                                                <span class="skip">게시물 작성일자</span>
+                                                <span class="text year">2000</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text month">00</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text date">00</span>
+                                            </span>
+                                        </div>
+                                        <div class="post_file">
+                                            <div class="temp_box prev_type" data-row="2">
+                                                <div class="box_item">
+                                                    <div class="title_box">
+                                                        <span class="title">(붙임1)한국교원대학교 연구년교수 일부개정 규정(안).hwp</span>
+                                                    </div>
+                                                    <div class="button_box">
+                                                        <span class="temp_btn icon_type no_type small preview">
+                                                            <a href="" title="파일 미리보기" class="btn">미리보기</a>
+                                                        </span>
+                                                        <span class="temp_btn icon_type no_type small down hover">
+                                                            <a href="" title="파일 다운로드" class="btn">다운로드</a>
+                                                        </span>
+                                                    </div>
+                                                </div>    <!--//box_item-->
+                                                <div class="box_item">
+                                                    <div class="title_box">
+                                                        <span class="title">(붙임2)검토의견 제출서(서식).hwp</span>
+                                                    </div>
+                                                    <div class="button_box">
+                                                        <span class="temp_btn icon_type no_type small preview">
+                                                            <a href="" title="파일 미리보기" class="btn">미리보기</a>
+                                                        </span>
+                                                        <span class="temp_btn icon_type no_type small down hover">
+                                                            <a href="" title="파일 다운로드" class="btn">다운로드</a>
+                                                        </span>
+                                                    </div>
+                                                </div>    <!--//box_item-->
+                                            </div>    <!--//temp_box prev_type-->
+                                        </div>
+                                    </div>
+                                </li>    <!--//post_item-->
+                                <li class="post_item">
+                                    <div class="post_title">
+                                        <a href="" title="게시물 바로가기" class="post_link">
+                                            <span class="category">&lbrack;대학소식&rbrack;</span>「한국<span class="mark">교원대</span>학교 연구년교수 규정」일부개정 규정(안) 행정예고
+                                        </a>
+                                    </div>
+                                    <div class="post_desc">
+                                        <div class="post_text">초등교원 양성대학 공동 입시설명회를 아래와 같이 온라인으로 개최하오니 초등교직에 관심있는 학생 및 학부모님들의 많은 참여 부탁드리겠습니다. ▣ 참여대학 및 행사일정 ▣ 방법: 온라인 실시간 방송(ZOOM, 웨비나) ▣ 참가신청: https://naver.me/FgS7XPff ▣ 신청기한: 2024. 5. 7.(화)까지 초등교원 양성대학 공동 입시설명회를 아래와 같이 온라인으로 개최하오니 초등교직에 관심있는 학생 및 학부모님들의 많은 참여 부탁드리겠습니다. ▣ 참여대학 및 행사일정 ▣ 방법: 온라인 실시간 방송(ZOOM, 웨비나) ▣ 참가신청: https://naver.me/FgS7XPff ▣ 신청기한: 2024. 5. 7.(화)까지</div>
+                                        <div class="post_info">
+                                            <span class="root">입학안내 &gt; 공지사항</span>
+                                            <span class="time">
+                                                <span class="skip">게시물 작성일자</span>
+                                                <span class="text year">2000</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text month">00</span>
+                                                <span class="text hyphen">-</span>
+                                                <span class="text date">00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>    <!--//post_item-->
+                            </ul>
+                        </div>    <!--//result_box-->
+                        <span class="more_btn">
+                            <button type="button" class="btn">더보기</button>
+                        </span>    <!--//more_btn-->
+                        <!--//페이지네이션(.p-pagination)-->
+                        <div class="p-pagination">
+                            <div class="p-page">
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                    <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                    <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                </span>
+                                <span class="p-page__link-group">
+                                    <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                    <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                    <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                    <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                    <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                    <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                    <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                    <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                    <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                    <a href="" title="10페이지 이동" class="p-page__link">10</a>
+                                </span>
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                    <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                    <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--//학칙 및 규정(.rule)-->
+                    <section class="result_wrap rule">
+                        <div class="title_box">
+                            <h3 class="result_title">학칙 및 규정</h3>
+                            <span class="sub_title">(총 <em class="t_num">1</em>건)</span>
+                        </div>    <!--//title_box-->
+                        <div class="result_box">
+                            <div class="temp_box prev_type">
+                                <div class="box_item">
+                                    <div class="title_box">
+                                        <span class="title">한국교원대학교_부설고등학교_학칙(2011.12.12.).pdf</span>
+                                    </div>
+                                    <div class="button_box">
+                                        <span class="temp_btn icon_type small preview">
+                                            <a href="" title="파일 미리보기" class="btn">미리보기</a>
+                                        </span>
+                                        <span class="temp_btn icon_type small down hover">
+                                            <a href="" title="파일 다운로드" class="btn">다운로드</a>
+                                        </span>
+                                    </div>
+                                </div>    <!--//box_item-->
+                            </div>
+                        </div>    <!--//result_box-->
+                        <span class="more_btn">
+                            <button type="button" class="btn">더보기</button>
+                        </span>    <!--//more_btn-->
+                        <!--//페이지네이션(.p-pagination)-->
+                        <div class="p-pagination">
+                            <div class="p-page">
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                    <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                    <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                </span>
+                                <span class="p-page__link-group">
+                                    <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                    <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                    <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                    <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                    <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                    <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                    <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                    <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                    <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                    <a href="" title="10페이지 이동" class="p-page__link">10</a>
+                                </span>
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                    <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                    <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--//사진(.photo)-->
+                    <section class="result_wrap photo">
+                        <div class="title_box">
+                            <h3 class="result_title">사진</h3>
+                            <span class="sub_title">(총 <em class="t_num">36</em>건)</span>
+                        </div>    <!--//title_box-->
+                        <div class="result_box">
+                            <ul class="photo_list">
+                                <li class="photo_item">
+                                    <a href="" title="게시물 바로가기" class="photo_link">
+                                        <div class="post_img">
+                                            <img src="./images/knue_search_img.jpg" alt="예시 사진" class="this_img" />
+                                        </div>
+                                        <div class="post_desc">
+                                            <div class="post_inner">
+                                                <div class="post_text">한국교원대 제 12대 총장임용후보자 선거 후보자 ㅇㅇㅇ입니다.</div>
+                                                <div class="post_info">
+                                                    <span class="time">
+                                                        <span class="skip">게시물 작성일자</span>
+                                                        <span class="text year">2024</span>
+                                                        <span class="text hyphen">-</span>
+                                                        <span class="text month">04</span>
+                                                        <span class="text hyphen">-</span>
+                                                        <span class="text date">19</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    <!--//photo_item-->
+                                <li class="photo_item">
+                                    <a href="" title="게시물 바로가기" class="photo_link">
+                                        <div class="post_img">
+                                            <img src="./images/knue_search_img.jpg" alt="예시 사진" class="this_img" />
+                                        </div>
+                                        <div class="post_desc">
+                                            <div class="post_inner">
+                                                <div class="post_text">타이틀 텍스트가 두줄 넘어가면 말줄임 처리합니다. 타이틀 텍스트가 두줄 넘어가면 말줄임 처리합니다.</div>
+                                                <div class="post_info">
+                                                    <span class="time">
+                                                        <span class="skip">게시물 작성일자</span>
+                                                        <span class="text year">2000</span>
+                                                        <span class="text hyphen">-</span>
+                                                        <span class="text month">00</span>
+                                                        <span class="text hyphen">-</span>
+                                                        <span class="text date">00</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    <!--//photo_item-->
+                                <li class="photo_item no_item">
+                                    <!--//등록된 이미지가 없는 경우-->
+                                    <a href="" title="게시물 바로가기" class="photo_link">
+                                        <div class="post_img">
+                                            <div class="no_img">등록된 이미지가 없습니다.</div>
+                                        </div>
+                                        <div class="post_desc">
+                                            <div class="post_inner">
+                                                <div class="post_text">타이틀 텍스트가 두줄 넘어가면 말줄임 처리합니다. 타이틀 텍스트가 두줄 넘어가면 말줄임 처리합니다.</div>
+                                                <div class="post_info">
+                                                    <span class="time">
+                                                        <span class="skip">게시물 작성일자</span>
+                                                        <span class="text year">2000</span>
+                                                        <span class="text hyphen">-</span>
+                                                        <span class="text month">00</span>
+                                                        <span class="text hyphen">-</span>
+                                                        <span class="text date">00</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    <!--//photo_item no_item-->
+                                <li class="photo_item">
+                                    <a href="" title="게시물 바로가기" class="photo_link">
+                                        <div class="post_img">
+                                            <img src="./images/knue_search_img.jpg" alt="예시 사진" class="this_img" />
+                                        </div>
+                                        <div class="post_desc">
+                                            <div class="post_inner">
+                                                <div class="post_text">타이틀 텍스트가 두줄 넘어가면 말줄임 처리합니다. 타이틀 텍스트가 두줄 넘어가면 말줄임 처리합니다.</div>
+                                                <div class="post_info">
+                                                    <span class="time">
+                                                        <span class="skip">게시물 작성일자</span>
+                                                        <span class="text year">2000</span>
+                                                        <span class="text hyphen">-</span>
+                                                        <span class="text month">00</span>
+                                                        <span class="text hyphen">-</span>
+                                                        <span class="text date">00</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    <!--//photo_item-->
+                            </ul>
+                        </div>    <!--//result_box-->
+                        <span class="more_btn">
+                            <button type="button" class="btn">더보기</button>
+                        </span>    <!--//more_btn-->
+                        <!--//페이지네이션(.p-pagination)-->
+                        <div class="p-pagination">
+                            <div class="p-page">
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                    <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                    <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                </span>
+                                <span class="p-page__link-group">
+                                    <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                    <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                    <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                    <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                    <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                    <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                    <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                    <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                    <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                    <a href="" title="10페이지 이동" class="p-page__link">10</a>
+                                </span>
+                                <span class="p-page__control">
+                                    <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                    <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                    <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>    <!--//colgroup-->
+            <div class="side_right">
+                <div class="side_wrap search_rank">
+                    <h3 class="side_title">인기검색어</h3>
+                    <div class="side_tab_box">
+                        <div class="tab_btn">
+                            <button type="button" title="선택됨" class="btn active">일간</button>
+                        </div>
+                        <div class="tab_btn">
+                            <button type="button" class="btn">주간</button>
+                        </div>
+                    </div>    <!--//side_tab_box-->
+                    <div class="side_con_box">
+                        <div class="con_item active">
+                            <ol class="rank_list">
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">1</i>
+                                        <span class="text">셔틀버스</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">2</i>
+                                        <span class="text">복수전공</span>
+                                        <span class="state"><i class="icon up">순위 상승</i>41</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">3</i>
+                                        <span class="text">세미나</span>
+                                        <span class="state"><i class="icon down">순위 하강</i>1</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">4</i>
+                                        <span class="text">졸업생</span>
+                                        <span class="new">NEW</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">5</i>
+                                        <span class="text">편입</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">6</i>
+                                        <span class="text">자퇴</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">7</i>
+                                        <span class="text">복학</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">8</i>
+                                        <span class="text">성적</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">9</i>
+                                        <span class="text">휴학</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">10</i>
+                                        <span class="text">입학처</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                            </ol>    <!--//rank_list-->
+                        </div>
+                        <div class="con_item">
+                            <ol class="rank_list">
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">1</i>
+                                        <span class="text">입학처</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">2</i>
+                                        <span class="text">휴학</span>
+                                        <span class="state"><i class="icon up">순위 상승</i>4</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">3</i>
+                                        <span class="text">성적</span>
+                                        <span class="state"><i class="icon down">순위 하강</i>18</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">4</i>
+                                        <span class="text">복학</span>
+                                        <span class="new">NEW</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">5</i>
+                                        <span class="text">자퇴</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">6</i>
+                                        <span class="text">편입</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">7</i>
+                                        <span class="text">졸업생</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">8</i>
+                                        <span class="text">세미나</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">9</i>
+                                        <span class="text">복수전공</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                                <li class="rank_item">
+                                    <a href="" class="rank_link">
+                                        <i class="num">10</i>
+                                        <span class="text">셔틀버스</span>
+                                        <span class="state"><i class="icon same">순위 유지</i>0</span>
+                                    </a>
+                                </li>    <!--//rank_item-->
+                            </ol>    <!--//rank_list-->
+                        </div>
+                    </div>    <!--//side_con_box-->
+                </div>    <!--//side_wrap search_rank-->
+                <div class="side_wrap search_find">
+                    <h3 class="side_title">내가 찾은 검색어</h3>
+                    <div class="find_list">
+                        <div class="find_item">
+                            <a href="" class="find_link"><span>연구</span></a>
+                            <button type="button" class="btn delete">삭제</button>
+                        </div>
+                        <div class="find_item">
+                            <a href="" class="find_link"><span>총장</span></a>
+                            <button type="button" class="btn delete">삭제</button>
+                        </div>
+                        <div class="find_item">
+                            <a href="" class="find_link"><span>규제신고센터</span></a>
+                            <button type="button" class="btn delete">삭제</button>
+                        </div>
+                    </div>
+                </div>    <!--//side_wrap search_find-->
+            </div>    <!--//side_right-->
+        </div>    <!--//wrap-->
+    </div>    <!--//#container-->
+    <footer id="footer">
+        <div class="footer_wrap">
+            <div class="footer_logo_box">
+                <a href="./index.do" class="logo_link">
+                    <span class="logo_con con_img">한국교원대학교 Korea National University of Education</span>
+                    <span class="logo_con con_text">통합검색</span>
+                </a>
+            </div>    <!--//footer_logo_box-->
+            <div class="footer_info">
+                <address>(28173) 충북 청주시 흥덕구 강내면 태성탑연로 250</address>
+                <ul class="info_list">
+                    <li class="info_item tel">
+                        <em class="info_title">TEL</em>
+                        <em class="info_desc">043-230-3114</em>
+                    </li>
+                    <li class="info_item fax">
+                        <em class="info_title">FAX</em>
+                        <em class="info_desc">043-233-2960</em>
+                    </li>
+                </ul>    <!--//info_list-->
+                <p class="copyright">Copyright ⓒ Korea National University of Education. All rights reserved.</p>    <!--//copyright-->
+            </div>    <!--//footer_info-->
+            <div class="footer_go">
+                <button type="button" class="go_btn"><span><em>TOP</em></span></button>    <!--//go_btn-->
+            </div>    <!--//footer_go-->
+        </div>    <!--//footer_wrap-->
+    </footer>    <!--//#footer-->
+</div>    <!--//wrapper-->
+</body>
+</html>
