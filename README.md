@@ -1,5 +1,6 @@
 # 프로젝트 작업 현황
 
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,100:2575fc&height=250&section=header&text=프로젝트%20작업%20현황&fontSize=45&fontAlignY=35&animation=fadeIn&desc=Shining%20Stars&descAlignY=60&descAlign=50)
 
 ## ■ 2023년
 1. **충북도청 새얼굴찾기 브랜드**  
