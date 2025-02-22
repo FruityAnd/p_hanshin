@@ -1,7 +1,6 @@
 # 프로젝트 작업 현황
 
-!([https://capsule-render.vercel.app/api?type=cylinder&color=gradient&customColorList=ffc0cb,dda0dd&height=250&text=프로젝트%20현황&fontSize=40&fontColor=white&textBg=false&textShadow=true](https://capsule-render.vercel.app/api?type=venom&height=200&color=fde7e7&text=PROJECT%20LIST&textBg=false&fontSize=40&fontAlign=50&fontColor=373737))
-
+![PROJECT LIST](https://capsule-render.vercel.app/api?type=venom&height=200&color=fde7e7&text=PROJECT%20LIST&textBg=false&fontSize=40&fontAlign=50&fontColor=373737)
 
 ## ■ 2023년
 1. **충북도청 새얼굴찾기 브랜드**  
