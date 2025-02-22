@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* SCore */
+@font-face{
+    font-family : 'SCore';
+    font-weight : 600;
+    src : url("../font/S-CoreDream-6Bold.woff") format('woff');
+}
+@font-face{
+    font-family : 'SCore';
+    font-weight : 500;
+    src : url("../font/S-CoreDream-5Medium.woff") format('woff');
+}
+@font-face{
+    font-family : 'SCore';
+    font-weight : 400;
+    src : url("../font/S-CoreDream-4Regular.woff") format('woff');
+}
+
+/* OneM */
+@font-face{
+    font-family : 'OneM';
+    font-weight : 400;
+    src : url("../font/ONE_Mobile_Title.woff") format('woff');
+}
+
+/* GW */
+@font-face{
+    font-family : 'GW';
+    font-weight : 400;
+    src : url("../font/GapyeongWave.woff") format('woff');
+}
+
+/* open */
+@font-face{
+    font-family : 'open';
+    font-weight : 600;
+    src : url("../font/OpenSans-Bold.woff") format('woff');
+}
+
+/* JG */
+@font-face{
+    font-family : 'JG';
+    font-weight : 400;
+    src : url("../font/JalnanGothicTTF.woff") format('woff');
+}

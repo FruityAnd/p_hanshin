@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+#contents table th, #contents table td{vertical-align:middle;}
+#board table.bbs_basic tbody.tb th{vertical-align:middle;}
+
+/* 게시판 버튼 */
+.boardNavigation .buttonLeft,
+.boardNavigation .buttonRight{display:inline-block;position:relative;width:auto;vertical-align:top;box-sizing:border-box;}
+.boardNavigation .buttonLeft .button,
+.boardNavigation .buttonRight .button{padding:0;border-radius:10px;font-size:0;color:transparent;transition-property:background, border;transition-duration:0.3s;transition-timing-function:linear;}
+.boardNavigation .buttonLeft .button > a,
+.boardNavigation .buttonRight .button > a,
+.boardNavigation .buttonLeft .button > button,
+.boardNavigation .buttonRight .button > button,
+.boardNavigation .buttonLeft .button > input,
+.boardNavigation .buttonRight .button > input{padding:7px 20px;height:auto;font-size:16px;line-height:24px;font-weight:400;font-family:'SCore';transition-property:color;transition-duration:0.3s;transition-timing-function:linear;}
+.boardNavigation .buttonLeft .button:nth-child(even),
+.boardNavigation .buttonRight .button:nth-child(even){background:#466ad5;border:1px solid #466ad5;}
+.boardNavigation .buttonLeft .button:nth-child(even):hover,
+.boardNavigation .buttonRight .button:nth-child(even):hover{background:#fff;}
+.boardNavigation .buttonLeft .button:nth-child(even) > a,
+.boardNavigation .buttonRight .button:nth-child(even) > a,
+.boardNavigation .buttonLeft .button:nth-child(even) > button,
+.boardNavigation .buttonRight .button:nth-child(even) > button,
+.boardNavigation .buttonLeft .button:nth-child(even) > input,
+.boardNavigation .buttonRight .button:nth-child(even) > input{color:#fff;}
+.boardNavigation .buttonLeft .button:nth-child(even) > a:hover,
+.boardNavigation .buttonRight .button:nth-child(even) > a:hover,
+.boardNavigation .buttonLeft .button:nth-child(even) > button:hover,
+.boardNavigation .buttonRight .button:nth-child(even) > button:hover,
+.boardNavigation .buttonLeft .button:nth-child(even) > input:hover,
+.boardNavigation .buttonRight .button:nth-child(even) > input:hover{color:#466ad5;text-decoration:none;}
+.boardNavigation .buttonLeft .button:nth-child(odd),
+.boardNavigation .buttonRight .button:nth-child(odd){background:#fff;border:1px solid #a2a7b7;}
+.boardNavigation .buttonLeft .button:nth-child(odd):hover,
+.boardNavigation .buttonRight .button:nth-child(odd):hover{background:#eef0f8;border:1px solid #eef0f8;}
+.boardNavigation .buttonLeft .button:nth-child(odd) > a,
+.boardNavigation .buttonRight .button:nth-child(odd) > a,
+.boardNavigation .buttonLeft .button:nth-child(odd) > button,
+.boardNavigation .buttonRight .button:nth-child(odd) > button,
+.boardNavigation .buttonLeft .button:nth-child(odd) > input,
+.boardNavigation .buttonRight .button:nth-child(odd) > input{color:#54586b;}
+.boardNavigation .buttonLeft .button:nth-child(odd) > a:hover,
+.boardNavigation .buttonRight .button:nth-child(odd) > a:hover,
+.boardNavigation .buttonLeft .button:nth-child(odd) > button:hover,
+.boardNavigation .buttonRight .button:nth-child(odd) > button:hover,
+.boardNavigation .buttonLeft .button:nth-child(odd) > input:hover,
+.boardNavigation .buttonRight .button:nth-child(odd) > input:hover{color:#13151b;text-decoration:none;}
+@media all and (max-width:1000px) {
+    .boardNavigation .buttonLeft .button > a,
+    .boardNavigation .buttonRight .button > a,
+    .boardNavigation .buttonLeft .button > button,
+    .boardNavigation .buttonRight .button > button,
+    .boardNavigation .buttonLeft .button > input,
+    .boardNavigation .buttonRight .button > input{padding:6px 15px;font-size:15px;}
+}
+@media all and (max-width:640px) {
+    .boardNavigation .buttonLeft .button > a,
+    .boardNavigation .buttonRight .button > a,
+    .boardNavigation .buttonLeft .button > button,
+    .boardNavigation .buttonRight .button > button,
+    .boardNavigation .buttonLeft .button > input,
+    .boardNavigation .buttonRight .button > input{padding:5px 15px;font-size:14px;line-height:20px;}
+}
+
+/* 게시판 - 버튼 배치 */
+.boardNavigation > div:last-child{float:right;}
+table.bbs_default_list + .boardNavigation{}
+table.bbs_default_list + .boardNavigation .buttonLeft,
+table.bbs_default_list + .boardNavigation .buttonRight{display:block;width:100%;}
+table.bbs_default_list + .boardNavigation .buttonRight{float:left;}
+table.bbs_basic + .boardNavigation{}
+table.bbs_basic + .boardNavigation .buttonLeft,
+table.bbs_basic + .boardNavigation .buttonRight{display:block;width:100%;}
+table.bbs_basic + .boardNavigation .buttonRight{float:left;}
+#board table.bbs_basic + .boardNavigation .buttonLeft{float:none;text-align:center;}
+.p-pagination + .buttonLeft,
+.p-pagination + .buttonRight{margin-top:20px;}
+
+/* 게시판 리스트 - 테이블 레이아웃 */
+#board table.bbs_default_list{}
+@media all and (min-width:641px) {
+    #board table.bbs_default_list thead th:last-of-type{width:150px !important;}
+}

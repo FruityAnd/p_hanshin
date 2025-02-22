@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 나눔고딕 */
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans); Open Sans*/
+/*@font-face{font-family:ng;src:url(NanumGothic.eot);src:local(※), url(NanumGothic.woff) format(‘woff’)}*/
+
+
+html,body,div,span,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+abbr,address,cite,code,
+del,dfn,em,img,ins,kbd,q,samp,
+small,strong,sub,sup,var,
+b,i,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+input,button,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,header,footer,hgroup,menu,nav,section,summary,
+time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+legend,caption{display:none;}
+body{color:#555;}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}
+nav,ul,ol{list-style:none;}
+li{list-style-type:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+
+ins{background-color:#ff9;color:#000;text-decoration:none;}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}
+del{text-decoration:line-through;}
+abbr[title],dfn[title]{border-bottom:none;cursor:help;}
+
+table{border-collapse:collapse;border-spacing:0;}
+hr{display:none;}
+input,select,button{vertical-align:middle;}
+button{cursor:pointer;border:none;background:none}
+
+/*body{font-size:12px;font-family:NanumGothic,'나눔고딕',ng,Dotum,'돋움','굴림',Gulim,Helvetica,sans-serif;*font-size:small;*font:x-small;-webkit-text-size-adjust:none;}*/
+body {font-size:0.875em;font-family:'나눔 고딕', 'Nanum Gothic', '돋움', 'dotum';/* *font-size:small;*font:x-small; */ -webkit-text-size-adjust:none; line-height:1.4;}
+select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}
+/*table{font-size:inherit;font:100%;}*/
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+input, textarea, select, img { vertical-align: middle; }
+strong{color:#333;}
+
+/* a-style */
+a:link{color:#666;text-decoration:none;}
+a:visited{color:#666;text-decoration:none;}
+a:hover{color:#666;text-decoration:none;}
+a:active{color:#666;text-decoration:none;}
+
+/*.NG{font-family:NanumGothic,'나눔고딕',ng,Dotum,'돋움','굴림',Gulim,Helvetica,sans-serif;*font-size:small;*font:x-small;-webkit-text-size-adjust:none;}*/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(font/RjgO7rYTmqiVp7vzi-Q5URJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/NanumGothic-Regular.eot);
+  src: url(font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumGothic-Regular.woff2) format('woff2'),
+       url(font/NanumGothic-Regular.woff) format('woff'),
+       url(font/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(font/NanumGothic-Bold.eot);
+  src: url(font/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumGothic-Bold.woff2) format('woff2'),
+       url(font/NanumGothic-Bold.woff) format('woff'),
+       url(font/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(font/NanumGothic-ExtraBold.eot);
+  src: url(font/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumGothic-ExtraBold.woff2) format('woff2'),
+       url(font/NanumGothic-ExtraBold.woff) format('woff'),
+       url(font/NanumGothic-ExtraBold.ttf) format('truetype');
+}
