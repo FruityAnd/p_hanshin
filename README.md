@@ -1,4 +1,4 @@
-![PROJECT LIST](https://capsule-render.vercel.app/api?type=venom&height=200&color=fde7e7&text=PROJECT%20LIST&textBg=false&fontSize=40&fontAlign=50&fontColor=373737)
+![PROJECT LIST](https://capsule-render.vercel.app/api?type=venom&height=150&color=fde7e7&text=PROJECT%20LIST&textBg=false&fontSize=50&fontAlign=50&fontColor=373737)
 
 ## ■ 2023년
 1. **충북도청 새얼굴찾기 브랜드**  
