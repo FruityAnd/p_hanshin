@@ -217,8 +217,6 @@
     .make_reserve.detail .choice_box .box_inner{display:flex;}
 }
 @media all and (min-width:1601px) {
-    .make_reserve.detail .icon_box.type2 .box_inner .box_item{width:calc((100% - 40px) / 2);margin:0;padding-left:135px;}
-    .make_reserve.detail .icon_box.type2 .box_inner .box_item + .box_item{margin-left:40px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr.default td{font-size:17px;}
 }
 @media all and (max-width:1600px) {
@@ -244,10 +242,6 @@
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .t_box .ask_list .ask_item.tel{padding-left:25px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .t_box .ask_list .ask_item.tel:before{transform:scale(0.88);transform-origin:left center;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .b_box{padding:0 15px;}
-}
-@media all and (min-width:1201px) and (max-width:1600px) {
-    .make_reserve.detail .icon_box.type2 .box_inner .box_item{width:calc((100% - 30px) / 2);margin:0;padding-left:105px;}
-    .make_reserve.detail .icon_box.type2 .box_inner .box_item + .box_item{margin-left:30px;}
 }
 @media all and (max-width:1200px) {
     .make_reserve.detail .choice_box .box_inner .choice_item .title_box > .text{font-size:18px;}
