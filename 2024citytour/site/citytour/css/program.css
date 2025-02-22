@@ -160,9 +160,9 @@
 .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody{}
 .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr{}
 .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td{}
-.make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link{display:block;position:relative;width:100%;padding:20px 5px;border:none;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link{display:block;position:relative;width:100%;padding:5px;border:none;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
 .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link:before{display:block;position:absolute;z-index:-1;top:calc(50% - 30px);left:calc(50% - 30px);width:60px;height:60px;border:3px solid #3086f0;border-radius:100%;content:'';box-sizing:border-box;opacity:0;visibility:hidden;transition-property:opacity, visibility;transition-duration:0.25s;transition-timing-function:cubic-bezier(0.35, 0.3, 0.3, 0.5);}
-.make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link > .date{display:inline-block;position:relative;font-size:17px;line-height:30px;letter-spacing:-0.02em;font-weight:500;font-family:'SUITE';vertical-align:top;box-sizing:border-box;}
+.make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link > .date{display:inline-block;position:relative;width:100%;padding:15px 0;font-size:17px;line-height:30px;letter-spacing:-0.02em;font-weight:500;font-family:'SUITE';vertical-align:top;box-sizing:border-box;}
 .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td.bus_on .date_link > .date{color:#666;}
 .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td.bus_off .date_link > .date{color:#aaa;}
 .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td.day_off .date_link > .date{color:#e73e75;}
@@ -182,11 +182,10 @@
 .make_reserve.detail .choice_box .box_inner .choice_item .time_box .cal_time .cal_date .year,
 .make_reserve.detail .choice_box .box_inner .choice_item .time_box .cal_time .cal_date .day{margin-left:5px;}
 .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table{}
-.make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody{}
-.make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr{}
 .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table thead tr th{padding:13px 5px;}
 .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr td{padding:16px 5px;line-height:30px;}
 .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr td > .temp_form .temp_radio + label{padding-left:23px;padding-right:0;font-size:0;color:transparent;line-height:0;}
+.make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr td > input[type="radio"]{display:inline-block;position:relative;width:20px;height:20px;vertical-align:text-top;box-sizing:border-box;}
 .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr.sold_out{}
 .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr.sold_out td{color:#808490;}
 .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr.sold_out td > .temp_form{display:none;}
@@ -211,10 +210,15 @@
 .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .b_box{margin-top:18px;padding:0 20px;}
 .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .b_box .bu{margin:0;}
 .make_reserve.detail .btn_box{display:block;width:100%;margin-top:40px;box-sizing:border-box;}
+@media all and (min-width:641px) {
+    .make_reserve.detail .icon_box.type2.full .box_inner .box_item{display:block;position:relative;width:100%;margin:0;}
+}
 @media all and (min-width:1001px) {
     .make_reserve.detail .choice_box .box_inner{display:flex;}
 }
 @media all and (min-width:1601px) {
+    .make_reserve.detail .icon_box.type2 .box_inner .box_item{width:calc((100% - 40px) / 2);margin:0;padding-left:135px;}
+    .make_reserve.detail .icon_box.type2 .box_inner .box_item + .box_item{margin-left:40px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr.default td{font-size:17px;}
 }
 @media all and (max-width:1600px) {
@@ -233,12 +237,17 @@
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .cal_time .cal_date em{font-size:15px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table thead tr th,
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr td{font-size:16px;}
+    .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr td > input[type="radio"]{width:18px;height:18px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box{margin-top:35px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .t_box > .title{font-size:19px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .t_box .ask_list .ask_item + .ask_item{margin-left:10px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .t_box .ask_list .ask_item.tel{padding-left:25px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .t_box .ask_list .ask_item.tel:before{transform:scale(0.88);transform-origin:left center;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .b_box{padding:0 15px;}
+}
+@media all and (min-width:1201px) and (max-width:1600px) {
+    .make_reserve.detail .icon_box.type2 .box_inner .box_item{width:calc((100% - 30px) / 2);margin:0;padding-left:105px;}
+    .make_reserve.detail .icon_box.type2 .box_inner .box_item + .box_item{margin-left:30px;}
 }
 @media all and (max-width:1200px) {
     .make_reserve.detail .choice_box .box_inner .choice_item .title_box > .text{font-size:18px;}
@@ -262,10 +271,14 @@
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .b_box .bu li{margin-top:2px;font-size:16px;}
 }
 @media all and (min-width:1001px) and (max-width:1200px) {
+    .make_reserve.detail .icon_box.type2 .box_inner .box_item{width:calc((100% - 25px) / 2);margin:0;}
+    .make_reserve.detail .icon_box.type2 .box_inner .box_item + .box_item{margin-left:25px;}
+    .make_reserve.detail .icon_box.type2 .box_inner .box_item .text_box .desc > br{display:none;}
+    .make_reserve.detail .icon_box.type2.full .box_inner .box_item .text_box .desc > br{display:block;}
     .make_reserve.detail .choice_box .box_inner .choice_item.left{width:45%;}
     .make_reserve.detail .choice_box .box_inner .choice_item.right{width:55%;}
     .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table{padding:19px 1vw;}
-    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link{padding:15px 5px;}
+    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link > .date{padding:10px 0;}
 }
 @media all and (max-width:1000px) {
     .make_reserve .scroll_table .table{min-width:auto;}
@@ -278,7 +291,7 @@
     .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_pick > .title{padding:0 15px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table{margin-top:15px;padding:2vw 3vw;}
     .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar thead tr th{font-size:16px;}
-    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link{padding:15px 5px;}
+    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link > .date{padding:10px 0;}
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box{margin-top:35px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .cal_time{top:-30px;width:220px;padding:5px 5px 4px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .cal_time > .title,
@@ -292,6 +305,10 @@
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .t_box .ask_list .ask_item.tel:before{transform:scale(0.8);}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .b_box{margin-top:15px;}
 }
+@media all and (min-width:641px) and (max-width:1000px) {
+    .make_reserve.detail .icon_box.type2 .box_inner .box_item{width:calc((100% - 20px) / 2);margin:0;}
+    .make_reserve.detail .icon_box.type2 .box_inner .box_item + .box_item{margin-left:20px;}
+}
 @media all and (max-width:640px) {
     .make_reserve.detail .scroll_table .table{min-width:500px;margin-top:15px;}
     .make_reserve.detail .choice_box .box_inner{padding:20px 3vw;}
@@ -299,9 +316,9 @@
     .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_pick > .title{padding:0 10px;font-size:15px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table{margin-top:10px;padding:2.5vw 1vw;}
     .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar thead tr th{padding:11px 5px;font-size:15px;line-height:25px;}
-    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link{padding:11px 5px;}
-    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link:before{top:calc(50% - 20px);left:calc(50% - 20px);width:40px;height:40px;}
-    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link > .date{font-size:15px;line-height:25px;}
+    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link{padding:4px;}
+    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link:before{top:calc(50% - 20px);left:calc(50% - 20px);width:40px;height:40px;border:2px solid #3086f0;}
+    .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td .date_link > .date{padding:8px 0;font-size:15px;line-height:25px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td.today .date_link > .text{top:-8px;left:calc(50% - 15px);width:30px;font-size:12px;line-height:22px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .cal_box .cal_table > .calendar tbody tr td.today .date_link > .text:before{height:25px;background-size:cover;}
     .make_reserve.detail .choice_box .box_inner .choice_item .text_box{margin-top:10px;}
@@ -311,6 +328,7 @@
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .cal_time{display:block;position:relative;top:0;width:200px;margin:0 auto;padding:5px;border-radius:10px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr td{line-height:25px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr.default td{font-size:15px;}
+    .make_reserve.detail .choice_box .box_inner .choice_item .time_box .time_table tbody tr td > input[type="radio"]{width:16px;height:16px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box{margin-top:20px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .t_box{padding:10px 5px;}
     .make_reserve.detail .choice_box .box_inner .choice_item .guide_box .t_box > .title{font-size:16px;}

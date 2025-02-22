@@ -78,12 +78,11 @@
 .mypage_wrap .submit_box{margin-top:40px;}
 
 /* 이용약관 / 개인정보 수집 */
-.agree_box{display:block;position:relative;width:100%;padding:25px 33px;background-color:#fff;box-sizing:border-box;border:1px solid #d7dde4;border-radius:40px;}
-.agree_box .agree_inner{display:block;position:relative;overflow-y:scroll;width:100%;max-height:500px;padding-right:20px;font-size:17px;color:#444;letter-spacing:-0.03em;line-height:30px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:400;word-break:keep-all;white-space:pre-wrap;}
+.agree_box{display:block;position:relative;width:100%;padding:29px 34px;background-color:#fff;box-sizing:border-box;border:1px solid #d7dde4;border-radius:40px;}
+.agree_box .agree_inner{display:block;position:relative;overflow-y:scroll;width:100%;max-height:280px;padding-right:20px;font-size:17px;color:#444;letter-spacing:-0.03em;line-height:30px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:400;word-break:keep-all;}
 .agree_box.scroll_n .agree_inner{overflow-y:visible;max-height:initial;}
 .agree_box .agree_inner .box_sub_title{color:#000;font-weight:700;}
 .agree_box .agree_inner .warning{margin-top:10px;}
-
 @media all and (max-width:1600px){
     .mypage_wrap .table tbody tr td .my_state{width:80px;line-height:36px;font-size:15px;}
     .mypage_wrap .right_state{top:-3px;}
