@@ -1,5 +1,3 @@
-# 프로젝트 작업 현황
-
 ![PROJECT LIST](https://capsule-render.vercel.app/api?type=venom&height=200&color=fde7e7&text=PROJECT%20LIST&textBg=false&fontSize=40&fontAlign=50&fontColor=373737)
 
 ## ■ 2023년
