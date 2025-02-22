@@ -1,7 +1,5 @@
 # 프로젝트 작업 현황
 
-![header](https://capsule-render.vercel.app/api?type=rect&color=linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)&height=150&section=header&text=프로젝트%20작업%20현황&fontSize=40&animation=fadeIn&fontColor=333&desc=Blurry%20Effect&descAlign=70&descAlignY=60)
-
 
 
 ## ■ 2023년
