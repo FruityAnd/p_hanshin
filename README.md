@@ -1,10 +1,7 @@
 # 프로젝트 작업 현황
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=250&section=header&text=프로젝트%20작업%20현황&fontSize=45&fontAlignY=35&animation=fadeIn&desc=Shining%20Stars&descAlignY=60&descAlign=50&fontColor=fff)
+![header](https://capsule-render.vercel.app/api?type=rect&color=linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)&height=150&section=header&text=프로젝트%20작업%20현황&fontSize=40&animation=fadeIn&fontColor=333&desc=Blurry%20Effect&descAlign=70&descAlignY=60)
 
-![header](https://capsule-render.vercel.app/api?type=transparent&fontColor=ffeb3b&text=⭐%20프로젝트%20작업%20현황%20⭐&height=150&fontSize=50&animation=fadeIn)
-
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:000428,100:004e92&height=250&section=header&text=프로젝트%20작업%20현황&fontSize=45&fontAlignY=35&animation=fadeIn&desc=Meteor%20Shower&descAlignY=60&descAlign=50&fontColor=fff)
 
 
 ## ■ 2023년
