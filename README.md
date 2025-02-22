@@ -1,7 +1,7 @@
 ![PROJECT LIST](https://capsule-render.vercel.app/api?type=venom&height=150&color=fde7e7&text=PROJECT%20LIST&textBg=false&fontSize=45&fontAlign=50&fontColor=373737)
 
 ## ■ 2023년
-1. **충북도청 새얼굴찾기 브랜드**  
+1. **충북도청 새얼굴찾기 브랜드 (2023brand)**  
    - [서브 레이아웃](https://fruityand.github.io/p_hanshin/2023brand/site/brand/sub.html)
 2. **TTA 아카데미**
    - [서브 컨텐츠 템플릿](https://fruityand.github.io/p_hanshin/2023tta/site/edu/template.html)
