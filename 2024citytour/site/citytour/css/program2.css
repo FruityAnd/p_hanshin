@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/* (주)한신정보기술 안병민 사원 - 2024.09 */
+.start_line{display:block;width:100%;margin:30px 0;background-color:#d72183;font-size:20px;color:#fff;letter-spacing:-0.03em;line-height:40px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;word-break:keep-all;text-align:center;}
+.start_line.pink{background-color:#D563A0;}
+
+
+/* 사전예약 */
+.reservation_wrap .table td .temp_form,
+.reservation_wrap .table td .temp_select_box{padding:0 5px;}
+.reservation_wrap .table td .temp_form:first-child,
+.reservation_wrap .table td .temp_select_box:first-child{padding-left:0;}
+.reservation_wrap .table td .temp_form.name .temp_input{width:500px;}
+.reservation_wrap .table td .sum{color:#eb3065;font-weight:600;}
+.reservation_wrap .check_submit{margin-top:40px;}
+.reservation_wrap .check_submit .temp_form{margin:0 20px;}
+.reservation_wrap .check_submit .temp_btn{margin-top:40px;}
+
+.reservation_wrap .reservation_completion_box{display:block;position:relative;width:100%;padding:120px 130px 0;}
+.reservation_wrap .reservation_completion_box:before{display:block;position:absolute;top:0;left:0;width:100%;height:400px;background-image:linear-gradient(to right,#ddeaff,#e0fded);border-radius:60px;}
+.reservation_wrap .reservation_completion_box .box_inner{position:relative;padding:217px 30px 68px;background-color:#fff;box-shadow:25px 43px 40px 0 rgba(47,84,107,0.1);border-radius:60px;text-align:center;}
+.reservation_wrap .reservation_completion_box .box_inner .box_icon{display:inline-block;position:absolute;top:-45px;left:50%;width:188px;height:264px;background:url(../images/program/reservation_completion_icon.png)center center / cover no-repeat;transform:translateX(-50%);}
+.reservation_wrap .reservation_completion_box .box_inner .box_text{position:relative;font-size:18px;color:#000;letter-spacing:-0.04em;line-height:36px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:700;word-break:keep-all;}
+.reservation_wrap .reservation_completion_box .box_inner .box_text .dev_text{font-size:19px;font-weight:800;}
+.reservation_wrap .reservation_completion_box .submit_box{margin-top:85px;}
+@media all and (max-width:1600px){
+    .reservation_wrap .table td .temp_form .temp_input{width:160px;}
+    .reservation_wrap .table td .temp_select_box .temp_select{min-width:160px;}
+    .reservation_wrap .table td .temp_form.name .temp_input{width:335px;}
+    .reservation_wrap .check_submit{margin-top:30px;}
+    .reservation_wrap .check_submit .temp_btn{margin-top:30px;}
+
+    .reservation_wrap .reservation_completion_box{padding:100px 80px 0;}
+    .reservation_wrap .reservation_completion_box:before{height:300px;}
+    .reservation_wrap .reservation_completion_box .box_inner{padding:150px 30px 50px;}
+    .reservation_wrap .reservation_completion_box .box_inner .box_icon{width:150px;height:211px;}
+    .reservation_wrap .reservation_completion_box .submit_box{margin-top:55px;}
+}
+@media all and (max-width:1000px){
+    .reservation_wrap .table td .temp_form,
+    .reservation_wrap .table td .temp_select_box{width:calc((100% - 8px) / 3);padding:0;}
+    .reservation_wrap .table td .temp_form .temp_input{width:100%;}
+    .reservation_wrap .table td .temp_select_box .temp_select{width:100%;min-width:0;}
+    .reservation_wrap .table td .temp_form.name{width:100%;}
+    .reservation_wrap .table td .temp_form.name .temp_input{width:100%;}
+    .reservation_wrap .check_submit{margin-top:20px;}
+    .reservation_wrap .check_submit .temp_form{margin:0 10px;}
+    .reservation_wrap .check_submit .temp_btn{margin-top:20px;}
+
+    .reservation_wrap .reservation_completion_box{padding:80px 50px 0;}
+    .reservation_wrap .reservation_completion_box:before{height:240px;border-radius:40px;}
+    .reservation_wrap .reservation_completion_box .box_inner{padding:105px 20px 40px;border-radius:40px;}
+    .reservation_wrap .reservation_completion_box .box_inner .box_icon{width:120px;height:169px;}
+    .reservation_wrap .reservation_completion_box .box_inner .box_text{font-size:17px;line-height:26px;}
+    .reservation_wrap .reservation_completion_box .box_inner .box_text + .box_text{margin-top:10px;}
+    .reservation_wrap .reservation_completion_box .box_inner .box_text .dev_text{font-size:18px;}
+}
+@media all and (max-width:640px){
+    .reservation_wrap .check_submit{margin-top:10px;}
+    .reservation_wrap .check_submit .temp_btn{margin-top:10px;}
+
+    .reservation_wrap .reservation_completion_box{padding:60px 3vw 0;}
+    .reservation_wrap .reservation_completion_box .box_inner{padding-top:65px;}
+    .reservation_wrap .reservation_completion_box .box_inner .box_icon{width:85px;height:118px;}
+    .reservation_wrap .reservation_completion_box .box_inner .box_text{font-size:16px;}
+    .reservation_wrap .reservation_completion_box .box_inner .box_text .dev_text{font-size:17px;}
+}
+
+
+/* 마이페이지 */
+.mypage_wrap .table tbody tr td .my_state{width:93px;border-radius:50px;font-size:16px;color:#fff;letter-spacing:-0.02em;line-height:40px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:400;word-break:keep-all;}
+.mypage_wrap .table tbody tr td .my_state.type1{background-color:#4262c9;}
+.mypage_wrap .table tbody tr td .my_state.type2{background-color:#d72183;}
+.mypage_wrap .reservation_state_box{position:relative;}
+.mypage_wrap .reservation_state_box .right_state{position:absolute;top:0;right:0;text-align:right;}
+.mypage_wrap .no_state{display:block;position:relative;width:100%;padding:62px 20px 40px;background-color:#f4f5f9;border-radius:40px;font-size:17px;color:#505670;letter-spacing:-0.02em;line-height:23px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:400;word-break:keep-all; text-align:center;}
+.mypage_wrap .no_state > i{display:block;position:absolute;top:29px;left:50%;width:24px;height:24px;background:url(../images/program/mypage_no_state.png) center center / cover no-repeat;transform:translateX(-50%);}
+.mypage_wrap .submit_box{margin-top:40px;}
+
+/* 이용약관 / 개인정보 수집 */
+.agree_box{display:block;position:relative;width:100%;padding:25px 33px;background-color:#fff;box-sizing:border-box;border:1px solid #d7dde4;border-radius:40px;}
+.agree_box .agree_inner{display:block;position:relative;overflow-y:scroll;width:100%;max-height:500px;padding-right:20px;font-size:17px;color:#444;letter-spacing:-0.03em;line-height:30px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:400;word-break:keep-all;white-space:pre-wrap;}
+.agree_box.scroll_n .agree_inner{overflow-y:visible;max-height:initial;}
+.agree_box .agree_inner .box_sub_title{color:#000;font-weight:700;}
+.agree_box .agree_inner .warning{margin-top:10px;}
+
+@media all and (max-width:1600px){
+    .mypage_wrap .table tbody tr td .my_state{width:80px;line-height:36px;font-size:15px;}
+    .mypage_wrap .right_state{top:-3px;}
+    .mypage_wrap .submit_box{margin-top:30px;}
+
+    .agree_box{padding:20px 25px;}
+}
+@media all and (max-width:1000px){
+    .mypage_wrap .table tbody tr td .my_state{width:70px;line-height:32px;font-size:14px;}
+    .mypage_wrap .right_state{top:-4px;}
+    .mypage_wrap .no_state{padding:60px 20px 30px;font-size:16px;line-height:22px;}
+    .mypage_wrap .no_state > i{top:25px;}
+    .mypage_wrap .submit_box{margin-top:20px;}
+
+    .agree_box{padding:15px 20px;}
+    .agree_box .agree_inner{font-size:16px;line-height:28px;}
+}
+@media all and (max-width:640px){
+    .mypage_wrap .right_state{top:-5px;}
+    .mypage_wrap .submit_box{margin-top:10px;}
+}
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* ㈜한신정보기술 - 24.09. 안병민 */
+
+/* cts1-2 */
+.course_box{font-size:0;line-height:0;}
+.course_box .course_inner{display:none;}
+.course_box .course_inner.active{display:block;}
+.course_box .course_inner .deco_title{margin-top:85px;}
+.course_box .course_inner .deco_title:first-child{margin-top:0;}
+.course_box .course_inner .course_list + .deco_title{margin-top:130px;}
+.course_box .course_inner .course_list{position:relative;overflow:visible;padding:30px 0 20px;}
+.course_box .course_inner .course_list:before{display:block;position:absolute;bottom:79px;left:0;width:100%;height:55px;background:url(../images/contents/course_item_line.png) left center / 31px 55px repeat-x;}
+.course_box .course_inner .course_list .course_item{display:inline-block;position:relative;width:220px;vertical-align:top;}
+.course_box .course_inner .course_list.row5 .course_item + .course_item{margin-left:calc((100% - 1100px) / 4);}
+.course_box .course_inner .course_list.row6 .course_item + .course_item{margin-left:calc((100% - 1320px) / 5);}
+.course_box .course_inner .course_list .course_item .item_img{border-radius:58px;}
+.course_box .course_inner .course_list .course_item .item_text{position:absolute;bottom:-20px;right:-22px;width:160px;padding:39px 22px 18px;background-color:#fff;box-shadow:-18px -18px 20px 0 rgba(0,0,0,0.08);border-top-left-radius:60px;font-size:16px;color:#444;letter-spacing:-0.03em;line-height:22px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;word-break:keep-all;text-align:right;}
+.course_box .course_inner .course_list .course_item .item_text .item_deco{position:absolute;top:-15px;left:15px;width:54px;border-radius:50%;font-size:14px;color:#fff;letter-spacing:-0.03em;line-height:54px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:400;word-break:keep-all;text-align:center;}
+.course_box .course_inner .course_list .course_item:first-child .item_text .item_deco{background-color:#ee6001;}
+.course_box .course_inner .course_list .course_item:last-child .item_text .item_deco{background-color:#2d82f7;}
+
+.course_box .course_inner .info_list{overflow:visible;margin-bottom:58px;}
+.course_box .course_inner .info_list .info_item{display:inline-block;position:relative;width:225px;padding-top:20px;padding-left:20px;vertical-align:top;text-align:left;}
+.course_box .course_inner .info_list.row5 .info_item + .info_item{margin-left:calc((100% - 1125px) / 4);}
+.course_box .course_inner .info_list.row6 .info_item + .info_item{margin-left:calc((100% - 1350px) / 5);}
+.course_box .course_inner .info_list .info_item:before{display:block;position:absolute;top:45px;left:calc(100% + 42px);width:32px;height:27px;background:url(../images/contents/info_item_arrow.png) center center / cover no-repeat;}
+.course_box .course_inner .info_list.row6 .info_item:before{left:100%;}
+.course_box .course_inner .info_list .info_item:last-child:before{display:none;}
+.course_box .course_inner .info_list .info_item .count{display:block;position:absolute;top:0;left:0;width:70px;height:70px;padding-top:10px;padding-left:20px;background-color:#7f8f9c;box-sizing:border-box;border-radius:17px 40px 50px 50px;font-size:16px;color:#fff;letter-spacing:0;line-height:22px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;word-break:keep-all;}
+.course_box .course_inner .info_list .info_item .item_text{position:relative;width:100%;height:80px;background-color:rgba(255,255,255,0.2);box-shadow:13px 22px 25px 0 rgba(177,186,201,0.15);border-radius:100px;text-align:center;backdrop-filter:blur(5px);}
+.course_box .course_inner .info_list .info_item .item_text em{position:relative;top:50%;font-size:18px;color:#444;letter-spacing:-0.03em;line-height:24px;font-family:'SUITE', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:500;word-break:keep-all;transform:translateY(-50%);}
+.course_box .course_inner .warning_box{margin-top:20px;}
+.course_box .course_inner .warning{margin-top:15px;}
+@media all and (max-width:1600px){
+    .course_box .course_inner .course_list{padding-top:0;}
+    .course_box .course_inner .deco_title{margin-top:50px;}
+    .course_box .course_inner .course_list + .deco_title{margin-top:80px;}
+    .course_box .course_inner .course_list .course_item{width:170px;}
+    .course_box .course_inner .course_list.row5 .course_item + .course_item{margin-left:calc((100% - 850px) / 4);}
+    .course_box .course_inner .course_list.row6 .course_item + .course_item{margin-left:calc((100% - 1020px) / 5);}
+    .course_box .course_inner .course_list .course_item .item_img{border-radius:45px;}
+    .course_box .course_inner .course_list .course_item .item_text{width:140px;padding:20px 20px 20px 0;border-top-left-radius:40px;}
+    .course_box .course_inner .course_list .course_item .item_text .item_deco{top:-23px;left:23px;width:45px;line-height:45px;}
+
+    .course_box .course_inner .info_list.row5 .info_item{width:calc((100% - 320px) / 5);}
+    .course_box .course_inner .info_list.row5 .info_item + .info_item{margin-left:80px;}
+    .course_box .course_inner .info_list.row5 .info_item:before{left:calc(100% + 28px);}
+    .course_box .course_inner .info_list.row6 .info_item{width:calc((100% - 250px) / 6);}
+    .course_box .course_inner .info_list.row6 .info_item + .info_item{margin-left:50px;}
+    .course_box .course_inner .info_list .info_item .count{width:60px;height:60px;}
+    .course_box .course_inner .info_list .info_item .item_text em{font-size:17px;line-height:23px;}
+}
+@media all and (max-width:1300px){
+    .course_box .course_inner .course_list{padding-bottom:45px;}
+    .course_box .course_inner .course_list .course_item{width:140px;}
+    .course_box .course_inner .course_list.row5 .course_item + .course_item{margin-left:calc((100% - 700px) / 4);}
+    .course_box .course_inner .course_list.row6 .course_item + .course_item{margin-left:calc((100% - 840px) / 5);}
+    .course_box .course_inner .course_list .course_item .item_img{border-radius:30px;}
+    .course_box .course_inner .course_list .course_item .item_text{bottom:-10px;left:50%;right:inherit;width:auto;padding:0 20px;border-radius:20px;line-height:40px;text-align:center;white-space:nowrap;transform:translateX(-50%);}
+    .course_box .course_inner .course_list .course_item .item_text .item_deco{top:35px;left:calc(50% - 20px);width:40px;line-height:40px;}
+
+    .course_box .course_inner .info_list .info_item{padding-left:15px;}
+    .course_box .course_inner .info_list .info_item:before{width:26px;height:22px;}
+    .course_box .course_inner .info_list.row5 .info_item{width:calc((100% - 240px) / 5);}
+    .course_box .course_inner .info_list.row5 .info_item:before{left:calc(100% + 20px);}
+    .course_box .course_inner .info_list.row5 .info_item + .info_item{margin-left:60px;}
+    .course_box .course_inner .info_list.row5 .info_item:before{left:calc(100% + 28px);}
+    .course_box .course_inner .info_list.row6 .info_item{width:calc((100% - 200px) / 6);}
+    .course_box .course_inner .info_list.row6 .info_item + .info_item{margin-left:40px;}
+    .course_box .course_inner .info_list .info_item .count{width:50px;height:50px;padding-top:7px;padding-left:15px;}
+    .course_box .course_inner .info_list .info_item .item_text{height:60px;}
+}
+@media all and (max-width:1000px){
+    .course_box .course_inner .deco_title{margin-top:40px;}
+    .course_box .course_inner .course_list + .deco_title{margin-top:50px;}
+    .course_box .course_inner .course_list:before{display:none;}
+    .course_box .course_inner .course_list .course_item{width:19.8vw;}
+    .course_box .course_inner .course_list.row5 .course_item + .course_item,
+    .course_box .course_inner .course_list.row6 .course_item + .course_item{margin-left:calc((100% - 79.4vw) / 3);}
+    .course_box .course_inner .course_list .course_item:nth-child(n + 5){float:right;margin-top:50px;}
+    .course_box .course_inner .course_list .course_item:before{display:block;position:absolute;top:calc(50% - 18px);left:100%;width:100%;height:36px;background:url(../images/contents/course_item_line.png) left center / 31px 55px repeat-x;}
+    .course_box .course_inner .course_list .course_item:nth-child(n + 5):before{left:inherit;right:100%;}
+    .course_box .course_inner .course_list .course_item:nth-child(4n):before{top:calc(100% + 45px);left:0;transform:rotate(90deg);}
+    .course_box .course_inner .course_list .course_item:last-child:before{display:none;}
+
+    .course_box .course_inner .info_list{margin-bottom:30px;}
+    .course_box .course_inner .info_list.row5 .info_item,
+    .course_box .course_inner .info_list.row6 .info_item{width:19.8vw;}
+    .course_box .course_inner .info_list.row5 .info_item + .info_item,
+    .course_box .course_inner .info_list.row6 .info_item + .info_item{margin-left:calc((100% - 79.4vw) / 3);}
+    .course_box .course_inner .info_list.row5 .info_item:before{left:100%;}
+    .course_box .course_inner .info_list .info_item:nth-child(n + 5){float:right;margin-top:50px;}
+    .course_box .course_inner .info_list .info_item:nth-child(n + 5):before{left:inherit;right:100%;transform:rotateY(180deg);}
+    .course_box .course_inner .info_list .info_item:nth-child(4n):before{top:105px;left:calc(50% - 7px);transform:rotate(90deg);}
+    .course_box .course_inner .info_list .info_item:last-child:before{display:none;}
+    .course_box .course_inner .info_list .info_item .count{width:42px;height:42px;}
+}
+@media all and (max-width:640px){
+    .course_box .course_inner .deco_title{margin-top:30px;}
+    .course_box .course_inner .course_list + .deco_title{margin-top:30px;}
+    .course_box .course_inner .course_list .course_item{width:130px;}
+    .course_box .course_inner .course_list.row5 .course_item + .course_item,
+    .course_box .course_inner .course_list.row6 .course_item + .course_item{margin-left:calc((100% - 390px) / 2);}
+    .course_box .course_inner .course_list .course_item:nth-child(n + 4){float:right;margin-top:50px;}
+    .course_box .course_inner .course_list .course_item:nth-child(6n){margin-left:0 !important;}
+    .course_box .course_inner .course_list .course_item:nth-child(n + 4):before{top:calc(50% - 18px);left:inherit;right:100%;transform:none;}
+    .course_box .course_inner .course_list .course_item:nth-child(3n):before{top:calc(100% + 45px);left:0;transform:rotate(90deg);}
+
+    .course_box .course_inner .info_list.row5 .info_item,
+    .course_box .course_inner .info_list.row6 .info_item{width:100%;}
+    .course_box .course_inner .info_list.row5 .info_item:before,
+    .course_box .course_inner .info_list.row6 .info_item:before{top:73px;left:calc(50% - 7px);transform:none;}
+    .course_box .course_inner .info_list.row5 .info_item + .info_item,
+    .course_box .course_inner .info_list.row6 .info_item + .info_item{margin-top:25px;margin-left:0;}
+    .course_box .course_inner .info_list .info_item .item_text{height:40px;}
+}
+@media all and (max-width:480px){
+    .course_box .course_inner{text-align:center;}
+    .course_box .course_inner .course_list{display:inline-block;width:100%;max-width:400px;}
+    .course_box .course_inner .course_list .course_item{width:150px;}
+    .course_box .course_inner .course_list.row5 .course_item + .course_item,
+    .course_box .course_inner .course_list.row6 .course_item + .course_item{margin-left:calc(100% - 300px);}
+    .course_box .course_inner .course_list .course_item:nth-child(n + 3){float:right;margin-top:50px;}
+    .course_box .course_inner .course_list .course_item:nth-child(n + 5){float:left;}
+    .course_box .course_inner .course_list .course_item:nth-child(6n){margin-left:calc(100% - 300px) !important;}
+    .course_box .course_inner .course_list .course_item:nth-child(4n),
+    .course_box .course_inner .course_list .course_item:nth-child(4n + 1){margin-left:0 !important;}
+    .course_box .course_inner .course_list .course_item:nth-child(3n):before{top:calc(50% - 18px);left:inherit;right:100%;transform:none;}
+    .course_box .course_inner .course_list .course_item:nth-child(4n - 3):before{top:calc(50% - 18px);left:100%;transform:none;}
+    .course_box .course_inner .course_list .course_item:nth-child(4n - 1):before{top:calc(50% - 18px);left:inherit;right:100%;transform:none;}
+    .course_box .course_inner .course_list .course_item:nth-child(2n):before{top:calc(100% + 45px);left:0;transform:rotate(90deg);}
+    .course_box .course_inner .warning_box.type2{text-align:left;}
+}

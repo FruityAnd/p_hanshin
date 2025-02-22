@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/* (주)한신정보기술 권나람 - 2024. 09. */
+
+/* --------------- 시티투어 sub_visual_box 시작 --------------- */
+.sub_visual_box{display:block;position:relative;width:100%;margin-top:-130px;box-sizing:border-box;}
+.sub_visual_box .visual_inner{display:block;position:relative;width:100%;height:480px;padding-top:130px;padding-bottom:35px;background:linear-gradient(to right, #1e9d6a 0%, #219b9f 100%);box-sizing:border-box;}
+.sub_visual_box .visual_inner .depth_box,
+.sub_visual_box .visual_inner .icon_box{display:block;position:relative;width:1600px;margin:0 auto;font-size:0;line-height:0;box-sizing:border-box;}
+.sub_visual_box .visual_inner .depth_box{height:100%;padding-top:102px;}
+.sub_visual_box .visual_inner .depth_box .depth_title{display:block;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.sub_visual_box .visual_inner .depth_box .depth_title > span{width:100%;color:#fff;letter-spacing:-0.03em;font-family:'SUITE';box-sizing:border-box;}
+.sub_visual_box .visual_inner .depth_box .depth_title.eng > span{display:none;font-size:60px;line-height:60px;font-weight:800;text-transform:uppercase;}
+.sub_visual_box .visual_inner .depth_box .depth_title.kor > span{display:block;font-size:32px;line-height:40px;font-weight:500;}
+.sub_visual_box .visual_inner .icon_box{}
+.sub_visual_box .visual_inner .icon_box .icon{display:block;position:absolute;background-repeat:no-repeat;background-position:left top;box-sizing:border-box;opacity:0;visibility:hidden;transition-property:opacity, visibility;transition-duration:0.4s;transition-timing-function:cubic-bezier(0.35, 0.3, 0.3, 0.5);}
+.sub_visual_box .visual_inner.type1 .icon_box .icon{top:31px;width:357px;height:287px;background-image:url(../images/sub/sub_visual_deco01.png);}
+.sub_visual_box .visual_inner.type2 .icon_box .icon{top:27px;width:241px;height:274px;background-image:url(../images/sub/sub_visual_deco02.png);}
+.sub_visual_box .visual_inner.type3 .icon_box .icon{top:15px;width:242px;height:286px;background-image:url(../images/sub/sub_visual_deco03.png);}
+.sub_visual_box .visual_inner.type4 .icon_box .icon{top:23px;width:279px;height:278px;background-image:url(../images/sub/sub_visual_deco04.png);}
+.sub_visual_box .visual_inner.type1 .icon_box .icon,
+.sub_visual_box .visual_inner.type2 .icon_box .icon,
+.sub_visual_box .visual_inner.type3 .icon_box .icon,
+.sub_visual_box .visual_inner.type4 .icon_box .icon{opacity:1;visibility:visible;}
+@media all and (min-width:1001px) {
+    .sub_visual_box .visual_inner.type1 .depth_box .depth_title.eng > span:nth-child(1),
+    .sub_visual_box .visual_inner.type2 .depth_box .depth_title.eng > span:nth-child(2),
+    .sub_visual_box .visual_inner.type3 .depth_box .depth_title.eng > span:nth-child(3),
+    .sub_visual_box .visual_inner.type4 .depth_box .depth_title.eng > span:nth-child(4){display:block;}
+    .sub_visual_box .visual_inner .depth_box .depth_title.kor{margin-top:12px;}
+}
+@media all and (min-width:1601px) {
+    .sub_visual_box .visual_inner{border-bottom-left-radius:200px;}
+    .sub_visual_box .visual_inner.type1 .icon_box .icon{right:-8px;}
+    .sub_visual_box .visual_inner.type2 .icon_box .icon{right:27px;}
+    .sub_visual_box .visual_inner.type3 .icon_box .icon{right:27px;}
+    .sub_visual_box .visual_inner.type4 .icon_box .icon{right:0;}
+}
+@media all and (max-width:1600px) {
+    .sub_visual_box .visual_inner .depth_box,
+    .sub_visual_box .visual_inner .icon_box{width:100%;padding-left:3%;padding-right:3%;}
+    .sub_visual_box .visual_inner .depth_box{padding-top:102px;}
+    .sub_visual_box .visual_inner.type1 .icon_box .icon,
+    .sub_visual_box .visual_inner.type2 .icon_box .icon,
+    .sub_visual_box .visual_inner.type3 .icon_box .icon,
+    .sub_visual_box .visual_inner.type4 .icon_box .icon{right:3%;}
+    .sub_visual_box .visual_inner.type1 .icon_box .icon{transform:scale(0.8);transform-origin:right bottom;}
+    .sub_visual_box .visual_inner.type2 .icon_box .icon,
+    .sub_visual_box .visual_inner.type3 .icon_box .icon,
+    .sub_visual_box .visual_inner.type4 .icon_box .icon{transform:scale(0.85);transform-origin:right center;}
+    .sub_visual_box .visual_inner .depth_box .depth_title.eng > span{font-size:50px;line-height:50px;}
+    .sub_visual_box .visual_inner .depth_box .depth_title.kor > span{font-size:28px;}
+}
+@media all and (max-width:1000px) {
+    .sub_visual_box{margin-top:-72px;}
+    .sub_visual_box .visual_inner{height:300px;padding-top:72px;padding-bottom:30px;}
+    .sub_visual_box .visual_inner.type1 .icon_box .icon{transform:scale(0.5);}
+    .sub_visual_box .visual_inner.type2 .icon_box .icon,
+    .sub_visual_box .visual_inner.type3 .icon_box .icon,
+    .sub_visual_box .visual_inner.type4 .icon_box .icon{transform:scale(0.55);transform-origin:right top;}
+    .sub_visual_box .visual_inner.type1 .icon_box .icon{top:calc(100% - 88px);}
+    .sub_visual_box .visual_inner.type2 .icon_box .icon{}
+    .sub_visual_box .visual_inner.type3 .icon_box .icon{}
+    .sub_visual_box .visual_inner.type4 .icon_box .icon{}
+    .sub_visual_box .visual_inner .depth_box{padding-top:60px;}
+    .sub_visual_box .visual_inner .depth_box .depth_title{text-align:center;}
+    .sub_visual_box .visual_inner .depth_box .depth_title.kor > span{font-size:24px;line-height:35px;}
+}
+@media all and (max-width:640px) {
+    .sub_visual_box .visual_inner{height:190px;padding-bottom:25px;}
+    .sub_visual_box .visual_inner .depth_box{padding-top:23px;}
+    .sub_visual_box .visual_inner .depth_box .depth_title.kor > span{font-size:20px;line-height:30px;}
+    .sub_visual_box .visual_inner.type1 .icon_box .icon,
+    .sub_visual_box .visual_inner.type2 .icon_box .icon,
+    .sub_visual_box .visual_inner.type3 .icon_box .icon,
+    .sub_visual_box .visual_inner.type4 .icon_box .icon{transform:scale(1);transform-origin:unset;}
+    .sub_visual_box .visual_inner.type1 .icon_box .icon{top:calc(100% + 3px);right:calc(3% + 3px);width:107px;height:90px;background-image:url(../images/sub/sub_visual_m_deco01.png);}
+    .sub_visual_box .visual_inner.type2 .icon_box .icon{top:0;width:69px;height:79px;background-image:url(../images/sub/sub_visual_m_deco02.png);}
+    .sub_visual_box .visual_inner.type3 .icon_box .icon{top:-6px;width:75px;height:88px;background-image:url(../images/sub/sub_visual_m_deco03.png);}
+    .sub_visual_box .visual_inner.type4 .icon_box .icon{top:-2px;width:81px;height:79px;background-image:url(../images/sub/sub_visual_m_deco04.png);}
+}
+
+/* --------------- 시티투어 sub_visual_box 끝 --------------- */
+
+
+/* --------------- 시티투어 container, colgroup 시작 --------------- */
+#container{margin:0;padding:0;background-color:transparent;}
+.colgroup{display:block;float:none;width:100%;padding-top:0;box-sizing:border-box;}
+/* --------------- 시티투어 container, colgroup 끝 --------------- */
+
+
+/* --------------- 시티투어 sub_head 시작 (연천 대표서브 클레스명 사용) --------------- */
+.sub_head{display:block;position:relative;width:100%;padding-bottom:95px;box-sizing:border-box;}
+.sub_head .sub_info{display:block;position:relative;width:100%;padding:0;box-sizing:border-box;}
+.sub_head .sub_info:before{display:none;}
+/* 패스 박스(breadcrumbs) */
+.sub_head .sub_info .breadcrumbs{display:block;position:relative;width:100%;height:65px;margin-top:-35px;box-sizing:border-box;text-align:left;}
+.sub_head .sub_info .breadcrumbs:before{display:block;position:absolute;top:0;left:-20px;width:calc(100vw + 20px);height:100%;border-top-left-radius:30px;background-color:#fff;content:'';box-sizing:border-box;box-shadow:8px 13px 25px 0 rgba(8, 43, 78, 0.07);}
+.sub_head .sub_info .breadcrumbs .breadcrumbs_list{display:block;position:relative;width:100%;padding:23px 0 22px;font-size:0;line-height:0;box-sizing:border-box;}
+.sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item{display:inline-block;position:relative;width:auto;margin-right:20px;padding-left:20px;vertical-align:top;box-sizing:border-box;}
+.sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item:before{display:block;position:absolute;top:calc((100% - 11px) / 2);left:0;width:6px;height:11px;background:url(../images/sub/path_arrow.png) no-repeat left top;content:'';box-sizing:border-box;}
+.sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item .breadcrumbs_anchor{display:inline-block;position:relative;margin:0;font-size:17px;color:#4a5b6b;line-height:20px;letter-spacing:-0.03em;font-weight:400;font-family:'SUITE';vertical-align:top;box-sizing:border-box;}
+.sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item .breadcrumbs_anchor:after{display:none;}
+.sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item:last-child .breadcrumbs_anchor{margin-right:0;}
+.sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item.breadcrumbs_home{padding-left:12px;}
+.sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item.breadcrumbs_home:before{display:none;}
+.sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item.breadcrumbs_home .breadcrumbs_anchor{width:20px;height:20px;background:url(../images/sub/path_home.png) no-repeat left top;}
+/* 공유 및 인쇄하기 버튼(.addons)*/
+.sub_head .sub_info .addons{display:block;position:absolute;bottom:auto;top:15px;right:16px;box-sizing:border-box;}
+.sub_head .sub_info .addons .addons_list{display:block;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.sub_head .sub_info .addons .addons_list .addons_item{display:inline-block;float:none;position:relative;vertical-align:top;box-sizing:border-box;}
+.sub_head .sub_info .addons .addons_list .addons_item .addons_button{display:inline-block;position:relative;width:35px;height:35px;border-radius:unset;border:none;background-color:#fff;vertical-align:top;box-sizing:border-box;}
+.sub_head .sub_info .addons .addons_list .addons_item .addons_button:before{display:block;position:absolute;margin:0;content:'';box-sizing:border-box;}
+.sub_head .sub_info .addons .addons_list .addons_item.print{}
+.sub_head .sub_info .addons .addons_list .addons_item.print .addons_button.print_btn{font-size:0;line-height:0;}
+.sub_head .sub_info .addons .addons_list .addons_item.print .addons_button.print_btn:before{top:calc((100% - 20px) / 2);left:calc((100% - 21px) / 2);width:21px;height:20px;background:url(../images/sub/path_print.png) no-repeat left top;}
+/* 현재 컨텐츠명(.sub_title) */
+.sub_head .sub_info .sub_title{display:block;position:relative;width:100%;margin-top:95px;margin-bottom:0;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.sub_head .sub_info .sub_title > h2{display:inline-block;padding:0;font-size:50px;color:#000;line-height:60px;letter-spacing:-0.03em;font-weight:800;font-family:'SUITE';vertical-align:top;box-sizing:border-box;}
+@media all and (max-width:1600px) {
+    .sub_head{padding-bottom:75px;}
+    .sub_head .sub_info .breadcrumbs:before{left:0;width:100vw;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item.breadcrumbs_home{padding-left:20px;}
+    .sub_head .sub_info .sub_title{margin-top:75px;}
+    .sub_head .sub_info .sub_title > h2{font-size:40px;line-height:50px;}
+}
+@media all and (max-width:1000px) {
+    .sub_head{padding-bottom:50px;}
+    .sub_head .sub_info .breadcrumbs{height:60px;margin-top:-30px;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list{padding:21px 0;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item{margin-right:14px;padding-left:18px;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item .breadcrumbs_anchor{font-size:16px;line-height:18px;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item.breadcrumbs_home .breadcrumbs_anchor{width:18px;height:18px;background-size:cover;}
+    .sub_head .sub_info .addons{display:none;}
+    .sub_head .sub_info .sub_title{margin-top:50px;}
+    .sub_head .sub_info .sub_title > h2{font-size:30px;line-height:40px;}
+}
+@media all and (max-width:640px) {
+    .sub_head{padding-bottom:25px;}
+    .sub_head .sub_info{margin-bottom:0;}
+    .sub_head .sub_info .breadcrumbs{height:50px;margin-top:-25px;}
+    .sub_head .sub_info .breadcrumbs:before{left:0;width:100vw;border-top-left-radius:20px;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list{padding:17px 0;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item{margin-right:10px;padding-left:14px;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item:before{top:calc((100% - 7px) / 2);width:4px;height:7px;background-size:cover;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item .breadcrumbs_anchor{font-size:14px;line-height:16px;}
+    .sub_head .sub_info .breadcrumbs .breadcrumbs_list .breadcrumbs_item.breadcrumbs_home .breadcrumbs_anchor{width:16px;height:16px;background-size:cover;}
+    .sub_head .sub_info .sub_title{margin-top:25px;}
+    .sub_head .sub_info .sub_title > h2{font-size:22px;line-height:30px;}
+}
+/* --------------- 시티투어 sub_head 끝 (연천 대표서브 클레스명 사용) --------------- */
+
+
+/* --------------- 시티투어 contents 시작 --------------- */
+#contents{display:block;width:100%;min-height:1000px;margin-top:0;margin-bottom:160px;box-sizing:border-box;}
+@media all and (min-width:1601px) {
+    #contents{padding:0 10px;}
+}
+@media all and (max-width:1000px) {
+    #contents{min-height:600px;margin-bottom:120px;}
+}
+@media all and (max-width:640px) {
+    #contents{margin-bottom:80px;}
+}
+/* --------------- 시티투어 contents 끝 --------------- */
+
+
+/* 삭제 예정 */
+
