@@ -4,7 +4,7 @@
 
 ### ■ 2023년
 1. **충북도청 새얼굴찾기 브랜드**  
-   - 서브 레이아웃: [클릭해서 확인](https://fruityand.github.io/p_hanshin/2023brand/site/brand/sub.html)
+   - [서브 레이아웃](https://fruityand.github.io/p_hanshin/2023brand/site/brand/sub.html)
 2. **TTA 아카데미**
    - 서브 컨텐츠 템플릿
 3. **영덕 사진DB**
