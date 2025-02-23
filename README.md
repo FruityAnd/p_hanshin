@@ -2,7 +2,7 @@
 
 
 ## ■ 2025년 
-1 **<신규> 남양주시청 다산나루 (2025animal)**
+1. **<신규> 남양주시청 다산나루 (2025animal)**
    - [메인 레이아웃](https://fruityand.github.io/p_hanshin/2025animal/site/animal/main.html)
    - [서브 레이아웃(기존 서브 일부 변경)](https://fruityand.github.io/p_hanshin/2025animal/site/animal/sub.html)
 
