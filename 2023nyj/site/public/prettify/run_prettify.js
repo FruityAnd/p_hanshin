@@ -106,7 +106,7 @@
             g.src = "./prettify/lang/lang-" + encodeURIComponent(H[l]) + ".js";
             N.insertBefore(g, N.firstChild)
         })(H[l]);
-        for (var S = H.length, F = [], l = 0, B = P.length; l < B; ++l) F.push("./prettify/skins/prettify.css" + encodeURIComponent(P[l]) + ".css");
+        for (var S = H.length, F = [], l = 0, B = P.length; l < B; ++l) F.push("./prettify/skins/" + encodeURIComponent(P[l]) + ".css");
         F.push("./prettify/skins/prettify.css");
         (function (g) {
             function r(l) {
