@@ -9,9 +9,8 @@
 .atv{color:#F88C31}
 .dec{color:purple}
 pre.prettyprint{border:0 solid #888}
-ol.linenums{margin-top:0;margin-bottom:0; padding-bottom:20px;}
-ol.linenums li:nth-child(2n-1){background:#2D2036;}
-.prettyprint{background:#000}
+ol.linenums{margin-top:0;margin-bottom:0;}
+ol.linenums li:nth-child(2n-1){background:#111f3c;}
 li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{color:#555;list-style-type:decimal}
 li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
 @media print{
